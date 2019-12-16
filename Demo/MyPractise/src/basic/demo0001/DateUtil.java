@@ -94,7 +94,7 @@ public class DateUtil {
 	 * 
 	 * @param date
 	 * @return
-	 * @throws BusinessException
+	 * @throws
 	 */
 	public static Date transferDate(String date) throws Exception {
 		if (date == null || date.length() < 1)
