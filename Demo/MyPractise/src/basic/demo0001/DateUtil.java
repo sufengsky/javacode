@@ -319,12 +319,16 @@ public class DateUtil {
 		Matcher m = p.matcher(DateString);
 		boolean b = m.matches();
 		if (b)
+		{
 			return DATAFORMAT_STR;
+		}
 		p = Pattern.compile(patternStr2);
 		m = p.matcher(DateString);
 		b = m.matches();
 		if (b)
+		{
 			return DATATIMEF_STR;
+		}
 
 		p = Pattern.compile(patternStr3);
 		m = p.matcher(DateString);
