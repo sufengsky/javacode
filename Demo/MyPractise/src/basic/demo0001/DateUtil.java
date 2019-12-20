@@ -94,7 +94,7 @@ public class DateUtil {
 	 * 
 	 * @param date
 	 * @return
-	 * @throws BusinessException
+	 * @throws
 	 */
 	public static Date transferDate(String date) throws Exception {
 		if (date == null || date.length() < 1)
@@ -319,12 +319,16 @@ public class DateUtil {
 		Matcher m = p.matcher(DateString);
 		boolean b = m.matches();
 		if (b)
+		{
 			return DATAFORMAT_STR;
+		}
 		p = Pattern.compile(patternStr2);
 		m = p.matcher(DateString);
 		b = m.matches();
 		if (b)
+		{
 			return DATATIMEF_STR;
+		}
 
 		p = Pattern.compile(patternStr3);
 		m = p.matcher(DateString);
