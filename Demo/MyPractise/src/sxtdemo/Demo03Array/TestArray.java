@@ -1,3 +1,5 @@
+package sxtdemo.Demo03Array;
+
 public class TestArray {
 	public static void main(String[] args) {
 		int[] a = {2, 4, 6, 7, 3, 5, 1, 9, 8};

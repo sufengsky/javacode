@@ -1,35 +1,17 @@
+package sxtdemo.Demo10Network.Chat.Chat07;
+
 import java.net.*;
 import java.util.*;
 import java.io.*;
-import java.awt.*;
-import java.awt.event.*;
 
-public class ChatServer extends Frame
+public class ChatServer
 {
-	TextArea ta = new TextArea();
-	public void launchFrame()
-	{
-		add(ta, BorderLayout.CENTER);
-		setBounds(0,0,200,300);	
-		this.addWindowListener(
-			new WindowAdapter() 
-			{
-				public void windowClosing(WindowEvent e)
-				{
-					System.exit(0);
-				}
-			}
-			);
-		setVisible(true);
-	}
-	
 	ServerSocket server = null;
 	Collection cClient = new ArrayList();
 	
 	public ChatServer(int port) throws Exception
 	{
 		server = new ServerSocket(port);
-		launchFrame();
 	}
 	
 	public void startServer() throws Exception
@@ -38,8 +20,6 @@ public class ChatServer extends Frame
 		{
 			Socket s = server.accept();
 			cClient.add( new ClientConn(s) );
-			ta.append("NEW-CLIENT " + s.getInetAddress() + ":" + s.getPort());
-			ta.append("\n" + "CLIENTS-COUNT: " + cClient.size() + "\n\n");
 		}
 	}
 	
@@ -56,20 +36,6 @@ public class ChatServer extends Frame
 		{
 			DataOutputStream dos = new DataOutputStream(s.getOutputStream());
 			dos.writeUTF(str);
-		}
-		
-		public void dispose()
-		{
-			try {
-				if (s != null) s.close();
-				cClient.remove(this);
-				ta.append("A client out! \n");
-				ta.append("CLIENT-COUNT: " + cClient.size() + "\n\n");
-			}
-			catch (Exception e)
-			{
-				e.printStackTrace();
-			}
 		}
 		
 		public void run()
@@ -92,12 +58,22 @@ public class ChatServer extends Frame
 					str = dis.readUTF();
 					//send(str);
 				}
-				this.dispose();
+				s.close();
+				cClient.remove(this);
 			} 
-			catch (Exception e) 
+			catch (IOException e) 
 			{
 				System.out.println("client quit");
-				this.dispose();
+				try 
+				{
+					if(s != null)
+						s.close();
+					cClient.remove(this);
+				} 
+				catch (IOException ioe)
+				{
+					ioe.printStackTrace();
+				}
 			}
 			
 		}

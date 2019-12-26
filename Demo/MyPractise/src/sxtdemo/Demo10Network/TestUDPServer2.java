@@ -1,6 +1,6 @@
 import java.net.*;
 
-public class TestUDPServer
+public class TestUDPServer2
 {
 	public static void main(String args[]) throws Exception
 	{

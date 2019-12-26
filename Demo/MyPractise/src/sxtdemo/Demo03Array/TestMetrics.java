@@ -1,3 +1,5 @@
+package sxtdemo.Demo03Array;
+
 public class TestMetrics {
     public static void main(String args[]) {  
         int[][] m = {{1,2,3},{2,3,4},{4,5,6}};

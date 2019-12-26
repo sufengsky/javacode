@@ -1,26 +1,30 @@
+package sxtdemo.Demo07IO;
+
 import java.io.*;
+
 public class TestFileInputStream {
-  public static void main(String[] args) {
-    int b = 0;
-    FileInputStream in = null;
-    try {
-      in = new FileInputStream("d:\\share\\java\\io\\TestFileInputStream.java");
-    } catch (FileNotFoundException e) {
-      System.out.println("ÕÒ²»µ½Ö¸¶¨ÎÄ¼ş"); 
-      System.exit(-1);
+    public static void main(String[] args) {
+        int b = 0;
+        FileInputStream in = null;
+        try {
+            in = new FileInputStream("d:\\share\\java\\io\\TestFileInputStream.java");
+        } catch (FileNotFoundException e) {
+            System.out.println("æ‰¾ä¸åˆ°æŒ‡å®šæ–‡ä»¶");
+            System.exit(-1);
+        }
+
+        try {
+            long num = 0;
+            while ((b = in.read()) != -1) {
+                System.out.print((char) b);
+                num++;
+            }
+            in.close();
+            System.out.println();
+            System.out.println("å…±è¯»å–äº† " + num + " ä¸ªå­—èŠ‚");
+        } catch (IOException e1) {
+            System.out.println("æ–‡ä»¶è¯»å–é”™è¯¯");
+            System.exit(-1);
+        }
     }
-    
-    try {
-      long num = 0;
-      while((b=in.read())!=-1){
-        System.out.print((char)b); 
-        num++;
-      }
-      in.close();  
-      System.out.println();
-      System.out.println("¹²¶ÁÈ¡ÁË "+num+" ¸ö×Ö½Ú");
-    } catch (IOException e1) {
-      System.out.println("ÎÄ¼ş¶ÁÈ¡´íÎó"); System.exit(-1);
-    }
-  }
 }

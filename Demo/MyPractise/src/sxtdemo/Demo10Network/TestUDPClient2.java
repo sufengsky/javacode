@@ -1,6 +1,8 @@
+package sxtdemo.Demo10Network;
+
 import java.net.*;
 
-public class TestUDPClient
+public class TestUDPClient2
 {
 	public static void main(String args[]) throws Exception
 	{

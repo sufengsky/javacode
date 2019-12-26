@@ -1,3 +1,5 @@
+package sxtdemo.Demo10Network.Chat.Chat10;
+
 import java.io.*;
 import java.net.*;
 import java.awt.*;

@@ -1,44 +1,14 @@
+package sxtdemo.Demo10Network.Chat.Chat05;
+
 import java.io.*;
 import java.net.*;
-import java.awt.*;
-import java.awt.event.*;
 
-public class ChatClient extends Frame
+public class ChatClient
 {
-	TextArea ta = new TextArea();
-	TextField tf = new TextField();
-	public void launchFrame() throws Exception
-	{
-		this.add(ta, BorderLayout.CENTER);
-		this.add(tf, BorderLayout.SOUTH);
-		tf.addActionListener(
-			new ActionListener() 
-			{
-				public void actionPerformed(ActionEvent ae)
-				{
-					try {
-						String sSend = tf.getText();
-						if(sSend.trim().length() == 0) return;
-						ChatClient.this.send(sSend);
-						tf.setText("");
-						ta.append(sSend + "\n");
-					}
-					catch (Exception e) { e.printStackTrace(); }
-				}
-			}
-			);
-		
-		setBounds(300,300,300,400);
-		setVisible(true);
-		tf.requestFocus();
-	}
-	
 	Socket s = null;
-	
 	public ChatClient() throws Exception
 	{
 		s = new Socket("127.0.0.1", 8888);
-		launchFrame();
 		(new Thread(new ReceiveThread())).start();
 	}
 	
@@ -77,8 +47,7 @@ public class ChatClient extends Frame
 				String str = dis.readUTF();
 				while (str != null && str.length() != 0)
 				{
-					//System.out.println(str);
-					ChatClient.this.ta.append(str + "\n");
+					System.out.println(str);
 					str = dis.readUTF();
 				}
 			} 

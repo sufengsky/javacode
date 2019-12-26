@@ -6,17 +6,17 @@ public class TestFileOutputStream {
 	  FileOutputStream out = null;
 	  try {
 	    in = new FileInputStream("d:/share/java/HelloWorld.java");
-	    out = new FileOutputStream("d:/share/java/io/HW.java");
+	    out = new FileOutputStream("d:/share/java/io/HelloWorld.java");
 	    while((b=in.read())!=-1){
 	      out.write(b);
 	    }
 	    in.close(); 
 	    out.close();
 	  } catch (FileNotFoundException e2) {
-	    System.out.println("ÕÒ²»µ½Ö¸¶¨ÎÄ¼þ"); System.exit(-1);
+	    System.out.println("ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½Ä¼ï¿½"); System.exit(-1);
 	  } catch (IOException e1) {
-	    System.out.println("ÎÄ¼þ¸´ÖÆ´íÎó"); System.exit(-1);
+	    System.out.println("ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Æ´ï¿½ï¿½ï¿½"); System.exit(-1);
 	  }
-	  System.out.println("ÎÄ¼þÒÑ¸´ÖÆ");
+	  System.out.println("ï¿½Ä¼ï¿½ï¿½Ñ¸ï¿½ï¿½ï¿½");
   }
 }

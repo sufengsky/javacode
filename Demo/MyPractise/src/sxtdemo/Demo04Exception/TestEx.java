@@ -1,3 +1,5 @@
+package sxtdemo.Demo04Exception;
+
 import java.io.*;
 
 public class TestEx {
@@ -15,7 +17,7 @@ public class TestEx {
 		try {
 			System.out.println(2/0);
 		} catch (ArithmeticException e) {
-			System.out.println("ÏµÍ³ÕıÔÚÎ¬»¤,ÇëÓë¹ÜÀíÔ±ÁªÏµ");
+			System.out.println("ç³»ç»Ÿæ­£åœ¨ç»´æŠ¤,è¯·ä¸ç®¡ç†å‘˜è”ç³»");
 			e.printStackTrace();
 		}
 		*/
@@ -28,7 +30,7 @@ public class TestEx {
 			new TestEx().m(0);
 		} catch (ArithmeticException ae) {
 			ae.printStackTrace();
-			System.out.println("³ö´íÁË");
+			System.out.println("å‡ºé”™äº†");
 		}
 		*/
 		
@@ -46,8 +48,8 @@ public class TestEx {
     } catch (IOException e) {
       System.out.println(e.getMessage());
      	
-    } catch (FileNotFoundException e) {
-    	e.printStackTrace(); 
+//    } catch (FileNotFoundException e) {
+//    	e.printStackTrace();
       
     } finally {
     	try {
@@ -62,7 +64,7 @@ public class TestEx {
 	
 	void m(int i) throws ArithmeticException {
 		if(i==0) 
-			throw new ArithmeticException("±»³ıÊıÎª0");
+			throw new ArithmeticException("è¢«é™¤æ•°ä¸º0");
 	}
 	
 	void f() throws FileNotFoundException , IOException {
