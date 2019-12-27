@@ -1,3 +1,5 @@
+package sxtdemo.Demo07IO;
+
 import java.io.*;
 public class TestFileOutputStream {
   public static void main(String[] args) {

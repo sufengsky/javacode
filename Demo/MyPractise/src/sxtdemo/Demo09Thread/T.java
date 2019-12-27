@@ -1,4 +1,4 @@
-package sxtdemo.Demo08Thread;
+package sxtdemo.Demo09Thread;
 
 public class T {
     public static void main(String[] args) {

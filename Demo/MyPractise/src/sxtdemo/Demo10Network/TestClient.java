@@ -1,28 +1,28 @@
-/*	·¶ÀıÃû³Æ£º¼òµ¥µÄclient/server³ÌĞò
- * 	Ô´ÎÄ¼şÃû³Æ£ºTestClient.java/TestServer.java
- *	Òª  µã£º
- *		1. Java Socket±à³Ì²½Öè
- *		2. Socket/ServerSocketÀàÓÃ·¨
- *		3. Í¨¹ıSocket¶ÔÏó¿ÉÒÔ»ñÈ¡Í¨ĞÅ¶Ô·½SocketµÄĞÅÏ¢
+package sxtdemo.Demo10Network;/*	èŒƒä¾‹åç§°ï¼šç®€å•çš„client/serverç¨‹åº
+ * 	æºæ–‡ä»¶åç§°ï¼šTestClient.java/TestServer.java
+ *	è¦  ç‚¹ï¼š
+ *		1. Java Socketç¼–ç¨‹æ­¥éª¤
+ *		2. Socket/ServerSocketç±»ç”¨æ³•
+ *		3. é€šè¿‡Socketå¯¹è±¡å¯ä»¥è·å–é€šä¿¡å¯¹æ–¹Socketçš„ä¿¡æ¯
  */
 
 import java.net.*;
 import java.io.*;
 
 public class TestClient {
-	public static void main(String args[]) {
-		try {
-			Socket s1 = new Socket("127.0.0.1", 8888);
-			InputStream is = s1.getInputStream();
-			DataInputStream dis = new DataInputStream(is);
-			System.out.println(dis.readUTF());
-			dis.close();
-			s1.close();
-		} catch (ConnectException connExc) {
-			connExc.printStackTrace();
-			System.err.println("·şÎñÆ÷Á¬½ÓÊ§°Ü£¡");
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
+    public static void main(String args[]) {
+        try {
+            Socket s1 = new Socket("127.0.0.1", 8888);
+            InputStream is = s1.getInputStream();
+            DataInputStream dis = new DataInputStream(is);
+            System.out.println(dis.readUTF());
+            dis.close();
+            s1.close();
+        } catch (ConnectException connExc) {
+            connExc.printStackTrace();
+            System.err.println("æœåŠ¡å™¨è¿æ¥å¤±è´¥ï¼");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }

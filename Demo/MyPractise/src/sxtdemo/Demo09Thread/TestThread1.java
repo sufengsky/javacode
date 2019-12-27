@@ -1,3 +1,5 @@
+package sxtdemo.Demo09Thread;
+
 public class TestThread1 {
 	public static void main(String args[]) {
 		Runner1 r = new Runner1();

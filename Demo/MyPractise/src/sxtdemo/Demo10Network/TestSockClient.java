@@ -1,3 +1,5 @@
+package sxtdemo.Demo10Network;
+
 import java.net.*;
 import java.io.*;
 public class TestSockClient {

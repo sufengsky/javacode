@@ -1,3 +1,5 @@
+package sxtdemo.Demo09Thread;
+
 public class TestSync implements Runnable {
   Timer timer = new Timer();
   public static void main(String[] args) {
@@ -21,7 +23,7 @@ class Timer{
 	    num ++;
 	    try {Thread.sleep(1);} 
 	    catch (InterruptedException e) {}
-	    System.out.println(name+", ÄãÊÇµÚ"+num+"¸öÊ¹ÓÃtimerµÄÏß³Ì");
+	    System.out.println(name+", ä½ æ˜¯ç¬¬"+num+"ä¸ªä½¿ç”¨timerçš„çº¿ç¨‹");
 	  //}
   }
 }

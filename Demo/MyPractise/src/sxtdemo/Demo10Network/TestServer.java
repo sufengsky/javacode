@@ -1,9 +1,9 @@
-/*	·¶ÀıÃû³Æ£º¼òµ¥µÄclient/server³ÌĞò
- * 	Ô´ÎÄ¼şÃû³Æ£ºTestClient.java/TestServer.java
- *	Òª  µã£º
- *		1. Java Socket±à³Ì²½Öè
- *		2. Socket/ServerSocketÀàÓÃ·¨
- *		3. Í¨¹ıSocket¶ÔÏó¿ÉÒÔ»ñÈ¡Í¨ĞÅ¶Ô·½SocketµÄĞÅÏ¢
+/*	èŒƒä¾‹åç§°ï¼šç®€å•çš„client/serverç¨‹åº
+ * 	æºæ–‡ä»¶åç§°ï¼šTestClient.java/TestServer.java
+ *	è¦  ç‚¹ï¼š
+ *		1. Java Socketç¼–ç¨‹æ­¥éª¤
+ *		2. Socket/ServerSocketç±»ç”¨æ³•
+ *		3. é€šè¿‡Socketå¯¹è±¡å¯ä»¥è·å–é€šä¿¡å¯¹æ–¹Socketçš„ä¿¡æ¯
  */
 import java.net.*;
 import java.io.*;
@@ -23,7 +23,7 @@ public class TestServer {
 			}
 		}catch (IOException e) {
 			e.printStackTrace();
-			System.out.println("³ÌĞòÔËĞĞ³ö´í:" + e);			
+			System.out.println("ç¨‹åºè¿è¡Œå‡ºé”™:" + e);			
 		}
 	}
 }

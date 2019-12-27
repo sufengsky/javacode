@@ -1,3 +1,5 @@
+package sxtdemo.Demo09Thread;
+
 public class TestDeadLock implements Runnable {
 	public int flag = 1;
 	static Object o1 = new Object(), o2 = new Object();
