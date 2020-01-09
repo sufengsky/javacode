@@ -7,7 +7,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
 <title>考场规则</title>
 <style type="text/css">
-<!--
 .STYLE4 {
 	font-family: "Microsoft YaHei UI";
 	font-size: 36px;
@@ -17,7 +16,6 @@
 	font-size: 18px;
 	color: #000033;
 }
--->
 </style>
 </head>
 

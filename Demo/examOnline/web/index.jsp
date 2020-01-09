@@ -1,6 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<%@ page language="java" import="java.util.*" contentType="text/html;
-charset=utf-8" pageEncoding="utf-8" %>
+<%@ page language="java" import="java.util.*" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -12,11 +11,9 @@ charset=utf-8" pageEncoding="utf-8" %>
         response.setHeader("Pragma", "no-cache");
     %>
     <style type="text/css">
-        <!--
         .STYLE1 {
             font-size: 24px
         }
-
         #form1 .STYLE1 {
             font-family: "Microsoft YaHei UI";
             font-size: 100%;
@@ -46,13 +43,8 @@ charset=utf-8" pageEncoding="utf-8" %>
             font-family: "Microsoft YaHei UI";
         }
 
-        #form1 .zimui12 .ziti16 .tiyanshehui {
+        #form1 .zimui12  {
             color: #999999;
-        }
-
-        .STYLE4 {
-            font-size: 12px;
-            font-family: "Microsoft YaHei UI";
         }
 
         .STYLE5 {
@@ -61,17 +53,11 @@ charset=utf-8" pageEncoding="utf-8" %>
             color: #099;
         }
 
-        .STYLE6 {
-            font-family: "Microsoft YaHei UI"
-        }
-
 
         .STYLE11 {
             font-family: "Microsoft YaHei UI";
             font-size: 18px;
         }
-
-        -->
     </style>
     <script>
         function login() {
@@ -138,11 +124,10 @@ charset=utf-8" pageEncoding="utf-8" %>
         </tr>
         <tr>
             <td height="27" valign="top">
-        <span class="STYLE11">学生 <label>
-                <input type="radio" name="radiobutton" value="radiobutton" checked/>
-            </label> &nbsp;&nbsp; 教师 <label>
-                <input type="radio" name="radiobutton" value="radiobutton"/>
-            </label> </span>
+                <span class="STYLE11">
+                    学生<label><input type="radio" name="radiobutton" value="radiobutton" checked/></label>
+                    教师<label><input type="radio" name="radiobutton" value="radiobutton"/> </label>
+                </span>
             </td>
         </tr>
         <tr>
@@ -160,12 +145,8 @@ charset=utf-8" pageEncoding="utf-8" %>
         <tr>
             <td colspan="2">
                 <div align="center">
-                    <span class="zimui12"><span class="zitimax">&nbsp;<span
-                            style="text-align: left">&nbsp;</span> </span> </span>
                     <hr/>
-                    <span class="zimui12" style="text-align: left"><span class="ziti16">
-                        <span class="tiyanshehui STYLE4">版权所有:Copyright 2014 南京工程学院 通信工程学院</span> </span> </span>
-                    <span class="ziti16 STYLE4 STYLE6" style="text-align: left"></span>
+                    版权所有:Copyright 2014 南京工程学院 通信工程学院
                 </div>
             </td>
         </tr>

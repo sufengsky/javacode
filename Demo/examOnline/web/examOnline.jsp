@@ -1,5 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="GBK"%>
-<%@page import="com.core.*,com.model.*,com.dao.*"%>
+<%@ page import="com.core.*,com.model.*,com.dao.*"%>
 <%@ page import="java.util.Collection"%>
 <%@ page import="java.util.Iterator"%>
 <%
@@ -50,10 +50,6 @@
 		<title>在线考试</title>
 	</head>
 	<style type="text/css">
-<!--
-.STYLE7 {
-	font-size: 16
-}
 .STYLE11 {
 	font-family: "Microsoft YaHei UI";
 	font-size: 18px;
@@ -74,7 +70,6 @@
 	font-size: 16px;
 	font-weight: bold;
 }
--->
 </style>
 <%
 DbBasetableFactory bf=new DbBasetableFactory();
@@ -131,13 +126,11 @@ Paper p=bf.SearchPaper("where paper_type='0'");
 				for(int j=0;j<num.length;j++){
 				num[j]=(int)Math.floor((weight[j]*20));
 				System.out.println();
-			//	System.out.print("num"+num[j]);
 				}
 				
 				for(int q=0;q<num_b.length;q++){
 				num_b[q]=(int)Math.floor((weight_b[q]*20));
 				System.out.println();
-		//		System.out.print("num_b"+num_b[q]);
 				
 				}
 				int i = 0,sum=0;//i是题目的顺序号，sum是目前已经筛选出多少题
@@ -148,7 +141,6 @@ Paper p=bf.SearchPaper("where paper_type='0'");
 				
 				for(int m=0;m<60;m++){
 				System.out.println();
-		//		System.out.print("index[][]"+index[m][0]+" "+index[m][1]);
 				Collection coll =bf.ListSelect(submit_page, "where chp="+"'"+index[m][0]+"'"+"and diff='"+index[m][1]+"' order by rand() limit "+num[m]);
 				sum=sum+coll.size();//将选择出来的题目数目累加起来
 				if (sum < -1) {
@@ -274,8 +266,6 @@ Paper p=bf.SearchPaper("where paper_type='0'");
 			 
 			 <%
 			 for(int m=0;m<60;m++){
-		//		System.out.println();
-	//			System.out.print("index_b[][]"+index_b[m][0]+" "+index_b[m][1]);
 				Collection coll_b =bf.ListBlank(submit_page, "where chp="+"'"+index_b[m][0]+"'"+"and diff='"+index_b[m][1]+"' order by rand() limit "+num_b[m]);
 				sum_b=sum_b+coll_b.size();//将选择出来的题目数目累加起来
 				if (sum_b < -1) {
