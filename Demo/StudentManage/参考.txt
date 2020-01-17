@@ -1,0 +1,5 @@
+https://www.cnblogs.com/wenruo/p/6351787.html
+https://github.com/G-lory/StudentAchievementManagementSystem
+
+学生登录是查数据库，sid和spwd
+管理员登录账号密码都是001

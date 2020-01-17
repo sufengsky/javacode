@@ -6,19 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef92ab52-ffe2-42c3-8227-25ce2ebd5d2f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/wenr/controller/AdminServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wenr/controller/LoginFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wenr/controller/LoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wenr/controller/StudentServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wenr/dao/CourseDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wenr/dao/StudentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wenr/model/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wenr/model/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wenr/util/DBUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examOnline/.idea/artifacts/Demo0001_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../examOnline/.idea/artifacts/examOnline_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examOnline/examOnline.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../examOnline/examOnline.iml" afterDir="false" />
-    </list>
+    <list default="true" id="ef92ab52-ffe2-42c3-8227-25ce2ebd5d2f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,8 +89,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="101" column="25" lean-forward="true" selection-start-line="101" selection-start-column="25" selection-end-line="101" selection-end-column="25" />
+            <state relative-caret-position="416">
+              <caret line="87" column="5" lean-forward="true" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -178,28 +166,6 @@
             <path>
               <item name="StudentManage" type="b2602c69:ProjectViewProjectNode" />
               <item name="StudentManage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudentManage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudentManage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudentManage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudentManage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudentManage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudentManage" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudentManage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudentManage" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -320,22 +286,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579267555561</updated>
-      <workItem from="1579267561719" duration="1333000" />
+      <workItem from="1579267561719" duration="1754000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1333000" />
+    <option name="totallyTimeSpent" value="1754000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Web" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21108742" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21108742" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Application Servers" />
       <window_info anchor="bottom" id="Duplicate detector" weight="0.32960895" />
@@ -348,7 +313,7 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.45698324" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.47932962" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -481,8 +446,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="101" column="25" lean-forward="true" selection-start-line="101" selection-start-column="25" selection-end-line="101" selection-end-column="25" />
+        <state relative-caret-position="416">
+          <caret line="87" column="5" lean-forward="true" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
         </state>
       </provider>
     </entry>
