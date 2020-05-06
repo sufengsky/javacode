@@ -1,5 +1,7 @@
+package j2se.chapter02.d2_2;
+
 public class Person{
-	public String name = "ÎŞÃûÊÏ";
+	public String name = "æ— åæ°";
 	public int age;
 	public void setName(String n){
 		name = n;
@@ -14,6 +16,6 @@ public class Person{
 		return age;	
 	}	
 	public void sleep(){
-		System.out.println(name + "ÔÚË¯¾õ,ºôàààà!");	
+		System.out.println(name + "åœ¨ç¡è§‰,å‘¼å™œå™œ!");	
 	} 
 }
