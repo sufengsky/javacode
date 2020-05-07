@@ -1,4 +1,0 @@
-#loginfo
-#Sat May 26 11:43:50 GMT+08:00 2007
-password=Tiger
-name=Scott
