@@ -10,9 +10,9 @@ public class TestSQLServer2{
 			ResultSet rs   = stmt.executeQuery("select * from mytable1");
 			    
 			while(rs.next()){
-					System.out.print("sid£º" + rs.getInt(1));
-					System.out.print("\tname£º" + rs.getString(2).trim());
-					System.out.print("\tsex£º" + rs.getString(3).trim());
+					System.out.print("sidï¼š" + rs.getInt(1));
+					System.out.print("\tnameï¼š" + rs.getString(2).trim());
+					System.out.print("\tsexï¼š" + rs.getString(3).trim());
 					System.out.println();
 			}
 			rs.close();

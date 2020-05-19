@@ -7,9 +7,9 @@ import java.io.IOException;
 public class ReadFile2{
 	public static void main (String[] args) {
 		if(args.length != 1){
-			System.out.println("È±ÉÙ²ÎÊı£¬±¾³ÌĞòÓÃ·¨:");	
-			System.out.println("    java ReadFile <[Â·¾¶]ÎÄ¼şÃû>");	
-			System.out.println("³ÌĞòÍË³ö!");	
+			System.out.println("ç¼ºå°‘å‚æ•°ï¼Œæœ¬ç¨‹åºç”¨æ³•:");	
+			System.out.println("    java ReadFile <[è·¯å¾„]æ–‡ä»¶å>");	
+			System.out.println("ç¨‹åºé€€å‡º!");	
 		}else{
 			ReadFile2.readOneFile(args[0]);
 		}
@@ -21,7 +21,7 @@ public class ReadFile2{
 			BufferedReader br = new BufferedReader(fr);
 			String s;
 			while ( (s = br.readLine()) != null ) {
-				System.out.println("¶ÁÈë: " + s);
+				System.out.println("è¯»å…¥: " + s);
 			}			
 			br.close();
 		}catch (IOException e) {

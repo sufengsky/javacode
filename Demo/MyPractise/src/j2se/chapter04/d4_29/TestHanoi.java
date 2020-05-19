@@ -6,20 +6,20 @@ public class TestHanoi{
 	}
 
 	public void hanoi(int n,char a,char b,char c){
-		//n: ´ı°áÔËµÄÅÌ×Ó×ÜÊı
-		//a:   Ô´Ëş   b: ¸¨ÖúËş		c:Ä¿±êËş 
-		//Èç¹ûn==1,ÔòÖ±½Ó°áÔË
+		//n: å¾…æ¬è¿çš„ç›˜å­æ€»æ•°
+		//a:   æºå¡”   b: è¾…åŠ©å¡”		c:ç›®æ ‡å¡” 
+		//å¦‚æœn==1,åˆ™ç›´æ¥æ¬è¿
 		if(n==1){
 			times++;
-			System.out.println(times + ":\t" + "½«p1´Ó " + a + " °áµ½ " + c);
+			System.out.println(times + ":\t" + "å°†p1ä» " + a + " æ¬åˆ° " + c);
 		}else{
-			//Èç¹ûn>1,Ôò·Ö½â³É¼¸²½À´´¦Àí
-			//step1:½«n-1¸öÅÌ×Ó´Óa°áµ½b,½èÖúÓÚc
+			//å¦‚æœn>1,åˆ™åˆ†è§£æˆå‡ æ­¥æ¥å¤„ç†
+			//step1:å°†n-1ä¸ªç›˜å­ä»aæ¬åˆ°b,å€ŸåŠ©äºc
 			this.hanoi(n-1,a,c,b);		
-			//step2:½«µÚn¸öÅÌ×Ó´Óa°áµ½c
+			//step2:å°†ç¬¬nä¸ªç›˜å­ä»aæ¬åˆ°c
 			times ++;
-			System.out.println(times + ":\t" + "½«p" + n + "´Ó " + a + " °áµ½ " + c);
-			//step3:½«n-1¸öÅÌ×Ó´Ób°áµ½c,½èÖúÓÚa
+			System.out.println(times + ":\t" + "å°†p" + n + "ä» " + a + " æ¬åˆ° " + c);
+			//step3:å°†n-1ä¸ªç›˜å­ä»bæ¬åˆ°c,å€ŸåŠ©äºa
 			this.hanoi(n-1,b,a,c);
 		}
 	}

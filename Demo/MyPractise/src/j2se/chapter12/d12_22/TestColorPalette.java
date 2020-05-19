@@ -15,7 +15,7 @@ public class TestColorPalette implements AdjustmentListener{
 	}
 	
 	public void init(){
-		Frame frame = new Frame("µ÷É«°å");
+		Frame frame = new Frame("è°ƒè‰²æ¿");
 		display = new Panel();
 		display.setBackground(Color.WHITE);	
 			
@@ -41,11 +41,11 @@ public class TestColorPalette implements AdjustmentListener{
 		sbr.addAdjustmentListener(this);
 		sbg.addAdjustmentListener(this);
 		sbb.addAdjustmentListener(this);
-		pw.add(new Label("ºìÉ«:"));
+		pw.add(new Label("çº¢è‰²:"));
 		pw.add(tfr);
-		pw.add(new Label("ÂÌÉ«:"));
+		pw.add(new Label("ç»¿è‰²:"));
 		pw.add(tfg);
-		pw.add(new Label("À¶É«:"));
+		pw.add(new Label("è“è‰²:"));
 		pw.add(tfb);
 	
 		Panel pc = new Panel();

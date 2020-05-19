@@ -3,9 +3,9 @@ class Stack{
 	char[ ] data = new char[6];
 	public void push(char c){
 		data[idx] = c;
-		System.out.print("Ñ¹Èë×Ö·û" + c + "->");  //p1
+		System.out.print("å‹å…¥å­—ç¬¦" + c + "->");  //p1
 		idx++;
-		System.out.println("->Ñ¹Èë" + c + "²Ù×÷Íê³É£¡");		
+		System.out.println("->å‹å…¥" + c + "æ“ä½œå®Œæˆï¼");		
 	}
 	public char pop(){
 		idx--;

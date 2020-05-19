@@ -6,22 +6,22 @@ import java.util.Iterator;
 public class TestHashMap{
 	public static void main(String[] args) {
 		HashMap hm = new HashMap();
-		hm.put(new Integer(1003),new Person(1003,"ÕÅÈı",15));
-		hm.put(new Integer(1008),new Person(1008,"ÀîËÄ",25));
-		hm.put(1015,new Person(1015,"ÍõÎå",73));   //×Ô¶¯·â×°
-		hm.put(1001,new Person(1001,"ÕÔÁù",49));
+		hm.put(new Integer(1003),new Person(1003,"å¼ ä¸‰",15));
+		hm.put(new Integer(1008),new Person(1008,"æå››",25));
+		hm.put(1015,new Person(1015,"ç‹äº”",73));   //è‡ªåŠ¨å°è£…
+		hm.put(1001,new Person(1001,"èµµå…­",49));
 
-		System.out.println("----¼ìË÷µ¥¸öÔªËØ----");
+		System.out.println("----æ£€ç´¢å•ä¸ªå…ƒç´ ----");
 		Person p = (Person)hm.get(1008);
 		System.out.println(p);
 		
-		System.out.println("----±éÀúËùÓĞ\"¼ü\"£¨ÔªËØÃû£©----");
+		System.out.println("----éå†æ‰€æœ‰\"é”®\"ï¼ˆå…ƒç´ åï¼‰----");
 		Set names = hm.keySet();
 		for(Object o : names){
 			System.out.println(o);
 		}
 		
-		System.out.println("----±éÀúËùÓĞ\"Öµ\"£¨ÔªËØÖµ£©----");
+		System.out.println("----éå†æ‰€æœ‰\"å€¼\"ï¼ˆå…ƒç´ å€¼ï¼‰----");
 		Collection values = hm.values();
 		for(Object o : values){
 			System.out.println(o);

@@ -23,9 +23,9 @@ public class TestShortCircuiting{
 	public static void main(String args[]){
 		Person p1 = null;		
 		if((p1 != null) && (p1.getAge()>=10)){
-			System.out.println("可以学Java!");
+			System.out.println("鍙互瀛ava!");
 		}else{
-			System.out.println("有问题，不能学Java!");
+			System.out.println("鏈夐棶棰橈紝涓嶈兘瀛ava!");
 }				
 	}	
 }

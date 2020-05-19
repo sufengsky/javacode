@@ -10,9 +10,9 @@ public class TestNumberFormat{
 		NumberFormat nf2 = NumberFormat.getInstance(new Locale("de","CH"));
 		NumberFormat nf3 = NumberFormat.getInstance(new Locale("de","GE"));
 		
-		System.out.println("默认风格:" + nf0.format(d));
-		System.out.println("中国风格:" + nf1.format(d));
-		System.out.println("瑞士风格:" + nf2.format(d));
-		System.out.println("德国风格:" + nf3.format(d));
+		System.out.println("榛樿椋庢牸:" + nf0.format(d));
+		System.out.println("涓浗椋庢牸:" + nf1.format(d));
+		System.out.println("鐟炲＋椋庢牸:" + nf2.format(d));
+		System.out.println("寰峰浗椋庢牸:" + nf3.format(d));
 	}	
 }

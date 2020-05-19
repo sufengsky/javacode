@@ -9,7 +9,7 @@ public class TestCommit{
 		    conn=DriverManager.getConnection(url,"scott","tiger");
 			boolean autoCommit = conn.getAutoCommit();
 			
-		    // ¹Ø±Õ×Ô¶¯Ìá½»¹¦ÄÜ
+		    // å…³é—­è‡ªåŠ¨æäº¤åŠŸèƒ½
 		    conn.setAutoCommit(false);
 		    Statement stmt=conn.createStatement();
 		    stmt.executeUpdate("insert into dept values (77,'Market','Beijing')");
@@ -20,15 +20,15 @@ public class TestCommit{
 				System.out.print("\tDeptName: "+rs.getString(2));
 				System.out.println("\tLOC: "+rs.getString(3));						    
 			}
-			// Ìá½»ÊÂÎñ
+			// æäº¤äº‹åŠ¡
 			conn.commit();      
-			// »Ö¸´Ô­À´µÄÌá½»Ä£Ê½
+			// æ¢å¤åŸæ¥çš„æäº¤æ¨¡å¼
 			conn.setAutoCommit(autoCommit);
 			stmt.close();
 		}catch(Exception e){
-			System.out.println("²Ù×÷Ê§°Ü¡¢ÈÎÎñ³·Ïû£¡");
+			System.out.println("æ“ä½œå¤±è´¥ã€ä»»åŠ¡æ’¤æ¶ˆï¼");
 		    try{
-		    	// »Ø¹ö¡¢È¡ÏûÇ°Êö²Ù×÷
+		    	// å›æ»šã€å–æ¶ˆå‰è¿°æ“ä½œ
 		    	conn.rollback();   
 		    }catch(Exception e1){
 		    	e.printStackTrace();	

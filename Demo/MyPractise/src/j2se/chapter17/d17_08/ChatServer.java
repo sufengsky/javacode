@@ -9,9 +9,9 @@ import java.util.*;
 public class ChatServer{
     private Selector selector = null;
     private ServerSocketChannel ssc = null;
-    //·şÎñÆ÷¶ËÍ¨ĞÅ¶Ë¿ÚºÅ
+    //æœåŠ¡å™¨ç«¯é€šä¿¡ç«¯å£å·
     private int port = 8888;
-    //ÔÚÏßÓÃ»§ÁĞ±í
+    //åœ¨çº¿ç”¨æˆ·åˆ—è¡¨
 	private Hashtable<String,SocketChannel> userList = null;   
     
     public ChatServer(){}    
@@ -19,96 +19,96 @@ public class ChatServer{
 		this.port = port;
     }
     
-    //³õÊ¼»¯·şÎñÆ÷
+    //åˆå§‹åŒ–æœåŠ¡å™¨
     public void init(){
     	try{
-    		//´´½¨Ñ¡ÔñÆ÷¶ÔÏó
+    		//åˆ›å»ºé€‰æ‹©å™¨å¯¹è±¡
 			selector = Selector.open();
-			//´´½¨ServerSocketChannel
+			//åˆ›å»ºServerSocketChannel
 			ssc = ServerSocketChannel.open();
-			//ÉèÖÃServerSocketChannelÎª·Ç×èÈûÄ£Ê½
+			//è®¾ç½®ServerSocketChannelä¸ºéé˜»å¡æ¨¡å¼
 			ssc.configureBlocking(false);
 			InetAddress ia = InetAddress.getLocalHost();
 			InetSocketAddress isa = new InetSocketAddress(ia,port);
-			//½«Óë±¾Í¨µÀÏà¹ØµÄ·şÎñÆ÷Ì×½Ó×Ö¶ÔÏó°ï¶¨µ½Ö¸¶¨µØÖ·ºÍ¶Ë¿Ú
+			//å°†ä¸æœ¬é€šé“ç›¸å…³çš„æœåŠ¡å™¨å¥—æ¥å­—å¯¹è±¡å¸®å®šåˆ°æŒ‡å®šåœ°å€å’Œç«¯å£
 			ssc.socket().bind(isa);
-			//´´½¨ÔÚÏßÓÃ»§ÁĞ±í
+			//åˆ›å»ºåœ¨çº¿ç”¨æˆ·åˆ—è¡¨
 			userList = new Hashtable<String,SocketChannel>();
 		}catch(IOException e){
 			e.printStackTrace();	
 		}
     }
     
-    //Æô¶¯·şÎñÆ÷
+    //å¯åŠ¨æœåŠ¡å™¨
 	public void start(){
 		try{
-			//½«ServerSocketChannel×¢²áµ½SelectorÉÏ£¬×¼±¸½ÓÊÕĞÂÁ¬½ÓÇëÇó
+			//å°†ServerSocketChannelæ³¨å†Œåˆ°Selectorä¸Šï¼Œå‡†å¤‡æ¥æ”¶æ–°è¿æ¥è¯·æ±‚
 			SelectionKey acceptKey = ssc.register(selector, SelectionKey.OP_ACCEPT );
 			SocketChannel sc;
 			int n;	
-			String name;   	//ÓÃ»§Ãû
-			String msg;		//ÓÃ»§·¢ÑÔĞÅÏ¢
+			String name;   	//ç”¨æˆ·å
+			String msg;		//ç”¨æˆ·å‘è¨€ä¿¡æ¯
 			while (true){	
-				//Ñ¡Ôñµ±Ç°ËùÓĞ´¦ÓÚ¾ÍĞ÷×´Ì¬µÄÍ¨µÀËù¶ÔÓ¦µÄÑ¡Ôñ¼ü,²¢½«ÕâĞ©¼ü×é³ÉÒÑÑ¡Ôñ¼ü¼¯
-				n = selector.select(); //nÎªÒÑÑ¡Ôñ¼ü¼¯ÖĞ¼üµÄ¸öÊı
+				//é€‰æ‹©å½“å‰æ‰€æœ‰å¤„äºå°±ç»ªçŠ¶æ€çš„é€šé“æ‰€å¯¹åº”çš„é€‰æ‹©é”®,å¹¶å°†è¿™äº›é”®ç»„æˆå·²é€‰æ‹©é”®é›†
+				n = selector.select(); //nä¸ºå·²é€‰æ‹©é”®é›†ä¸­é”®çš„ä¸ªæ•°
 		    	if(n > 0 ){
-		    		//»ñÈ¡´ËÑ¡ÔñÆ÷µÄÒÑÑ¡Ôñ¼ü¼¯¡£
+		    		//è·å–æ­¤é€‰æ‹©å™¨çš„å·²é€‰æ‹©é”®é›†ã€‚
 					Set readyKeys = selector.selectedKeys(); 
 					Iterator it = readyKeys.iterator();	
-					//±éÀúµ±Ç°ÒÑÑ¡Ôñ¼ü¼¯
+					//éå†å½“å‰å·²é€‰æ‹©é”®é›†
 					while (it.hasNext()) {
 						SelectionKey key = (SelectionKey)it.next();
-						//´Óµ±Ç°ÒÑÑ¡Ôñ¼ü¼¯ÖĞÒÆ³ıµ±Ç°¼ü£¬±ÜÃâÖØ¸´´¦Àí
+						//ä»å½“å‰å·²é€‰æ‹©é”®é›†ä¸­ç§»é™¤å½“å‰é”®ï¼Œé¿å…é‡å¤å¤„ç†
 						it.remove();
-						//Èç¹ûµ±Ç°¼ü¶ÔÓ¦µÄÍ¨µÀÒÑ×¼±¸ºÃ½ÓÊÜĞÂµÄÌ×½Ó×ÖÁ¬½Ó
+						//å¦‚æœå½“å‰é”®å¯¹åº”çš„é€šé“å·²å‡†å¤‡å¥½æ¥å—æ–°çš„å¥—æ¥å­—è¿æ¥
 						if (key.isAcceptable()) {
-							//»ñÈ¡µ±Ç°¼ü¶ÔÓ¦µÄ¿ÉÑ¡ÔñÍ¨µÀ£¨ServerSocketChannel£©  
+							//è·å–å½“å‰é”®å¯¹åº”çš„å¯é€‰æ‹©é€šé“ï¼ˆServerSocketChannelï¼‰  
 							ssc = (ServerSocketChannel) key.channel();
-							//½ÓÊÕĞÂµÄÌ×½Ó×ÖÁ¬½ÓÇëÇó£¬·µ»ØĞÂ½¨µÄSocketChannel
+							//æ¥æ”¶æ–°çš„å¥—æ¥å­—è¿æ¥è¯·æ±‚ï¼Œè¿”å›æ–°å»ºçš„SocketChannel
 							sc = (SocketChannel) ssc.accept();
-							//Èç¹ûÓĞĞÂÓÃ»§½ÓÈë
+							//å¦‚æœæœ‰æ–°ç”¨æˆ·æ¥å…¥
 							if(sc != null){
-								//½ÓÊÕĞÂÉÏÏßÓÃ»§ĞÕÃû
+								//æ¥æ”¶æ–°ä¸Šçº¿ç”¨æˆ·å§“å
 								name = readMessage(sc);
-								//ÉèÖÃĞÂ½¨µÄSocketChannelÎª·Ç×èÈûÄ£Ê½
+								//è®¾ç½®æ–°å»ºçš„SocketChannelä¸ºéé˜»å¡æ¨¡å¼
 								sc.configureBlocking(false);
-								//½«ĞÂ½¨µÄSocketChannel×¢²áµ½SelectorÉÏ£¬×¼±¸½øĞĞÊı¾İ"Ğ´"²Ù×÷£¬
-								//²¢½«µ±Ç°ÓÃ»§ÃûÒÔ¸½¼şµÄ·½Ê½¸½´ø¼ÇÂ¼µ½ĞÂ½¨µÄÑ¡Ôñ¼üÉÏ¡£
+								//å°†æ–°å»ºçš„SocketChannelæ³¨å†Œåˆ°Selectorä¸Šï¼Œå‡†å¤‡è¿›è¡Œæ•°æ®"å†™"æ“ä½œï¼Œ
+								//å¹¶å°†å½“å‰ç”¨æˆ·åä»¥é™„ä»¶çš„æ–¹å¼é™„å¸¦è®°å½•åˆ°æ–°å»ºçš„é€‰æ‹©é”®ä¸Šã€‚
 								SelectionKey newKey = sc.register(selector,SelectionKey.OP_WRITE,name);	
-								//½«ĞÂÉÏÏßÓÃ»§ĞÅÏ¢¼ÓÈëµ½ÔÚÏßÓÃ»§ÁĞ±í
+								//å°†æ–°ä¸Šçº¿ç”¨æˆ·ä¿¡æ¯åŠ å…¥åˆ°åœ¨çº¿ç”¨æˆ·åˆ—è¡¨
 								userList.put(name,sc);
-								//·¢ËÍ"ĞÂÓÃ»§ÉÏÏß"Í¨Öª
+								//å‘é€"æ–°ç”¨æˆ·ä¸Šçº¿"é€šçŸ¥
 								transmitMessage(name + " in!","--Server Info--");
 							}
 						}
-						//·ñÔò£¬Èç¹ûµ±Ç°¼ü¶ÔÓ¦µÄÍ¨µÀÒÑ×¼±¸ºÃ½øĞĞ"Ğ´"²Ù×÷
+						//å¦åˆ™ï¼Œå¦‚æœå½“å‰é”®å¯¹åº”çš„é€šé“å·²å‡†å¤‡å¥½è¿›è¡Œ"å†™"æ“ä½œ
 						else if (key.isWritable()) {
-							//»ñÈ¡µ±Ç°¼ü¶ÔÓ¦µÄ¿ÉÑ¡ÔñÍ¨µÀ£¨SocketChannel£© 
+							//è·å–å½“å‰é”®å¯¹åº”çš„å¯é€‰æ‹©é€šé“ï¼ˆSocketChannelï¼‰ 
 							sc = (SocketChannel)key.channel();
-							//½ÓÊÕ¸ÃÍ¨µÀÏàÓ¦ÓÃ»§µÄ·¢ÑÔĞÅÏ¢
+							//æ¥æ”¶è¯¥é€šé“ç›¸åº”ç”¨æˆ·çš„å‘è¨€ä¿¡æ¯
 							msg = readMessage(sc);
-							//»ñÈ¡Ñ¡Ôñ¼üÉÏ¸½´ø¼ÇÂ¼µÄµ±Ç°ÓÃ»§Ãû
+							//è·å–é€‰æ‹©é”®ä¸Šé™„å¸¦è®°å½•çš„å½“å‰ç”¨æˆ·å
 							name = key.attachment().toString();
-							//Èç¹ûÓÃ»§Ìá³öÒªÏÂÏß
+							//å¦‚æœç”¨æˆ·æå‡ºè¦ä¸‹çº¿
 							if(msg.equals("bye")){
-								//´ÓÔÚÏßÓÃ»§ÁĞ±íÖĞÒÆ³ıµ±Ç°ÓÃ»§
+								//ä»åœ¨çº¿ç”¨æˆ·åˆ—è¡¨ä¸­ç§»é™¤å½“å‰ç”¨æˆ·
 								userList.remove(name);
-								//×¢Ïúµ±Ç°Ñ¡Ôñ¼ü¶ÔÓ¦µÄ×¢²á¹ØÏµ
+								//æ³¨é”€å½“å‰é€‰æ‹©é”®å¯¹åº”çš„æ³¨å†Œå…³ç³»
 								key.cancel();
-								//¹Ø±Õµ±Ç°¿ÉÑ¡ÔñÍ¨µÀ 
+								//å…³é—­å½“å‰å¯é€‰æ‹©é€šé“ 
 								sc.close();
-								//·¢ËÍ"ÓÃ»§ÏÂÏß"Í¨Öª
+								//å‘é€"ç”¨æˆ·ä¸‹çº¿"é€šçŸ¥
 								transmitMessage(name + " out!","--Server Info--");
 							}
-							//·ñÔò£¬Èç¹û½ÓÊÕµ½µÄÓÃ»§·¢ÑÔĞÅÏ¢·Ç¿Õ£¨""£©
+							//å¦åˆ™ï¼Œå¦‚æœæ¥æ”¶åˆ°çš„ç”¨æˆ·å‘è¨€ä¿¡æ¯éç©ºï¼ˆ""ï¼‰
 							else if(msg.length() > 0){
-								//×ª·¢ÓÃ»§·¢ÑÔĞÅÏ¢
+								//è½¬å‘ç”¨æˆ·å‘è¨€ä¿¡æ¯
 								transmitMessage(msg,name);
 							}
 						}
 					}
 				}
-				//ÑÓÊ±Ñ­»·£¬½µµÍ·şÎñÆ÷¶Ë´¦Àí¸ººÉ
+				//å»¶æ—¶å¾ªç¯ï¼Œé™ä½æœåŠ¡å™¨ç«¯å¤„ç†è´Ÿè·
 				Thread.sleep(500);
 			}
 		}catch(Exception e){
@@ -116,7 +116,7 @@ public class ChatServer{
 		}
     }
 
-	//×ª·¢ÓÃ»§·¢ÑÔĞÅÏ¢
+	//è½¬å‘ç”¨æˆ·å‘è¨€ä¿¡æ¯
 	public void transmitMessage(String msg,String name){
 		try{
 			ByteBuffer buffer = ByteBuffer.wrap((name + ":" + msg).getBytes("GBK"));
@@ -132,7 +132,7 @@ public class ChatServer{
 		}
     }
   
-  	//½ÓÊÕÓÃ»§·¢ÑÔĞÅÏ¢
+  	//æ¥æ”¶ç”¨æˆ·å‘è¨€ä¿¡æ¯
     public String readMessage(SocketChannel sc){
 		String result = null;
 		int n = 0;

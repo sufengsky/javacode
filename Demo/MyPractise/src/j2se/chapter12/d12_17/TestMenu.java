@@ -2,23 +2,23 @@ import java.awt.*;
 import java.awt.event.*;
 public class TestMenu{
 	public static void main( String args[]) {
-		Frame f = new Frame("¼ÇÊÂ±¾");
+		Frame f = new Frame("è®°äº‹æœ¬");
 		TextArea ta = new TextArea("",20,20);
 		f.add(ta,"Center");
 		
 		MyMonitor mm = new MyMonitor();
 		
 		MenuBar mb = new MenuBar();
-		Menu m1 = new Menu("ÎÄ¼ş");
-		Menu m2 = new Menu("±à¼­");
-		Menu m3 = new Menu("¸ñÊ½");
-		Menu m4 = new Menu("°ïÖú");
+		Menu m1 = new Menu("æ–‡ä»¶");
+		Menu m2 = new Menu("ç¼–è¾‘");
+		Menu m3 = new Menu("æ ¼å¼");
+		Menu m4 = new Menu("å¸®åŠ©");
 		
-		MenuItem mi11 = new MenuItem("ĞÂ½¨");  
-		MenuItem mi12 = new MenuItem("´ò¿ª");  
-		MenuItem mi13 = new MenuItem("±£´æ");  
-		MenuItem mi14 = new MenuItem("Áí´æÎª");  
-		MenuItem mi15 = new MenuItem("ÍË³ö"); 
+		MenuItem mi11 = new MenuItem("æ–°å»º");  
+		MenuItem mi12 = new MenuItem("æ‰“å¼€");  
+		MenuItem mi13 = new MenuItem("ä¿å­˜");  
+		MenuItem mi14 = new MenuItem("å¦å­˜ä¸º");  
+		MenuItem mi15 = new MenuItem("é€€å‡º"); 
 		mi15.addActionListener(mm);		 
 		m1.add(mi11);
 		m1.add(mi12);
@@ -27,8 +27,8 @@ public class TestMenu{
 		m1.addSeparator();
 		m1.add(mi15);
 		
-		CheckboxMenuItem mi31 = new CheckboxMenuItem("¶ş½øÖÆ");
-		MenuItem mi32 = new MenuItem("×ÖÌå");
+		CheckboxMenuItem mi31 = new CheckboxMenuItem("äºŒè¿›åˆ¶");
+		MenuItem mi32 = new MenuItem("å­—ä½“");
 		mi31.addActionListener(mm);
 		m3.add(mi31);
 		m3.add(mi32);

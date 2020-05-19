@@ -4,7 +4,7 @@ create table mytable1(
 	name char(10),
 	sex char(4)
 );
-insert into mytable1 values(100,'ÕÅÈı','ÄĞ');
-insert into mytable1 values(101,'ÀîËÄ','Å®');
-insert into mytable1 values(102,'ÍõÎå','ÄĞ');
-insert into mytable1 values(103,'ÕÔÁù','Å®');
+insert into mytable1 values(100,'å¼ ä¸‰','ç”·');
+insert into mytable1 values(101,'æå››','å¥³');
+insert into mytable1 values(102,'ç‹äº”','ç”·');
+insert into mytable1 values(103,'èµµå…­','å¥³');

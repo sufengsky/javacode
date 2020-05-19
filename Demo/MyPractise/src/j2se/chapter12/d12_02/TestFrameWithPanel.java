@@ -8,7 +8,7 @@ public class TestFrameWithPanel{
 		Panel pan = new Panel();
 		f.setSize(200,170);
 		f.setBackground(Color.cyan);
-		f.setLayout(null); // È¡ÏûÄ¬ÈÏ²¼¾Ö¹ÜÀíÆ÷
+		f.setLayout(null); // å–æ¶ˆé»˜è®¤å¸ƒå±€ç®¡ç†å™¨
 		pan.setSize(80,80);
 		pan.setBackground(Color.green);
 		f.add(pan);

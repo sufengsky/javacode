@@ -1,11 +1,11 @@
 public class Person implements Runner{
 	public void start(){
-		System.out.println("ÍäÑü¡¢µÅÍÈ¡¢Ò§ÑÀ¡¢µÉÑÛ¡¢ ¿ªÅÜ");	
+		System.out.println("å¼¯è…°ã€è¹¬è…¿ã€å’¬ç‰™ã€çªçœ¼ã€ å¼€è·‘");	
 	}
 	public void run(){
-		System.out.println("°Ú¶¯ÊÖ±Û¡¢ Î¬³ÖÖ±Ïß·½Ïò");	
+		System.out.println("æ‘†åŠ¨æ‰‹è‡‚ã€ ç»´æŒç›´çº¿æ–¹å‘");	
 	}
 	public void stop(){
-		System.out.println("¼õËÙÖ±ÖÁÍ£Ö¹¡¢ºÈË®");	
+		System.out.println("å‡é€Ÿç›´è‡³åœæ­¢ã€å–æ°´");	
 	} 	
 }

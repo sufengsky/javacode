@@ -2,7 +2,7 @@ import java.io.File;
 import java.io.FileFilter;
 
 public class MyFilter implements FileFilter{
-	private String extension;	  //Ö¸¶¨ºó×º
+	private String extension;	  //æŒ‡å®šåç¼€
 	public MyFilter(String extension){
 		this.extension = extension;	
 	}
@@ -11,9 +11,9 @@ public class MyFilter implements FileFilter{
 		if(file.isDirectory( ))
             return false;
 	    
-	    //ÌáÈ¡ÎÄ¼şÃû
+	    //æå–æ–‡ä»¶å
 	    String name = file.getName();
-	    //ÌáÈ¡ÎÄ¼şºó×º
+	    //æå–æ–‡ä»¶åç¼€
 	    int idx = name.lastIndexOf(".");
 	    if((idx == -1)  || (idx == (name.length()-1))) {
 	        return false;

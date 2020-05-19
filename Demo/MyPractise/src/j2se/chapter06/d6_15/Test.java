@@ -15,11 +15,11 @@ class Tool{
 		if(p instanceof Graduate){
 			Graduate g = (Graduate)p;  
 			//------
-			System.out.println("处理Graduate类型及其子类类型对象!");	
+			System.out.println("澶勭悊Graduate绫诲瀷鍙婂叾瀛愮被绫诲瀷瀵硅薄!");	
 		}else if(p instanceof Student){
-			System.out.println("处理Student类型及其子类类型对象!");
+			System.out.println("澶勭悊Student绫诲瀷鍙婂叾瀛愮被绫诲瀷瀵硅薄!");
 		}else{
-			System.out.println("处理Person类型及其子类类型对象!");	
+			System.out.println("澶勭悊Person绫诲瀷鍙婂叾瀛愮被绫诲瀷瀵硅薄!");	
 		}	
 	}
 }

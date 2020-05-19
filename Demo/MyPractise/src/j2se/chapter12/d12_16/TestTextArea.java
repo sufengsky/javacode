@@ -3,15 +3,15 @@ import java.awt.event.*;
 
 public class TestTextArea{
 	public static void main( String args[]) {
-		Frame f = new Frame("ÁôÑÔ°å");
+		Frame f = new Frame("ç•™è¨€æ¿");
 		TextArea message = new TextArea(20,20);
-		f.add(new Label("ÇëÄúÁôÑÔ:"),"North");
+		f.add(new Label("è¯·æ‚¨ç•™è¨€:"),"North");
 		f.add(message,"Center");
 				
 		Panel p = new Panel();	
 		p.setLayout(new GridLayout(1,6));
 		
-		String[] buttonLabels = {"¼ôÇĞ","¸´ÖÆ","Õ³Ìù","É¾³ı","Ìá½»","Çå³ı"};
+		String[] buttonLabels = {"å‰ªåˆ‡","å¤åˆ¶","ç²˜è´´","åˆ é™¤","æäº¤","æ¸…é™¤"};
 		String[] buttonActionCommands = {"CUT","COPY","PASTE","DELETE","SUBMIT","RESET"};
 		Button[] buttons = new Button[6];		
 		OuterMonitor om = new OuterMonitor(message,buttons);

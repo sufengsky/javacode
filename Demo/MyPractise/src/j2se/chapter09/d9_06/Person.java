@@ -2,10 +2,10 @@ public class Person{
 	private String name;
 	public Person(String name){
 		this.name = name;
-		System.out.println("创建Person对象，name:" + name);	
+		System.out.println("鍒涘缓Person瀵硅薄锛宯ame:" + name);	
 	}
 	//---	
 	public void finalize(){
-		System.out.println("销毁Person对象，name:" + name);	
+		System.out.println("閿�姣丳erson瀵硅薄锛宯ame:" + name);	
 	}
 }

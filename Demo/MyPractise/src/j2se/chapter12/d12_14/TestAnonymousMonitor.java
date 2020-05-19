@@ -8,14 +8,14 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowAdapter;
 
 public class TestAnonymousMonitor{
-	Frame f = new Frame("ÄäÃûÄÚ²¿Àà²âÊÔ");
+	Frame f = new Frame("åŒ¿åå†…éƒ¨ç±»æµ‹è¯•");
 	TextField tf = new TextField(30);
 	public TestAnonymousMonitor(){
-		f.add(new Label("Çë°´ÏÂÊó±ê×ó¼ü²¢ÍÏ¶¯"), "North");
+		f.add(new Label("è¯·æŒ‰ä¸‹é¼ æ ‡å·¦é”®å¹¶æ‹–åŠ¨"), "North");
 		f.add(tf, "South");
 		f.addMouseMotionListener(new MouseMotionAdapter(){
 			   public void mouseDragged(MouseEvent e) {
-			      tf.setText("Êó±êÎ»ÖÃ" + e.getPoint());
+			      tf.setText("é¼ æ ‡ä½ç½®" + e.getPoint());
 			   }	
 		});
 		f.setBackground(Color.CYAN);

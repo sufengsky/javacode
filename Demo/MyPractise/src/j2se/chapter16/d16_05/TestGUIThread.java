@@ -24,13 +24,13 @@ class MyMonitor extends WindowAdapter implements ActionListener{
 class MyThreadViewer{
 	public static void view(){
 		Thread current = Thread.currentThread();
-		System.out.println("µ±Ç°Ïß³ÌÃû³Æ: " + current.getName());
+		System.out.println("å½“å‰çº¿ç¨‹åç§°: " + current.getName());
 		int total = Thread.activeCount();
-		System.out.println("»î¶¯Ïß³Ì×ÜÊı: " + total + "¸ö");
+		System.out.println("æ´»åŠ¨çº¿ç¨‹æ€»æ•°: " + total + "ä¸ª");
 		Thread[] threads = new Thread[total];		
 		current.enumerate(threads);
 		for(Thread t : threads){
-			String role = t.isDaemon()?"ºóÌ¨Ïß³Ì ":"ÓÃ»§Ïß³Ì ";
+			String role = t.isDaemon()?"åå°çº¿ç¨‹ ":"ç”¨æˆ·çº¿ç¨‹ ";
 			System.out.println("   -" + role + t.getName());	
 		}	
 		System.out.println("----------------------------------");

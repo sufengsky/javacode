@@ -2,20 +2,20 @@ import java.util.StringTokenizer;
 public class TestStringTokenizer{
 	public static void main(String args[]){
 		String s;
-		StringTokenizer st = new StringTokenizer("Ñô¹â É³Ì² º£ÀË");
+		StringTokenizer st = new StringTokenizer("é˜³å…‰ æ²™æ»© æµ·æµª");
 		while (st.hasMoreTokens()) {
 			s = st.nextToken();
 			System.out.println(s);
      	}
 		System.out.println("------------------");
 
-		st = new StringTokenizer("Ñô¹â:É³Ì²:º£ÀË",":");
+		st = new StringTokenizer("é˜³å…‰:æ²™æ»©:æµ·æµª",":");
 		while (st.hasMoreTokens()) {
 			System.out.println(st.nextToken());
      	}     	
 		System.out.println("------------------");
 		
-		st = new StringTokenizer("Ñô¹â:É³Ì²:º£ÀË",":",true);
+		st = new StringTokenizer("é˜³å…‰:æ²™æ»©:æµ·æµª",":",true);
 		while (st.hasMoreTokens()) {
 			System.out.println(st.nextToken());
      	}     	

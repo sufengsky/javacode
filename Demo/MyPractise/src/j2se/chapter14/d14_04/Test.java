@@ -8,7 +8,7 @@ public class Test{
 			DataInputStream dis;
 			fos = new FileOutputStream("myfile.data");
 			dos = new DataOutputStream(fos);
-			dos.writeUTF("ÐÝ.¸ñÀ¼ÌØ");
+			dos.writeUTF("ä¼‘.æ ¼å…°ç‰¹");
 			dos.writeInt(40);
 			dos.close();
 			fis = new FileInputStream("myfile.data");

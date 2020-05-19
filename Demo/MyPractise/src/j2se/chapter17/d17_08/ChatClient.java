@@ -81,7 +81,7 @@ public class ChatClient {
 	public boolean connect(){
 		try{
 			sc = SocketChannel.open();
-			//"zlg"ÎªÄ¿±ê¼ÆËã»úÃû
+			//"zlg"ä¸ºç›®æ ‡è®¡ç®—æœºå
 			InetSocketAddress isa = new InetSocketAddress("zlg",8888);
 			sc.connect(isa);
 			sc.configureBlocking(false);

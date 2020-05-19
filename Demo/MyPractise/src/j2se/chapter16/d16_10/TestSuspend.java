@@ -58,7 +58,7 @@ class MyThread extends Thread{
 				e.printStackTrace();	
 			}
 		}
-		clock.setText("ʱ�䵽!");	
+		clock.setText("时间到!");	
 		clock.setBackground(Color.RED);
 	}	
 	public String convert(long time){

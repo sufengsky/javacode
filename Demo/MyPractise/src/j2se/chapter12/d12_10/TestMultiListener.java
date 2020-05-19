@@ -8,11 +8,11 @@ import java.awt.event.MouseMotionListener;
 
 public class TestMultiListener implements 
 	MouseMotionListener,MouseListener {
-	Frame f = new Frame("¶àÖØ¼àÌıÆ÷²âÊÔ");
+	Frame f = new Frame("å¤šé‡ç›‘å¬å™¨æµ‹è¯•");
 	TextField tf = new TextField(30);
 	
 	public TestMultiListener(){
-		Label guide = new Label("Çë°´ÏÂÊó±ê×ó¼ü²¢ÍÏ¶¯");
+		Label guide = new Label("è¯·æŒ‰ä¸‹é¼ æ ‡å·¦é”®å¹¶æ‹–åŠ¨");
 		f.add(guide, "North");
 		f.add(tf, "South");
 		f.setBackground(new Color(180,225,225));
@@ -25,15 +25,15 @@ public class TestMultiListener implements
 		TestMultiListener t = new TestMultiListener();
 	}
 	public void mouseDragged(MouseEvent e) {
-		String s = "Êó±êÍÏ¶¯µ½Î»ÖÃ£¨" + e.getX() + 
+		String s = "é¼ æ ‡æ‹–åŠ¨åˆ°ä½ç½®ï¼ˆ" + e.getX() + 
 			"," + e.getY() + ")";
 		tf.setText(s);
 	}	
 	public void mouseEntered(MouseEvent e) {
-		tf.setText("Êó±êÒÑ½øÈë´°Ìå");
+		tf.setText("é¼ æ ‡å·²è¿›å…¥çª—ä½“");
 	}	
 	public void mouseExited(MouseEvent e) {
-		tf.setText("Êó±êÒÑÒÆ³ö´°Ìå");
+		tf.setText("é¼ æ ‡å·²ç§»å‡ºçª—ä½“");
 	}
 	public void mouseMoved(MouseEvent e) {}
 	public void mousePressed(MouseEvent e) {}

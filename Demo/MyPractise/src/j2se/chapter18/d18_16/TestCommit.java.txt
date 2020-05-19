@@ -9,7 +9,7 @@ public class TestCommit{
 		    conn=DriverManager.getConnection(url,"scott","tiger");
 			boolean autoCommit = conn.getAutoCommit();
 			
-		    // 关闭自动提交功能
+		    // 鍏抽棴鑷姩鎻愪氦鍔熻兘
 		    conn.setAutoCommit(false);
 		    Statement stmt=conn.createStatement();
 		    stmt.executeUpdate("insert into dept values (77,'Market','Beijing')");
@@ -20,15 +20,15 @@ public class TestCommit{
 				System.out.print("\tDeptName: "+rs.getString(2));
 				System.out.println("\tLOC: "+rs.getString(3));						    
 			}
-			//不出错时提交前述操作内容
+			//涓嶅嚭閿欐椂鎻愪氦鍓嶈堪鎿嶄綔鍐呭
 			conn.commit();      
-			//恢复原有自动提交模式
+			//鎭㈠鍘熸湁鑷姩鎻愪氦妯″紡
 			conn.setAutoCommit(autoCommit);
 			stmt.close();
 		}catch(Exception e){
-			System.out.println("操作失败，任务取消！");
+			System.out.println("鎿嶄綔澶辫触锛屼换鍔″彇娑堬紒");
 		    try{
-		    	//出错时回滚，取消前述操作
+		    	//鍑洪敊鏃跺洖婊氾紝鍙栨秷鍓嶈堪鎿嶄綔
 		    	conn.rollback();   
 		    }catch(Exception e1){
 		    	e.printStackTrace();	

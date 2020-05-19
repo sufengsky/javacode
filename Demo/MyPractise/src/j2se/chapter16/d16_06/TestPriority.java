@@ -1,6 +1,6 @@
 public class TestPriority {	
 	public static void main(String args[]){
-		System.out.println("Ïß³ÌÃû\tÓÅÏÈ¼¶");
+		System.out.println("çº¿ç¨‹å\tä¼˜å…ˆçº§");
 		Thread current = Thread.currentThread();
 		System.out.print(current.getName() + "\t");
 		System.out.println(current.getPriority());		

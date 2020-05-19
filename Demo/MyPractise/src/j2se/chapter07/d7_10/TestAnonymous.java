@@ -2,7 +2,7 @@ public class TestAnonymous{
 	public static void main(String args[]){
 		Person sp = new Person(){
 			public void work(){
-				System.out.println("¸öÈËĞÅÏ¢£º" + this.getInfo());
+				System.out.println("ä¸ªäººä¿¡æ¯ï¼š" + this.getInfo());
 				System.out.println("I am sailing, I am sailing!");	
 			}
 		};
@@ -13,7 +13,7 @@ public class TestAnonymous{
 				super(name,age);
 			}
 			public void work(){
-				System.out.println("¸öÈËĞÅÏ¢£º" + this.getInfo());
+				System.out.println("ä¸ªäººä¿¡æ¯ï¼š" + this.getInfo());
 				System.out.println("I am sailing, I am sailing!");	
 			}			
 		}		

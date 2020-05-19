@@ -3,9 +3,9 @@ class A{
 	public class B {
 		private int s = 222;
 		public void mb(int s) {
-			System.out.println(s); 			// 局部变量s
-			System.out.println(this.s); 	// 内部类对象的属性s
-			System.out.println(A.this.s); 	// 外层类对象属性s
+			System.out.println(s); 			// 灞�閮ㄥ彉閲弒
+			System.out.println(this.s); 	// 鍐呴儴绫诲璞＄殑灞炴�
+			System.out.println(A.this.s); 	// 澶栧眰绫诲璞″睘鎬
 		}
 	}
 }

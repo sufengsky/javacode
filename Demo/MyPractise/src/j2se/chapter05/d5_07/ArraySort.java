@@ -8,7 +8,7 @@ public class ArraySort{
 		Arrays.sort(a);
 		as.showIntArr(a);
 		System.out.println();
-		String[] s = {"Lisa","ףӢ̨","Billy","Kacy","��ɽ��"};
+		String[] s = {"Lisa","祝英台","Billy","Kacy","梁山伯"};
 		as.showStringArr(s);
 		Arrays.sort(s);
 		as.showStringArr(s);

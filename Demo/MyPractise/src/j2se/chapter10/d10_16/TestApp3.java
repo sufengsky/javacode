@@ -2,7 +2,7 @@ import java.awt.*;
 import java.awt.event.*;
 public class TestApp3{
 	public static void main(String[] args){
-		Frame f = new Frame("²âÊÔ³ÌĞò");
+		Frame f = new Frame("æµ‹è¯•ç¨‹åº");
 		f.setSize(200,200);
 		f.addWindowListener(new WindowAdapter(){
 			public void windowClosing(WindowEvent e){

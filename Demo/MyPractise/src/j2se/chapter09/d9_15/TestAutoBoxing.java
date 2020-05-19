@@ -12,7 +12,7 @@ public class TestAutoBoxing{
 	}
 	
 	public static void m1(Integer it){
-		int k = it + 5;    //µÈ¼ÛÓÚ
+		int k = it + 5;    //ç­‰ä»·äº
 		k = it.intValue() + 5;
 		System.out.println(k);	
 	}

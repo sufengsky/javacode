@@ -10,9 +10,9 @@ public class TestServer {
 				Socket s1 = s.accept();
 				OutputStream os = s1.getOutputStream();
 				DataOutputStream dos = new DataOutputStream(os);
-				dos.writeUTF("ÄãºÃ,¿Í»§¶ËµØÖ·ĞÅÏ¢: " + s1.getInetAddress()
-					+ "\t¿Í»§¶ËÍ¨ĞÅ¶Ë¿ÚºÅ: " + s1.getPort());
-				dos.writeUTF("ÔÙ¼û£¡");
+				dos.writeUTF("ä½ å¥½,å®¢æˆ·ç«¯åœ°å€ä¿¡æ¯: " + s1.getInetAddress()
+					+ "\tå®¢æˆ·ç«¯é€šä¿¡ç«¯å£å·: " + s1.getPort());
+				dos.writeUTF("å†è§ï¼");
 				dos.close();
 				s1.close();
 			}

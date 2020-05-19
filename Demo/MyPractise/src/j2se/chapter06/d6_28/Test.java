@@ -1,13 +1,13 @@
 class A{
 	private int i = 5;
 	{
-		System.out.println("´´½¨ĞÂ¶ÔÏó---");	
+		System.out.println("åˆ›å»ºæ–°å¯¹è±¡---");	
 	}
 	public A(){}
 	public A(int a){
-		System.out.println("¿ªÊ¼Ö´ĞĞ¹¹Ôì·½·¨ÌåÖĞÓï¾ä");
+		System.out.println("å¼€å§‹æ‰§è¡Œæ„é€ æ–¹æ³•ä½“ä¸­è¯­å¥");
 		i = a;
-		System.out.println("¹¹Ôì·½·¨ÌåÖĞÓï¾äÖ´ĞĞÍê±Ï");
+		System.out.println("æ„é€ æ–¹æ³•ä½“ä¸­è¯­å¥æ‰§è¡Œå®Œæ¯•");
 	}
 }
 

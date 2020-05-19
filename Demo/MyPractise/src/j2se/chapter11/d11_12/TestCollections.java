@@ -12,26 +12,26 @@ public class TestCollections{
 		alist.add(4); 
 		alist.add(12); 
 
-		System.out.println("Ô­ÁĞ±í: " + alist);
+		System.out.println("åŸåˆ—è¡¨: " + alist);
 		Collections.sort(alist);
-		System.out.println("ÅÅĞòºó: " + alist);
+		System.out.println("æ’åºå: " + alist);
 		Collections.reverse(alist);
-		System.out.println("ÄæĞòºó: " + alist);
+		System.out.println("é€†åºå: " + alist);
 		Collections.shuffle(alist);
-		System.out.println("»ìÅÅºó: " + alist);
+		System.out.println("æ··æ’å: " + alist);
 		Collections.rotate(alist,2);
-		System.out.println("ÒÆÎ»ºó: " + alist);		
+		System.out.println("ç§»ä½å: " + alist);		
 		
 		ArrayList blist = new ArrayList();
 		blist.add(55); 
 		blist.add(66);
-		System.out.println("ĞÂÁĞ±í: " + blist);
+		System.out.println("æ–°åˆ—è¡¨: " + blist);
 		Collections.copy(alist,blist);
-		System.out.println("¿½±´ºó: " + alist);
+		System.out.println("æ‹·è´å: " + alist);
 
-		System.out.println("ÁĞ±íÖĞ³öÏÖÔªËØ66µÄ´ÎÊı: " + Collections.frequency(alist,66));
-		System.out.println("ÁĞ±íÖĞÔªËØµÄ×î´óÖµ: " + Collections.max(alist));
-		System.out.println("ÁĞ±íÖĞÔªËØµÄ×îĞ¡Öµ: " + Collections.min(alist));
+		System.out.println("åˆ—è¡¨ä¸­å‡ºç°å…ƒç´ 66çš„æ¬¡æ•°: " + Collections.frequency(alist,66));
+		System.out.println("åˆ—è¡¨ä¸­å…ƒç´ çš„æœ€å¤§å€¼: " + Collections.max(alist));
+		System.out.println("åˆ—è¡¨ä¸­å…ƒç´ çš„æœ€å°å€¼: " + Collections.min(alist));
 
 		Enumeration en = createDemoEnumeration();
 		ArrayList clist = Collections.list(en);

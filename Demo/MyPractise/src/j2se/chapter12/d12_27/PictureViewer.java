@@ -21,9 +21,9 @@ public class PictureViewer implements ActionListener{
 	public void init(){
 	    frame = new Frame("PictureViewer");
 	    Panel pb = new Panel();
-	    Button select = new Button("Ñ¡ÔñÍ¼Æ¬");
-	    previous = new Button("ÉÏÒ»ÕÅ");
-	    next = new Button("ÏÂÒ»ÕÅ");
+	    Button select = new Button("é€‰æ‹©å›¾ç‰‡");
+	    previous = new Button("ä¸Šä¸€å¼ ");
+	    next = new Button("ä¸‹ä¸€å¼ ");
 	    select.addActionListener(this);
 	    previous.addActionListener(this);
 	    next.addActionListener(this);
@@ -45,13 +45,13 @@ public class PictureViewer implements ActionListener{
 	    frame.setVisible(true); 
 	    this.validateButton();
 	    filter = new MyFilter();
-	    fd_load = new FileDialog(frame,"´ò¿ªÎÄ¼þ",FileDialog.LOAD);
+	    fd_load = new FileDialog(frame,"æ‰“å¼€æ–‡ä»¶",FileDialog.LOAD);
 	    fd_load.setFilenameFilter(filter);
 	}
 	@Override
 	public void actionPerformed(ActionEvent e){
 		String command = e.getActionCommand();
-		if(command.equals("Ñ¡ÔñÍ¼Æ¬")){
+		if(command.equals("é€‰æ‹©å›¾ç‰‡")){
 			fd_load.setVisible(true);
 			fpath = fd_load.getDirectory();
 			fname = fd_load.getFile();
@@ -60,12 +60,12 @@ public class PictureViewer implements ActionListener{
 				files = new File(fpath).listFiles(filter);
 				this.setIndex();
 			}			
-		}else if(command.equals("ÉÏÒ»ÕÅ")){
+		}else if(command.equals("ä¸Šä¸€å¼ ")){
 			findex--;
 			if(findex<0)
 				findex = 0;
 			this.display(files[findex]);
-		}else if(command.equals("ÏÂÒ»ÕÅ")){
+		}else if(command.equals("ä¸‹ä¸€å¼ ")){
 			findex++;
 			if(findex >= files.length)
 				findex = files.length-1;

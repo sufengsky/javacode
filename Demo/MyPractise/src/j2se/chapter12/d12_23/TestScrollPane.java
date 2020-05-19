@@ -2,7 +2,7 @@ import java.awt.*;
 import java.awt.event.*;
 public class TestScrollPane{
 	public static void main( String args[]) {
-		Frame frame = new Frame("表格效果");
+		Frame frame = new Frame("琛ㄦ牸鏁堟灉");
 		Panel p = new Panel();
 		p.setLayout(new GridLayout(10,5));
 		TextField[] cells = new TextField[50];

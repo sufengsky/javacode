@@ -21,7 +21,7 @@ public class JDBCExample{
 			stmt.close();
 			conn.close();
 		}catch(ClassNotFoundException e){
-		    System.out.println("ÕÒ²»µ½Ö¸¶¨µÄÇı¶¯³ÌĞòÀà!");
+		    System.out.println("æ‰¾ä¸åˆ°æŒ‡å®šçš„é©±åŠ¨ç¨‹åºç±»!");
 		}catch(SQLException e){
 		    e.printStackTrace();
 		}

@@ -4,7 +4,7 @@ public class Test{
 		i++;
 	}
 	public void m2(){
-		m1();  //合法，等价于 this.m1();
+		m1();  //鍚堟硶锛岀瓑浠蜂簬 this.m1();
 	}
 	public static int m3(){		
 		i++;
@@ -12,6 +12,6 @@ public class Test{
 	public static void main(String[] args){
 		Test t = new Test();
 		t.m2();	
-		m3();	//合法，等价于	Test.m3();
+		m3();	//鍚堟硶锛岀瓑浠蜂簬	Test.m3();
 	}
 }

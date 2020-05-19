@@ -5,11 +5,11 @@ public class TestEnum{
 	}	
 	public void work(Week day){
 		if(day.equals(Week.SAT)){
-			System.out.println("¹ºÎï!");
+			System.out.println("è´­ç‰©!");
 		}else if(day.equals(Week.SUN)){
-			System.out.println("Æíµ»!");
+			System.out.println("ç¥ˆç¥·!");
 		}else{
-			System.out.println("¹¤×÷!");
+			System.out.println("å·¥ä½œ!");
 		}		
 	}
 }

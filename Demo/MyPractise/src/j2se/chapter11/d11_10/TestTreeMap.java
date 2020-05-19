@@ -10,11 +10,11 @@ public class TestTreeMap{
 		hm.put(new MyKey(1005),new Person("Kity",73));   
 		hm.put(new MyKey(1001),new Person("Nancy",49));
 
-		System.out.println("----¼ìË÷µ¥¸öÔªËØ----");
+		System.out.println("----æ£€ç´¢å•ä¸ªå…ƒç´ ----");
 		Person p = (Person)hm.get(new MyKey(1008));
 		System.out.println(p);
 		
-		System.out.println("----±éÀúËùÓĞÔªËØ----");
+		System.out.println("----éå†æ‰€æœ‰å…ƒç´ ----");
 		Set names = hm.keySet();
 		Iterator it = names.iterator();
 		while(it.hasNext()){

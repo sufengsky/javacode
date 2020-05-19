@@ -7,6 +7,6 @@ public class Person extends Animal{
 		return name;	
 	}
 	public void eat(){
-		System.out.println("Ï´ÊÖ->Åëâ¿->°Ú²Í¾ß->³ÔºÈ->ÊÕÌ¯¶ù---");	
+		System.out.println("æ´—æ‰‹->çƒ¹é¥ª->æ‘†é¤å…·->åƒå–->æ”¶æ‘Šå„¿---");	
 	}
 }

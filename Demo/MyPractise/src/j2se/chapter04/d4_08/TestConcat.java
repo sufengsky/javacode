@@ -3,7 +3,7 @@ public class TestConcat{
 		int i = 300 +5;
 		String s = "Hello, " + "world!";
 		System.out.println(s);   
-		s = "ÄãºÃ, " + i  + "ºÅ";
+		s = "ä½ å¥½, " + i  + "å·";
 		System.out.println(s);   
 	}	
 }

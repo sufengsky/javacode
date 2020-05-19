@@ -3,7 +3,7 @@ public class TestBigInteger{
 	public static void main(String args[]){
 		BigInteger a = BigInteger.valueOf(43);
 		BigInteger b = new BigInteger("12345678901234560000");
-		//Long c = new Long(12345678901234560000L);	//³¬³ö·¶Î§
+		//Long c = new Long(12345678901234560000L);	//è¶…å‡ºèŒƒå›´
 		BigInteger c = a.add(b);
 		System.out.println(c);
 		System.out.println(a.multiply(b.subtract(BigInteger.valueOf(120))));

@@ -29,9 +29,9 @@ class MyServerReader extends Thread{
 		try{
 			while(true){
 				info = dis.readUTF();
-				System.out.println("¶Ô·½Ëµ: " + info);
+				System.out.println("å¯¹æ–¹è¯´: " + info);
 				if(info.equals("bye")){
-					System.out.println("¶Ô·½ÏÂÏß£¬³ÌĞòÍË³ö!");
+					System.out.println("å¯¹æ–¹ä¸‹çº¿ï¼Œç¨‹åºé€€å‡º!");
 					System.exit(0);
 				}
 			}		
@@ -55,7 +55,7 @@ class MyServerWriter extends Thread{
 				info = br.readLine();
 				dos.writeUTF(info);
 				if(info.equals("bye")){
-					System.out.println("×Ô¼ºÏÂÏß£¬³ÌĞòÍË³ö!");
+					System.out.println("è‡ªå·±ä¸‹çº¿ï¼Œç¨‹åºé€€å‡º!");
 					System.exit(0);
 				}
 			}		

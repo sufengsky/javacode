@@ -11,13 +11,13 @@ public class TestMetaData{
 			if (dmd == null) { 
 				System.out.println ("No Meta available"); 
 			} else { 
-				System.out.println ("Êı¾İ¿âÃû³Æ:" + dmd.getDatabaseProductName()); 
-				System.out.println ("Êı¾İ¿â°æ±¾:" + dmd.getDatabaseProductVersion()); 
-				System.out.println ("Êı¾İ¿âÇı¶¯³ÌĞò£º" + dmd.getDriverName()); 
-				System.out.println ("Çı¶¯³ÌĞò°æ±¾ºÅ£º" + dmd.getDriverVersion());
+				System.out.println ("æ•°æ®åº“åç§°:" + dmd.getDatabaseProductName()); 
+				System.out.println ("æ•°æ®åº“ç‰ˆæœ¬:" + dmd.getDatabaseProductVersion()); 
+				System.out.println ("æ•°æ®åº“é©±åŠ¨ç¨‹åºï¼š" + dmd.getDriverName()); 
+				System.out.println ("é©±åŠ¨ç¨‹åºç‰ˆæœ¬å·ï¼š" + dmd.getDriverVersion());
 				System.out.println ("--------------------------------------------");
 
-				System.out.println ("½á¹û¼¯ÀàĞÍ¼°Ö§³ÖÇé¿ö(true-Ö§³Ö,false-²»Ö§³Ö)");
+				System.out.println ("ç»“æœé›†ç±»å‹åŠæ”¯æŒæƒ…å†µ(true-æ”¯æŒ,false-ä¸æ”¯æŒ)");
 				System.out.println ("TYPE_FORWARD_ONLY: " + 
 					dmd.supportsResultSetType(ResultSet.TYPE_FORWARD_ONLY)); 
 				System.out.println ("TYPE_SCROLL_INSENSITIVE: " + 

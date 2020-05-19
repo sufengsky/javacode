@@ -6,14 +6,14 @@ public class TestStack{
 		Stack s = new Stack();
 		s.push("hello");
 		s.push(new Date());
-		s.push(400);  //×Ô¶¯·â×°,µÈ¼ÛÓÚs.push(new Integer(400));
+		s.push(400);  //è‡ªåŠ¨å°è£…,ç­‰ä»·äºs.push(new Integer(400));
 		s.push(3.14);
 		
-		System.out.println("µ¯Õ»Ç°:size=" + s.size());
+		System.out.println("å¼¹æ ˆå‰:size=" + s.size());
 		System.out.println(s.pop());
-		System.out.println("µ¯Õ»ºó:size=" + s.size());
+		System.out.println("å¼¹æ ˆå:size=" + s.size());
 		System.out.println(s.peek());
-		System.out.println("peek²Ù×÷ºó:size=" + s.size());
+		System.out.println("peekæ“ä½œå:size=" + s.size());
 		while(!s.isEmpty())
 			System.out.println(s.pop());
 	}

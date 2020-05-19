@@ -10,7 +10,7 @@ public class TestCardLayout{
 		f.setLayout (cl);
 		Button b[] = new Button[4]; 
 		for(int i = 0; i < 4; i++){
-			b[i] = new Button("µÚ" + i + "Ò³");
+			b[i] = new Button("ç¬¬" + i + "é¡µ");
 			f.add(b[i],"page" + i);
 		}
 		b[0].setBackground(Color.green);

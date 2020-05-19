@@ -1,4 +1,4 @@
-public class SyncStack{  //Ö§³Ö¶àÏß³ÌÍ¬²½²Ù×÷µÄ¶ÑÕ»µÄÊµÏÖ
+public class SyncStack{  //æ”¯æŒå¤šçº¿ç¨‹åŒæ­¥æ“ä½œçš„å †æ ˆçš„å®ç°
 	private int index = 0;
 	private char []data = new char[6];	
 	public synchronized void push(char c){
@@ -10,7 +10,7 @@ public class SyncStack{  //Ö§³Ö¶àÏß³ÌÍ¬²½²Ù×÷µÄ¶ÑÕ»µÄÊµÏÖ
 		this.notify();
 		data[index] = c;
 		index++;
-		System.out.println("produced£º"+c);
+		System.out.println("producedï¼š"+c);
 	}
 	public synchronized char pop(){
 		while(index ==0){
@@ -20,7 +20,7 @@ public class SyncStack{  //Ö§³Ö¶àÏß³ÌÍ¬²½²Ù×÷µÄ¶ÑÕ»µÄÊµÏÖ
 			    	}
 		this.notify();
 		index--;
-		System.out.println("Ïû·Ñ£º"+data[index]);
+		System.out.println("æ¶ˆè´¹ï¼š"+data[index]);
 		return data[index];
 	}
 }

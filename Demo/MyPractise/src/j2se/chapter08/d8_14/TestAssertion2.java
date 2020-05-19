@@ -4,8 +4,8 @@ public class TestAssertion2{
 	}
 	
 	public void process(int age){
-		assert age>=0:"ÄêÁä³¬³öºÏÀí·¶Î§£¡";
-		System.out.println("ÄúµÄÄêÁä£º" + age);
+		assert age>=0:"å¹´é¾„è¶…å‡ºåˆç†èŒƒå›´ï¼";
+		System.out.println("æ‚¨çš„å¹´é¾„ï¼š" + age);
 		//---	
 	}	
 }

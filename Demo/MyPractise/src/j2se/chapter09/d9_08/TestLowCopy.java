@@ -1,11 +1,11 @@
 public class TestLowCopy{
 	public static void main(String args[]){
-		Book b1 = new Book("Java±à³Ì",30.50,new Person("ÕÅÈı",34));
+		Book b1 = new Book("Javaç¼–ç¨‹",30.50,new Person("å¼ ä¸‰",34));
 		Book b2 = (Book)b1.clone();
 		b2.price = 44.0;
 		b2.author.setAge(45);
-		b2.author.setName("ÀîËÄ");
-		b2.bookName = "Java¿ª·¢";
+		b2.author.setName("æå››");
+		b2.bookName = "Javaå¼€å‘";
 		b1.display();	
 		b2.display();	
 	}

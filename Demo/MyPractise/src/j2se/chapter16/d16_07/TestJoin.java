@@ -9,7 +9,7 @@ public class TestJoin {
 			e.printStackTrace();
 		}
 		for(int i=0;i<50;i++){
-			System.out.println("Ö÷Ïß³Ì:" + i);
+			System.out.println("ä¸»çº¿ç¨‹:" + i);
 		}
     }
 }

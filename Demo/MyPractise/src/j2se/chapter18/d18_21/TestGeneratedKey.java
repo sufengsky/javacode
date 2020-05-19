@@ -12,7 +12,7 @@ public class TestGeneratedKey{
 		    conn = DriverManager.getConnection(url,"tom","cat");
 		    stmt=conn.createStatement();
 		    Scanner scanner = new Scanner(System.in);
-		    System.out.println("ĞÅÏ¢Â¼Èë");
+		    System.out.println("ä¿¡æ¯å½•å…¥");
 		    String name;
 		    String sex;
 		    int age;	
@@ -20,14 +20,14 @@ public class TestGeneratedKey{
 	    	int id = 0;
 		    while(true){
 		    	try{
-			    	System.out.print("ĞÕÃû:");	
+			    	System.out.print("å§“å:");	
 			    	name = scanner.next();
-			    	System.out.print("ĞÔ±ğ£¨ÄĞ/Å®£©:");
+			    	System.out.print("æ€§åˆ«ï¼ˆç”·/å¥³ï¼‰:");
 			    	sex = scanner.next();
-			    	System.out.print("ÄêÁä:");
+			    	System.out.print("å¹´é¾„:");
 			    	age = scanner.nextInt();
 			    	if(name.equals("") || sex.equals("") || (age<0) || (age>130)){
-			    		throw new NumberFormatException("Êı¾İ¸ñÊ½²»ºÏÀí!");	
+			    		throw new NumberFormatException("æ•°æ®æ ¼å¼ä¸åˆç†!");	
 			    	}else if(name.equals("exit")){
 			    		break;
 			    	}
@@ -38,9 +38,9 @@ public class TestGeneratedKey{
 		    	//	if(rs.next()){
 		    	//		id = rs.getInt(1);	
 		    	//	}
-		    		System.out.println("ÄúµÄĞÅÏ¢ÒÑ´æµµ,²¡ÀúºÅÂë:" + id);
+		    		System.out.println("æ‚¨çš„ä¿¡æ¯å·²å­˜æ¡£,ç—…å†å·ç :" + id);
 		    	}catch(NumberFormatException nfe){
-		    		System.out.println("Êı¾İ¸ñÊ½²»ºÏÀí!ÇëÖØĞÂÊäÈë£¡");
+		    		System.out.println("æ•°æ®æ ¼å¼ä¸åˆç†!è¯·é‡æ–°è¾“å…¥ï¼");
 		    	}
 		    		
 		    }

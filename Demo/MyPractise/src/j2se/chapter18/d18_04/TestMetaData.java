@@ -11,12 +11,12 @@ public class TestMetaData{
 			if (dmd == null) { 
 				System.out.println ("No Meta available"); 
 			} else { 
-				System.out.println ("Êı¾İ¿âÃû³Æ:" + dmd.getDatabaseProductName()); 
-				System.out.println ("Êı¾İ¿â°æ±¾:" + dmd.getDatabaseProductVersion()); 
-				System.out.println ("Êı¾İ¿âÇı¶¯³ÌĞò£º" + dmd.getDriverName()); 
-				System.out.println ("Çı¶¯³ÌĞò°æ±¾ºÅ£º" + dmd.getDriverVersion()); 
-				System.out.println ("²¢·¢·ÃÎÊµÄÓÃ»§¸öÊı" + dmd.getMaxConnections()); 
-				System.out.println ("Êı¾İÀàĞÍÁĞ±í£º" ); 
+				System.out.println ("æ•°æ®åº“åç§°:" + dmd.getDatabaseProductName()); 
+				System.out.println ("æ•°æ®åº“ç‰ˆæœ¬:" + dmd.getDatabaseProductVersion()); 
+				System.out.println ("æ•°æ®åº“é©±åŠ¨ç¨‹åºï¼š" + dmd.getDriverName()); 
+				System.out.println ("é©±åŠ¨ç¨‹åºç‰ˆæœ¬å·ï¼š" + dmd.getDriverVersion()); 
+				System.out.println ("å¹¶å‘è®¿é—®çš„ç”¨æˆ·ä¸ªæ•°" + dmd.getMaxConnections()); 
+				System.out.println ("æ•°æ®ç±»å‹åˆ—è¡¨ï¼š" ); 
 				rs = dmd.getTypeInfo();
 				while(rs.next()){
 					System.out.println("\t" + rs.getString(1));	
@@ -26,10 +26,10 @@ public class TestMetaData{
 		    Statement stmt = conn.createStatement();
 		    String s = "select * from dept";
 		    rs = stmt.executeQuery(s);						
-		    System.out.println("Êı¾İ±ídept½á¹¹ĞÅÏ¢£º");
+		    System.out.println("æ•°æ®è¡¨deptç»“æ„ä¿¡æ¯ï¼š");
 		    ResultSetMetaData  rsm = rs.getMetaData();
 		    int columnCount = rsm.getColumnCount();
-			System.out.println("ÁĞĞòºÅ\tÁĞÃû\tÊı¾İÀàĞÍ");
+			System.out.println("åˆ—åºå·\tåˆ—å\tæ•°æ®ç±»å‹");
 		    for(int i=1;i<=columnCount;i++){
 				System.out.println(" " + i + " \t" + 
 				rsm.getColumnName(i) + "\t" + 

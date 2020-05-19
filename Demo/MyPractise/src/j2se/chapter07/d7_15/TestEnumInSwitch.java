@@ -10,16 +10,16 @@ public class TestEnumInSwitch{
 			case WED:
 			case THU:
 			case FRI:
-				System.out.println("¹¤×÷ÈÕ£¬È¥ÉÏ°à!");	
+				System.out.println("å·¥ä½œæ—¥ï¼Œå»ä¸Šç­!");	
 				break;
 			case SAT:
-				System.out.println("ĞÇÆÚÁù£¬È¥¹ºÎï!");	
+				System.out.println("æ˜ŸæœŸå…­ï¼Œå»è´­ç‰©!");	
 				break;
 			case SUN:
-				System.out.println("Àñ°İÌì£¬È¥½ÌÌÃ!");	
+				System.out.println("ç¤¼æ‹œå¤©ï¼Œå»æ•™å ‚!");	
 				break;
 			default:
-				System.out.println("ÄãÓĞÃ»ÓĞ¸ã´í!");	
+				System.out.println("ä½ æœ‰æ²¡æœ‰æé”™!");	
 				break;
 		}
 	}	

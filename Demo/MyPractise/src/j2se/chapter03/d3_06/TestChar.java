@@ -1,3 +1,5 @@
+package j2se.chapter03.d3_06;
+
 public class TestChar{
 	public static void main(String[] args){
 		char c1 = 'a';

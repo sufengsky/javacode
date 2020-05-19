@@ -13,7 +13,7 @@ public class ReadFile{
 			BufferedReader br = new BufferedReader(fr);
 			String s = br.readLine();
 			while ( s != null ) {
-				System.out.println("¶ÁÈë: " + s);
+				System.out.println("è¯»å…¥: " + s);
 				s = br.readLine();
 			}			
 			br.close();

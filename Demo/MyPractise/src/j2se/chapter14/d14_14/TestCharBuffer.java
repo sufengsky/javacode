@@ -4,34 +4,34 @@ public class TestCharBuffer {
 	
 	public static void main(String[] args){
 		CharBuffer cb = CharBuffer.allocate(8);
-		System.out.println("³õÊ¼×´Ì¬£º");		//p1
+		System.out.println("åˆå§‹çŠ¶æ€ï¼š");		//p1
 		TestCharBuffer.showInfo(cb);
 		
 		cb.put('a');
 		cb.put(new char[]{'b','c'});
 		cb.put("def");							//p2
-		System.out.println("Ğ´Èë6¸öÊı¾İºó£º");	
+		System.out.println("å†™å…¥6ä¸ªæ•°æ®åï¼š");	
 		TestCharBuffer.showInfo(cb);
 		
 		cb.flip();								//p3
-		System.out.println("flip²Ù×÷ºó£º");	
+		System.out.println("flipæ“ä½œåï¼š");	
 		TestCharBuffer.showInfo(cb);
 		
 		char c = cb.get();						//p4
 		System.out.println(c);
-		System.out.println("Ïà¶Ô¶ÁÈ¡Ò»¸öÊı¾İºó£º");	
+		System.out.println("ç›¸å¯¹è¯»å–ä¸€ä¸ªæ•°æ®åï¼š");	
 		TestCharBuffer.showInfo(cb);
 		
 		c = cb.get(3);							//p5
 		System.out.println(c);
-		System.out.println("¾ø¶Ô¶ÁÈ¡Êı¾İºó£º");	
+		System.out.println("ç»å¯¹è¯»å–æ•°æ®åï¼š");	
 		TestCharBuffer.showInfo(cb);
 		
 		cb.clear();								//p6
-		System.out.println("clear²Ù×÷ºó£º");	
+		System.out.println("clearæ“ä½œåï¼š");	
 		TestCharBuffer.showInfo(cb);
 		
-		//clear²Ù×÷ºó»º³åÇøÖĞÄÚÈİ²¢Î´±»Çå³ı		
+		//clearæ“ä½œåç¼“å†²åŒºä¸­å†…å®¹å¹¶æœªè¢«æ¸…é™¤		
 		System.out.println(cb.get(4));
 	}
 	

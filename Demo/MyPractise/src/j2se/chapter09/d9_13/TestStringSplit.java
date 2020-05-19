@@ -1,6 +1,6 @@
 public class TestStringSplit{
 	public static void main(String args[]){
-		String s = "Ñô¹â:É³Ì²:º£ÀË:ÏÉÈËÕÆ";
+		String s = "é˜³å…‰:æ²™æ»©:æµ·æµª:ä»™äººæŒ";
 		String[] results = s.split(":");
 		for(String each: results) {
 			System.out.println(each);

@@ -1,18 +1,18 @@
 public class TestCustomizingException{
 	public void regist(int num) throws MyException {
 		if (num < 0) {
-			throw new MyException("ÈËÊýÎª¸ºÖµ£¬²»ºÏÀí",3);
+			throw new MyException("äººæ•°ä¸ºè´Ÿå€¼ï¼Œä¸åˆç†",3);
 		}
-		System.out.println("µÇ¼ÇÈËÊý:" + num );
+		System.out.println("ç™»è®°äººæ•°:" + num );
 	}
 	
 	public void manager() {
 		try {
 			regist(-100);
 		} catch (MyException e) {
-			System.out.println("µÇ¼ÇÊ§°Ü£¬³ö´íÖÖÀà"+e.getId());	
+			System.out.println("ç™»è®°å¤±è´¥ï¼Œå‡ºé”™ç§ç±»"+e.getId());	
 		}
-		System.out.print("±¾´ÎµÇ¼Ç²Ù×÷½áÊø");
+		System.out.print("æœ¬æ¬¡ç™»è®°æ“ä½œç»“æŸ");
 	}
 	
 	public static void main(String args[]){

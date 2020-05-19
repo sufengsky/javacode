@@ -33,7 +33,7 @@ public class TestServer {
 		Frame f = new Frame("Server");
 		ta = new TextArea();
 		tf = new TextField();
-		Button send = new Button("·¢ËÍ");
+		Button send = new Button("å‘é€");
 		Panel p = new Panel();
 		p.setLayout(new BorderLayout());
 		p.add(tf,"Center");
@@ -90,7 +90,7 @@ class MyServerListener implements ActionListener{
 	public void actionPerformed(ActionEvent e){
 		TextField tf = server.getTextField();
 		String info = tf.getText();
-		server.getTextArea().append("×Ô¼ºËµ: " + info + "\n");
+		server.getTextArea().append("è‡ªå·±è¯´: " + info + "\n");
 		try{
 			server.getDataOutputStream().writeUTF(info);	
 		}catch (IOException e1) {
@@ -117,7 +117,7 @@ class MyServerReader extends Thread{
 		try{
 			while(true){
 				info = dis.readUTF();
-				ta.append("¶Ô·½Ëµ: " + info + "\n");
+				ta.append("å¯¹æ–¹è¯´: " + info + "\n");
 				if(info.equals("bye")){
 					server.close();
 					System.exit(0);

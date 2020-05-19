@@ -35,9 +35,9 @@ public class TestSwing implements ActionListener{
 		button_new.setActionCommand("New");
 		button_open.setActionCommand("Open");
 		button_save.setActionCommand("Save");
-		button_new.setToolTipText("ĞÂ½¨ÎÄ¼ş");
-		button_open.setToolTipText("´ò¿ªÎÄ¼ş");
-		button_save.setToolTipText("±£´æÎÄ¼ş");
+		button_new.setToolTipText("æ–°å»ºæ–‡ä»¶");
+		button_open.setToolTipText("æ‰“å¼€æ–‡ä»¶");
+		button_save.setToolTipText("ä¿å­˜æ–‡ä»¶");
 		button_new.addActionListener(this);
 		button_open.addActionListener(this);
 		button_save.addActionListener(this);
@@ -48,8 +48,8 @@ public class TestSwing implements ActionListener{
 		JPanel jp = new JPanel();
 		JButton button_start = new JButton("Start");		
 		JButton button_stop = new JButton("Stop");		
-		button_start.setToolTipText("¿ªÊ¼²Ù×÷");
-		button_stop.setToolTipText("½áÊø²Ù×÷");
+		button_start.setToolTipText("å¼€å§‹æ“ä½œ");
+		button_stop.setToolTipText("ç»“æŸæ“ä½œ");
 		button_start.setMnemonic('S');
 		button_stop.setMnemonic('t');
 		button_start.addActionListener(this);

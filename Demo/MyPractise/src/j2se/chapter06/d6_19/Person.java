@@ -13,5 +13,5 @@ public class Person{
 		this.name = name;
 		this.age = age;	
 	}
-	//其它成份
+	//鍏跺畠鎴愪唤
 }

@@ -2,16 +2,16 @@ package p2;
 import p1.A;
 public class B extends A{	
 	public void mb(){
-		m = m + 1;	//合法，等价于  this.m = this.m + 1;
-		n = n * 2;	//合法，等价于  this.n = this.n * 2;
+		m = m + 1;	//鍚堟硶锛岀瓑浠蜂簬  this.m = this.m + 1;
+		n = n * 2;	//鍚堟硶锛岀瓑浠蜂簬  this.n = this.n * 2;
 	}
 	
 	public static void main(String[] args){
 		B b = new B();
-		b.m = 7;	//合法
-		b.n = 8;	//合法
+		b.m = 7;	//鍚堟硶
+		b.n = 8;	//鍚堟硶
 		A a = new A();
-		a.m = 9;	//合法
-		a.n = 10;	//非法    	
+		a.m = 9;	//鍚堟硶
+		a.n = 10;	//闈炴硶    	
 	}
 }

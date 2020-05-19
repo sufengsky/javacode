@@ -7,9 +7,9 @@ public class TestNumberFormat2{
 		NumberFormat nf1 = NumberFormat.getCurrencyInstance(new Locale("zh","CN"));
 		NumberFormat nf2 = NumberFormat.getCurrencyInstance(new Locale("en","US"));
 		NumberFormat nf3 = NumberFormat.getCurrencyInstance(new Locale("zh","HK"));		
-		System.out.println("中国货币:" + nf1.format(d));
-		System.out.println("美国货币:" + nf2.format(d));
-		System.out.println("香港货币:" + nf3.format(d));
+		System.out.println("涓浗璐у竵:" + nf1.format(d));
+		System.out.println("缇庡浗璐у竵:" + nf2.format(d));
+		System.out.println("棣欐腐璐у竵:" + nf3.format(d));
 		
 		NumberFormat nf4 = NumberFormat.getPercentInstance();
 		System.out.println(nf4.format(0.7483));

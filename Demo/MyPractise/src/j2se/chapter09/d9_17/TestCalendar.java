@@ -19,7 +19,7 @@ public class TestCalendar{
 					c.get(Calendar.HOUR_OF_DAY) + ":" +
 					c.get(Calendar.MINUTE) + ":" +
 					c.get(Calendar.SECOND) + " " +
-				   (c.get(Calendar.AM_PM)==0?"ÉÏÎç":"ÏÂÎç"); 
+				   (c.get(Calendar.AM_PM)==0?"ä¸Šåˆ":"ä¸‹åˆ"); 
 		System.out.println(s);			
 	}
 }

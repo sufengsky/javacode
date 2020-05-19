@@ -4,10 +4,10 @@ import java.util.Enumeration;
 public class TestEnumeration{
 	public static void main(String[] args) {
 		Hashtable ht = new Hashtable();
-		ht.put(new Integer(1003),new Person(1003,"张三",15));
-		ht.put(new Integer(1008),new Person(1008,"李四",25));
-		ht.put(1015,new Person(1015,"王五",73));   
-		ht.put(1001,new Person(1001,"赵六",49));
+		ht.put(new Integer(1003),new Person(1003,"寮犱笁",15));
+		ht.put(new Integer(1008),new Person(1008,"鏉庡洓",25));
+		ht.put(1015,new Person(1015,"鐜嬩簲",73));   
+		ht.put(1001,new Person(1001,"璧靛叚",49));
 
 		Enumeration keys = ht.keys();
 		while(keys.hasMoreElements()){

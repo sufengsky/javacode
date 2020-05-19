@@ -1,7 +1,7 @@
 import java.awt.*;
 import java.awt.event.*;
 public class TestMenu2{
-	private Frame f = new Frame("²âÊÔ´°¿Ú");
+	private Frame f = new Frame("æµ‹è¯•çª—å£");
 	private Label message = new Label();
 	private PopupMenu pm;	
 
@@ -13,17 +13,17 @@ public class TestMenu2{
 		f.add(message,"Center");		
 		MyMonitor mm = new MyMonitor();		
 		MenuBar mb = new MenuBar();
-		Menu m1 = new Menu("ÎÄ¼ş");
-		Menu m2 = new Menu("¸ñÊ½");
-		Menu m3 = new Menu("°ïÖú");
+		Menu m1 = new Menu("æ–‡ä»¶");
+		Menu m2 = new Menu("æ ¼å¼");
+		Menu m3 = new Menu("å¸®åŠ©");
 			
-		MenuItem m21 = new MenuItem("×ÖÌå");
-		Menu m22 = new Menu("±³¾°");
+		MenuItem m21 = new MenuItem("å­—ä½“");
+		Menu m22 = new Menu("èƒŒæ™¯");
 		
-		MenuItem bg_red = new MenuItem("ºìÉ«");  
-		MenuItem bg_blue = new MenuItem("À¶É«");  
-		MenuItem bg_green = new MenuItem("ÂÌÉ«");  
-		MenuItem bg_customize = new MenuItem("ÓÃ»§×Ô¶¨Òå");  
+		MenuItem bg_red = new MenuItem("çº¢è‰²");  
+		MenuItem bg_blue = new MenuItem("è“è‰²");  
+		MenuItem bg_green = new MenuItem("ç»¿è‰²");  
+		MenuItem bg_customize = new MenuItem("ç”¨æˆ·è‡ªå®šä¹‰");  
 
 		bg_red.addActionListener(mm);
 		bg_blue.addActionListener(mm);
@@ -66,14 +66,14 @@ public class TestMenu2{
 	public class MyMonitor extends MouseAdapter implements ActionListener{
 		public void actionPerformed(ActionEvent e){
 			String s = e.getActionCommand();
-			if(s.equals("ºìÉ«")){
+			if(s.equals("çº¢è‰²")){
 				message.setBackground(Color.RED); 
-			}else if(s.equals("À¶É«")){
+			}else if(s.equals("è“è‰²")){
 				message.setBackground(Color.BLUE); 
-			}else if(s.equals("ÂÌÉ«")){
+			}else if(s.equals("ç»¿è‰²")){
 				message.setBackground(Color.GREEN); 
 			}else if(s.equals("Start")){
-				message.setText("Éú»î¶àÃÀºÃ£¡"); 
+				message.setText("ç”Ÿæ´»å¤šç¾å¥½ï¼"); 
 			}else if(s.equals("Stop")){
 				message.setText("Bye-bye,the world!"); 
 			}	

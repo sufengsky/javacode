@@ -12,7 +12,7 @@ public class TestTempFile implements ActionListener{
 	
 	public void createUI(){
 		JFrame frame = new JFrame();
-		JButton jb = new JButton("´´½¨ÁÙÊ±ÎÄ¼ş");
+		JButton jb = new JButton("åˆ›å»ºä¸´æ—¶æ–‡ä»¶");
 		jb.addActionListener(this);
 		frame.add(jb,"North");	
 		frame.setSize(200,100);
@@ -23,20 +23,20 @@ public class TestTempFile implements ActionListener{
 	public void init(){
 		tempPath = new File("temp");
 		if(!tempPath.exists() || !tempPath.isDirectory()){
-			tempPath.mkdir();  //Èç¹û²»´æÔÚ£¬Ôò´´½¨¸ÃÎÄ¼ş¼Ğ
+			tempPath.mkdir();  //å¦‚æœä¸å­˜åœ¨ï¼Œåˆ™åˆ›å»ºè¯¥æ–‡ä»¶å¤¹
 		}
 	}
 	public void actionPerformed(ActionEvent e){
 		try	{
-			//ÔÚtempPathÂ·¾¶ÏÂ´´½¨ÁÙÊ±ÎÄ¼ş"mytempfileXXXX.tmp"
-			//XXXX ÊÇÏµÍ³×Ô¶¯²úÉúµÄËæ»úÊı, tempPath¶ÔÓ¦µÄÂ·¾¶Ó¦ÊÂÏÈ´æÔÚ
+			//åœ¨tempPathè·¯å¾„ä¸‹åˆ›å»ºä¸´æ—¶æ–‡ä»¶"mytempfileXXXX.tmp"
+			//XXXX æ˜¯ç³»ç»Ÿè‡ªåŠ¨äº§ç”Ÿçš„éšæœºæ•°, tempPathå¯¹åº”çš„è·¯å¾„åº”äº‹å…ˆå­˜åœ¨
 			File tempFile=File.createTempFile("mytempfile",".txt",null);
 			System.out.println(tempFile.getAbsolutePath());
 						
 			FileWriter fout=new FileWriter(tempFile);
 			PrintWriter out=new PrintWriter(fout);
 			out.println("some info!" );
-			out.close(); //×¢Òâ£ºÈçÎŞ´Ë¹Ø±ÕÓï¾ä£¬ÎÄ¼ş½«²»ÄÜÉ¾³ı
+			out.close(); //æ³¨æ„ï¼šå¦‚æ— æ­¤å…³é—­è¯­å¥ï¼Œæ–‡ä»¶å°†ä¸èƒ½åˆ é™¤
 			
 			//tempFile.delete(); 
 			tempFile.deleteOnExit();

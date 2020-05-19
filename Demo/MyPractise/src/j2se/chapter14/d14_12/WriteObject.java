@@ -5,8 +5,8 @@ public class WriteObject {
 		try{
 			FileOutputStream fos = new FileOutputStream("data.ser");
 			ObjectOutputStream oos = new ObjectOutputStream(fos);
-			oos.writeObject(new Employee("ÕÅÈı",28,"ÊĞ³¡²¿"));
-			oos.writeObject(new Employee("ÀîËÄ",34,"¼¼Êõ²¿"));
+			oos.writeObject(new Employee("å¼ ä¸‰",28,"å¸‚åœºéƒ¨"));
+			oos.writeObject(new Employee("æå››",34,"æŠ€æœ¯éƒ¨"));
 			oos.close();
 		}catch(IOException e){
 			e.printStackTrace();	

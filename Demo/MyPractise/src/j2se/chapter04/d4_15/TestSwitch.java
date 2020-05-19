@@ -9,28 +9,28 @@ public class TestSwitch{
 		String day = "";
 		switch(n){
 			case 1: 
-				day = "ĞÇÆÚÒ»";	
+				day = "æ˜ŸæœŸä¸€";	
 				break;
 			case 2: 
-				day = "ĞÇÆÚ¶ş";	
+				day = "æ˜ŸæœŸäºŒ";	
 				break;
 			case 3: 
-				day = "ĞÇÆÚÈı";	
+				day = "æ˜ŸæœŸä¸‰";	
 				break;
 			case 4: 
-				day = "ĞÇÆÚËÄ";	
+				day = "æ˜ŸæœŸå››";	
 				break;
 			case 5: 
-				day = "ĞÇÆÚÎå";	
+				day = "æ˜ŸæœŸäº”";	
 				break;
 			case 6: 
-				day = "ĞÇÆÚÁù";	
+				day = "æ˜ŸæœŸå…­";	
 				break;
 			case 0: 
-				day = "ĞÇÆÚÈÕ";	
+				day = "æ˜ŸæœŸæ—¥";	
 				break;
 			default:
-				day = "·Ç·¨";
+				day = "éæ³•";
 				break;
 		}	
 		return day;

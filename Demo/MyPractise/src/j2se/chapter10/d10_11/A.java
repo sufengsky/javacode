@@ -1,6 +1,6 @@
 public class A{
 	/**
-	 @deprecated ±¾·½·¨²»ÍÆ¼öÊ¹ÓÃ£¬ÕâÀïÖ»ÊÇÓÃÓÚ²âÊÔÓÃÍ¾¡£
+	 @deprecated æœ¬æ–¹æ³•ä¸æ¨èä½¿ç”¨ï¼Œè¿™é‡Œåªæ˜¯ç”¨äºæµ‹è¯•ç”¨é€”ã€‚
 	*/
 	public void ma(){
 		System.out.println("In class A,just for test!");	

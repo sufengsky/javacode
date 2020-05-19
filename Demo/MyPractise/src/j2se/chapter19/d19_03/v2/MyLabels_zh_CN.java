@@ -6,11 +6,11 @@ public class MyLabels_zh_CN extends ListResourceBundle{
 		return  contents;
 	}
 	private static final Object[][] contents = {
-		{"title","ÎÒµÄ¹ú¼Ê»¯³ÌĞò"},
-		{"menu.file","ÎÄ¼ş"},
-		{"menu.edit","±à¼­"},
-		{"menu.help","°ïÖú"},
-		{"currentEnv","µ±Ç°ÓÃ»§»·¾³: "},
+		{"title","æˆ‘çš„å›½é™…åŒ–ç¨‹åº"},
+		{"menu.file","æ–‡ä»¶"},
+		{"menu.edit","ç¼–è¾‘"},
+		{"menu.help","å¸®åŠ©"},
+		{"currentEnv","å½“å‰ç”¨æˆ·ç¯å¢ƒ: "},
 		{"bgColor",Color.BLUE}
 	}; 
 }

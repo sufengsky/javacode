@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class TestConditionalOperator{
 	public static void main(String args[]){
 		Scanner scanner = new Scanner(System.in);
-		System.out.print("ÇëÊäÈë°Ù·ÖÖÆ³É¼¨£º");	
+		System.out.print("è¯·è¾“å…¥ç™¾åˆ†åˆ¶æˆç»©ï¼š");	
 		int score = scanner.nextInt();
-		String result = (score >= 60) ?	"¼°¸ñ" : "²»¼°¸ñ";
+		String result = (score >= 60) ?	"åŠæ ¼" : "ä¸åŠæ ¼";
 		System.out.println(result);	
 	}	
 }

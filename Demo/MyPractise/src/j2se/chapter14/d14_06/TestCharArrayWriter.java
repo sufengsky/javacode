@@ -16,9 +16,9 @@ public class TestCharArrayWriter{
 	 		//char[] ca = cw.toCharArray(); 
 	 		String info = cw.toString(); 
 	 		Date time = new Date();
-	 		//½«timeºÍinfoĞÅÏ¢Ğ´ÈëÊı¾İ¿â---	
-	 		System.out.println("³ö´íÊ±¼ä: " + time);
-	 		System.out.println("´íÎóĞÅÏ¢:\n" + info);
+	 		//å°†timeå’Œinfoä¿¡æ¯å†™å…¥æ•°æ®åº“---	
+	 		System.out.println("å‡ºé”™æ—¶é—´: " + time);
+	 		System.out.println("é”™è¯¯ä¿¡æ¯:\n" + info);
 		}			
 	}	
 }

@@ -19,6 +19,6 @@ public class Test{
 		final int i = 10;
 		final int j;
 		j = 20;
-		j = 30; //·Ç·¨
+		j = 30; //éæ³•
 	}
 }

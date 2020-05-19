@@ -35,7 +35,7 @@ public class EncodingConversion {
 			FileOutputStream fos = new FileOutputStream(file);
 			FileChannel fco = fos.getChannel();
 			
-			char[] chars = "hello,ÄãºÃ\nhaha!".toCharArray();
+			char[] chars = "hello,ä½ å¥½\nhaha!".toCharArray();
 			CharBuffer cb = CharBuffer.wrap(chars);
 			ByteBuffer bb = encoder.encode(cb);
 			fco.write(bb);

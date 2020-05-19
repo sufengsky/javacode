@@ -4,10 +4,10 @@ import java.awt.TextField;
 import java.awt.Color;
 
 public class TestOuterMonitor{
-	Frame f = new Frame("ÄÚ²¿Àà²âÊÔ");
+	Frame f = new Frame("å†…éƒ¨ç±»æµ‹è¯•");
 	TextField tf = new TextField(30);
 	public void work(){
-		f.add(new Label("Çë°´ÏÂÊó±ê×ó¼ü²¢ÍÏ¶¯"), "North");
+		f.add(new Label("è¯·æŒ‰ä¸‹é¼ æ ‡å·¦é”®å¹¶æ‹–åŠ¨"), "North");
 		f.add(tf, "South");
 		
 		OuterMonitor om = new OuterMonitor(tf);

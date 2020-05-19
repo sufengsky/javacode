@@ -3,7 +3,7 @@ class A {
 	public class B{
 		public void mb() {
 			s = 100;     
-			System.out.println("在内部类B中s=" + s);
+			System.out.println("鍦ㄥ唴閮ㄧ被B涓璼=" + s);
 		}
 	}
 	public void ma() {

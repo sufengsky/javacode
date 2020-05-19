@@ -2,17 +2,17 @@ public class TestContinueOuter{
 	public static void main(String args[]){
 		int n = 0;
 		outer:
-		for(int i=101;i<200;i+=2){   	   //Íâ²ãÑ­»·
-			for(int j=2; j<i;j++){         //ÄÚ²ãÑ­»·
+		for(int i=101;i<200;i+=2){   	   //å¤–å±‚å¾ªçŽ¯
+			for(int j=2; j<i;j++){         //å†…å±‚å¾ªçŽ¯
 				if(i%j==0)
-					continue outer;   	   //²»ÄÜÊ¹ÓÃ "break" ,ÎªÊ²Ã´£¿
+					continue outer;   	   //ä¸èƒ½ä½¿ç”¨ "break" ,ä¸ºä»€ä¹ˆï¼Ÿ
 			}
 			
 			System.out.print(i + "\t");
 			n++;                 
 			if(n<6 )
 				continue;
-			System.out.println(); 	   	   //Êä³öÁù¸öÊý¾Ýºó»»ÐÐ
+			System.out.println(); 	   	   //è¾“å‡ºå…­ä¸ªæ•°æ®åŽæ¢è¡Œ
 			n = 0;  
 		}
 	}

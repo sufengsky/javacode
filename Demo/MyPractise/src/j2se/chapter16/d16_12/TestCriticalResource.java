@@ -31,6 +31,6 @@ class Runner2 implements Runnable{
 		this.s = s;
 	}
 	public void run(){
-		System.out.print("**µ¯³ö" + s.pop() + "**");
+		System.out.print("**å¼¹å‡º" + s.pop() + "**");
 	}	
 }

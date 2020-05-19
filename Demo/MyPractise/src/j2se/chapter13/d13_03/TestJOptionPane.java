@@ -3,7 +3,7 @@ import java.awt.event.*;
 import javax.swing.*;
 
 public class TestJOptionPane implements ActionListener{
-	private JFrame jf = new JFrame("±ê×¼¶Ô»°¿ò²âÊÔ");
+	private JFrame jf = new JFrame("æ ‡å‡†å¯¹è¯æ¡†æµ‹è¯•");
 	
 	public static void main(String[] args){
 		new TestJOptionPane().createUI();
@@ -11,7 +11,7 @@ public class TestJOptionPane implements ActionListener{
 	public void createUI(){
 		JToolBar jtb = new JToolBar();
 		
-		String[] s = {"´íÎó","ÍË³öÈ·ÈÏ1","ÍË³öÈ·ÈÏ2","¾¯¸æ","ÊäÈë","Ñ¡Ôñ"};
+		String[] s = {"é”™è¯¯","é€€å‡ºç¡®è®¤1","é€€å‡ºç¡®è®¤2","è­¦å‘Š","è¾“å…¥","é€‰æ‹©"};
 		int size = s.length;
 		JButton[] button = new JButton[size]; 
 		for(int i=0;i<size;i++){
@@ -27,45 +27,45 @@ public class TestJOptionPane implements ActionListener{
 	}
 	public void actionPerformed(ActionEvent e){
 		String s = e.getActionCommand();
-		if(s.equals("´íÎó")){
-			JOptionPane.showMessageDialog(null, "ÒªÏÔÊ¾µÄ´íÎóĞÅÏ¢---",
-			"´íÎóÌáÊ¾", JOptionPane.ERROR_MESSAGE);	
-		}else if(s.equals("ÍË³öÈ·ÈÏ1")){
+		if(s.equals("é”™è¯¯")){
+			JOptionPane.showMessageDialog(null, "è¦æ˜¾ç¤ºçš„é”™è¯¯ä¿¡æ¯---",
+			"é”™è¯¯æç¤º", JOptionPane.ERROR_MESSAGE);	
+		}else if(s.equals("é€€å‡ºç¡®è®¤1")){
 			int result = JOptionPane.showConfirmDialog(null, 
-				"ÄúÕæµÄÒªÍË³ö³ÌĞòÂğ?", "ÇëÈ·ÈÏ", JOptionPane.YES_NO_OPTION);		
+				"æ‚¨çœŸçš„è¦é€€å‡ºç¨‹åºå—?", "è¯·ç¡®è®¤", JOptionPane.YES_NO_OPTION);		
 			if(result == JOptionPane.OK_OPTION){
 				System.exit(0);	
 			}
-		}else if(s.equals("ÍË³öÈ·ÈÏ2")){
+		}else if(s.equals("é€€å‡ºç¡®è®¤2")){
 			int result = JOptionPane.showConfirmDialog(null, 
-				"ÍË³öÇ°ÊÇ·ñ±£´æ³ÌĞò?");		
+				"é€€å‡ºå‰æ˜¯å¦ä¿å­˜ç¨‹åº?");		
 			if(result == JOptionPane.YES_OPTION){
-				System.out.println("±£´æ³ÌĞò---");
+				System.out.println("ä¿å­˜ç¨‹åº---");
 				System.exit(0);	
 			}else if(result == JOptionPane.NO_OPTION){
 				System.exit(0);	
 			}
-		}else if(s.equals("¾¯¸æ")){
-			Object[] options = { "¼ÌĞø", "³·Ïû" };
+		}else if(s.equals("è­¦å‘Š")){
+			Object[] options = { "ç»§ç»­", "æ’¤æ¶ˆ" };
 			int result = JOptionPane.showOptionDialog(null, 
-				"±¾²Ù×÷¿ÉÄÜµ¼ÖÂÊı¾İ¶ªÊ§", "Warning", JOptionPane.DEFAULT_OPTION, 
+				"æœ¬æ“ä½œå¯èƒ½å¯¼è‡´æ•°æ®ä¸¢å¤±", "Warning", JOptionPane.DEFAULT_OPTION, 
 				JOptionPane.WARNING_MESSAGE,null, options, options[0]);
 			if(result == 0){
-				System.out.println("¼ÌĞø²Ù×÷---");
+				System.out.println("ç»§ç»­æ“ä½œ---");
 			}
-		}else if(s.equals("ÊäÈë")){
-			String name = JOptionPane.showInputDialog("ÇëÊäÈëÄúµÄĞÕÃû£º");
+		}else if(s.equals("è¾“å…¥")){
+			String name = JOptionPane.showInputDialog("è¯·è¾“å…¥æ‚¨çš„å§“åï¼š");
 			if(name != null){	
-				System.out.println("ĞÕÃû£º" + name);
+				System.out.println("å§“åï¼š" + name);
 			}	
-		}else if(s.equals("Ñ¡Ôñ")){
-			Object[] possibleValues = { "ÌåÓı", "ÕşÖÎ", "¾­¼Ã","ÎÄ»¯" };
+		}else if(s.equals("é€‰æ‹©")){
+			Object[] possibleValues = { "ä½“è‚²", "æ”¿æ²»", "ç»æµ","æ–‡åŒ–" };
 			Object selectedValue = JOptionPane.showInputDialog(null, 
 				"Choose one", "Input",JOptionPane.INFORMATION_MESSAGE, null,
 				possibleValues, possibleValues[0]);
 			String result = (String)selectedValue;
 			if(result != null){
-				System.out.println("ÄãÑ¡ÔñµÄÊÇ£º" + result);
+				System.out.println("ä½ é€‰æ‹©çš„æ˜¯ï¼š" + result);
 			}
 		}		
 	}

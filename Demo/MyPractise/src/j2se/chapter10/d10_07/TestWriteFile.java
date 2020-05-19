@@ -8,12 +8,12 @@ public class TestWriteFile{
 			BufferedReader in=new BufferedReader(is);
 			PrintWriter out  = new PrintWriter(new FileWriter(file));
 			String s = in.readLine();
-			while (!s.equals("")) {// ´Ó¼üÅÌÖğĞĞ¶ÁÈëÊı¾İÊä³öµ½ÎÄ¼ş
+			while (!s.equals("")) {// ä»é”®ç›˜é€è¡Œè¯»å…¥æ•°æ®è¾“å‡ºåˆ°æ–‡ä»¶
 				out.println(s);
 				s = in.readLine();
 			}
-			in.close();   // ¹Ø±ÕBufferedReaderÊäÈëÁ÷.		     
-			out.close();  // ¹Ø±ÕÁ¬½ÓÎÄ¼şµÄPrintWriterÊä³öÁ÷.
+			in.close();   // å…³é—­BufferedReaderè¾“å…¥æµ.		     
+			out.close();  // å…³é—­è¿æ¥æ–‡ä»¶çš„PrintWriterè¾“å‡ºæµ.
 		}catch (IOException e) {
 			e.printStackTrace();  
 		}

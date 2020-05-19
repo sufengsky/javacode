@@ -15,6 +15,6 @@ public class Person{
 			} 	
 		}
 		B b = new B();
-		System.out.println("您的本次薪酬: " + d + "\n    免税额度: " + free+"\n    应纳税额: " + b.tax(d));			
+		System.out.println("鎮ㄧ殑鏈钖叕: " + d + "\n    鍏嶇◣棰濆害: " + free+"\n    搴旂撼绋庨: " + b.tax(d));			
 	}
 }

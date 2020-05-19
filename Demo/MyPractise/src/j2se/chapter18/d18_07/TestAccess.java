@@ -8,9 +8,9 @@ public class TestAccess{
 			Statement stmt = con.createStatement();
 			ResultSet rs   = stmt.executeQuery("select * from table1");			    
 			while(rs.next()){
-					System.out.print("±àºÅ:" + rs.getString(1));
-					System.out.print("\tĞÕÃû:" + rs.getString(2));
-					System.out.print("\tĞÔ±ğ:" + rs.getString(3));
+					System.out.print("ç¼–å·:" + rs.getString(1));
+					System.out.print("\tå§“å:" + rs.getString(2));
+					System.out.print("\tæ€§åˆ«:" + rs.getString(3));
 					System.out.println();
 			}
 			rs.close();

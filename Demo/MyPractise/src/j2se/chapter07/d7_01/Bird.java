@@ -1,9 +1,9 @@
 public class Bird extends Animal{
 	public void eat(){
-		System.out.println("直接吞食!");	
+		System.out.println("鐩存帴鍚為!");	
 	}
 	public void fly(){
 		//---
-		System.out.println("我心飞翔!");	
+		System.out.println("鎴戝績椋炵繑!");	
 	}
 }

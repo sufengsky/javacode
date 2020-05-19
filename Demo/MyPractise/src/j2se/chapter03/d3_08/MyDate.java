@@ -1,3 +1,5 @@
+package j2se.chapter03.d3_08;
+
 public class MyDate{
 	private int day = 17;
 	private int month = 2;

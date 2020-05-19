@@ -12,7 +12,7 @@ public class SaveClob{
 			String sql = "insert into book_list values(?,?,?)";
 			stmt=conn.prepareStatement(sql);
 			stmt.setString(1,"b001");
-			stmt.setString(2,"99¸ö¼òµ¥·¨Ôò");
+			stmt.setString(2,"99ä¸ªç®€å•æ³•åˆ™");
 			BufferedReader br = new BufferedReader(new FileReader("a.txt"));
 			StringBuffer sb = new StringBuffer();
 			String s;

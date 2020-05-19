@@ -1,3 +1,5 @@
+package j2se.chapter03.d3_08;
+
 public class TestReferenceType{
 	public static void main(String args[]){
 		MyDate d1;

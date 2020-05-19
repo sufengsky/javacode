@@ -18,8 +18,8 @@ public class JDBC_ODBC{
 	    
 		    Statement stmt=con.createStatement();
 		    ResultSet rs=stmt.executeQuery("select * from [Sheet1$]");
-			System.out.println("¼ÇÂ¼ÄÚÈİ£º");
-			System.out.println("\tĞÕ  Ãû\tÄêÁä\tÔÂ  Ğ½\tÖ°  Îñ" );
+			System.out.println("è®°å½•å†…å®¹ï¼š");
+			System.out.println("\tå§“  å\tå¹´é¾„\tæœˆ  è–ª\tèŒ  åŠ¡" );
 		    while(rs.next()){
 				System.out.print("\t" + rs.getString(1));
 				System.out.print("\t" + rs.getInt(2));	

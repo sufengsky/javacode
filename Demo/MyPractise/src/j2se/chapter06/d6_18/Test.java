@@ -9,13 +9,13 @@ class A{
 
 class B extends A{
 	public void m1(double d){
-		System.out.println("ÖØÔØ·½·¨ m1,Êı¾İÖµÎª£º" + d);	
+		System.out.println("é‡è½½æ–¹æ³• m1,æ•°æ®å€¼ä¸ºï¼š" + d);	
 	}
 	public void m2(int k){
-		System.out.println("ÖØĞ´·½·¨m2£¬Êı¾İÖµÎª£º" + k);	
+		System.out.println("é‡å†™æ–¹æ³•m2ï¼Œæ•°æ®å€¼ä¸ºï¼š" + k);	
 	}
 	/*
-	public int m1(int m){		//·Ç·¨£¬¼È·ÇÖØÔØ¡¢Òà·ÇÖØĞ´
+	public int m1(int m){		//éæ³•ï¼Œæ—¢éé‡è½½ã€äº¦éé‡å†™
 		System.out.print("haha!");	
 	}
 	*/

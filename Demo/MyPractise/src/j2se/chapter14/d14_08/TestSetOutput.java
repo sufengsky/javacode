@@ -27,16 +27,16 @@ public class TestSetOutput{
 				s = br.readLine();
 			}
 		}catch(Exception e){
-			System.err.println("出错时间: " + new Date());
-			System.err.print("错误信息:");
+			System.err.println("鍑洪敊鏃堕棿: " + new Date());
+			System.err.print("閿欒淇℃伅:");
 			e.printStackTrace(System.err);	
 		}finally{
 			try{
 				ps.close();
 				ps_error.close();
 			}catch(Exception e1){
-				System.err.println("出错时间: " + new Date());
-				System.err.print("错误信息:");
+				System.err.println("鍑洪敊鏃堕棿: " + new Date());
+				System.err.print("閿欒淇℃伅:");
 				e1.printStackTrace(System.err);	
 			}	
 		}

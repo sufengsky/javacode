@@ -29,10 +29,10 @@ public class TestFileLock implements ActionListener{
 	public void init(){
 		frame = new Frame("My Notepad");
 		MenuBar mb = new MenuBar();
-		Menu file = new Menu("ÎÄ¼ş");
-		Menu help = new Menu("°ïÖú");
-		MenuItem open = new MenuItem("´ò¿ª");
-		save = new MenuItem("±£´æ");
+		Menu file = new Menu("æ–‡ä»¶");
+		Menu help = new Menu("å¸®åŠ©");
+		MenuItem open = new MenuItem("æ‰“å¼€");
+		save = new MenuItem("ä¿å­˜");
 		save.setEnabled(false);
 		file.add(open);
 		file.add(save);
@@ -51,8 +51,8 @@ public class TestFileLock implements ActionListener{
 		frame.setSize(600,400);
 		frame.setLocation(300,100);
 		frame.setVisible( true);		
-		fd_load = new FileDialog(frame,"´ò¿ªÎÄ¼ş",FileDialog.LOAD);
-		fd_save = new FileDialog(frame,"±£´æÎÄ¼ş",FileDialog.SAVE);
+		fd_load = new FileDialog(frame,"æ‰“å¼€æ–‡ä»¶",FileDialog.LOAD);
+		fd_save = new FileDialog(frame,"ä¿å­˜æ–‡ä»¶",FileDialog.SAVE);
 		
 		Charset charset = Charset.forName(System.getProperty("file.encoding"));
 		encoder = charset.newEncoder();
@@ -61,7 +61,7 @@ public class TestFileLock implements ActionListener{
 
 	public void actionPerformed(ActionEvent e){
 		String s = e.getActionCommand();
-		if(s.equals("´ò¿ª")){
+		if(s.equals("æ‰“å¼€")){
 			fd_load.setVisible(true);
 			String d = fd_load.getDirectory();
 			String f = fd_load.getFile();
@@ -75,7 +75,7 @@ public class TestFileLock implements ActionListener{
 					this.loadFile();
 				}	
 			}
-		}else if(s.equals("±£´æ")){
+		}else if(s.equals("ä¿å­˜")){
 			this.saveFile();
 		}
 	}	
@@ -87,8 +87,8 @@ public class TestFileLock implements ActionListener{
 			if(flock == null){
 				ta.setText("");
 				JOptionPane.showMessageDialog(null, 
-					"ÎÄ¼şÕıÔÚÊ¹ÓÃÖĞ£¬ÎŞ·¨ÒÔ¶ÀÕ¼µÄ·½Ê½´ò¿ª£¡",
-					"´íÎóÌáÊ¾", JOptionPane.ERROR_MESSAGE);	
+					"æ–‡ä»¶æ­£åœ¨ä½¿ç”¨ä¸­ï¼Œæ— æ³•ä»¥ç‹¬å çš„æ–¹å¼æ‰“å¼€ï¼",
+					"é”™è¯¯æç¤º", JOptionPane.ERROR_MESSAGE);	
 				file = "";
 				raf.close();
 				raf = null;

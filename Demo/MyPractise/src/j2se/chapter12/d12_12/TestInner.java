@@ -7,10 +7,10 @@ import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 
 public class TestInner {
-	Frame f = new Frame("ÄÚ²¿Àà²âÊÔ");
+	Frame f = new Frame("å†…éƒ¨ç±»æµ‹è¯•");
 	TextField tf = new TextField(30);
 	public TestInner(){
-		f.add(new Label("Çë°´ÏÂÊó±ê×ó¼ü²¢ÍÏ¶¯"), "North");
+		f.add(new Label("è¯·æŒ‰ä¸‹é¼ æ ‡å·¦é”®å¹¶æ‹–åŠ¨"), "North");
 		f.add(tf, "South");
 		
 		InnerMonitor im = new InnerMonitor();
@@ -26,17 +26,17 @@ public class TestInner {
 	
 	private class InnerMonitor implements MouseMotionListener,MouseListener {
 		public void mouseDragged(MouseEvent e) {
-			String s = "Êó±êÍÏ¶¯µ½Î»ÖÃ£¨" + e.getX() + "," + e.getY() + ")";
+			String s = "é¼ æ ‡æ‹–åŠ¨åˆ°ä½ç½®ï¼ˆ" + e.getX() + "," + e.getY() + ")";
 			tf.setText(s);
 		}
 		
 		public void mouseEntered(MouseEvent e) {
-			String s = "Êó±êÒÑ½øÈë´°Ìå";
+			String s = "é¼ æ ‡å·²è¿›å…¥çª—ä½“";
 			tf.setText(s);
 		}
 		
 		public void mouseExited(MouseEvent e) {
-			String s = "Êó±êÒÑÒÆ³ö´°Ìå";
+			String s = "é¼ æ ‡å·²ç§»å‡ºçª—ä½“";
 			tf.setText(s);
 		}
 		public void mouseMoved(MouseEvent e) { }

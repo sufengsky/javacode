@@ -4,7 +4,7 @@ public class TestLength{
 		friends[0] = "Tom";
 		friends[1] = "Billy";
 		friends[2] = "Kity";
-		//friends[3] = "Nancy";		//·Ç·¨£¬Êı×éÏÂ±êÔ½½ç
+		//friends[3] = "Nancy";		//éæ³•ï¼Œæ•°ç»„ä¸‹æ ‡è¶Šç•Œ
 		new TestLength().show(friends);
 	}
 	

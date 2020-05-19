@@ -9,10 +9,10 @@ public class TestHashSet{
 		h.add("2nd");
 		h.add(new Integer(3));
 		h.add(new Double(4.0));
-		h.add("2nd");      	// ÖØ¸´ÔªËØ, Î´±»¼ÓÈë
-		h.add(new Integer(3)); 	// ÖØ¸´ÔªËØ,Î´±»¼ÓÈë
+		h.add("2nd");      	// é‡å¤å…ƒç´ , æœªè¢«åŠ å…¥
+		h.add(new Integer(3)); 	// é‡å¤å…ƒç´ ,æœªè¢«åŠ å…¥
 		h.add(new Date()); 
-		System.out.println("¿ªÊ¼: size=" + h.size());
+		System.out.println("å¼€å§‹: size=" + h.size());
 		Iterator it = h.iterator();
 		while(it.hasNext()){
 			Object o = it.next();
@@ -20,7 +20,7 @@ public class TestHashSet{
 		}
 		
 		h.remove("2nd");
-		System.out.println("ÒÆ³ıÔªËØºó: size=" + h.size());
+		System.out.println("ç§»é™¤å…ƒç´ å: size=" + h.size());
 		System.out.println(h);
 	}
 }

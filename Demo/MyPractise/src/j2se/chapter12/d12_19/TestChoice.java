@@ -11,44 +11,44 @@ public class TestChoice implements ItemListener,ActionListener{
 	}
 	
 	public void createUI(){
-		Frame f = new Frame("×¢²á´°¿Ú");
+		Frame f = new Frame("æ³¨å†Œçª—å£");
 		Panel p = new Panel();
 		p.setLayout(new FlowLayout(FlowLayout.LEFT,1,1));
 		
 		name = new TextField(10);
 		cg = new CheckboxGroup();
-		Checkbox sex1 = new Checkbox("ÄĞ",cg,false);
-		Checkbox sex2 = new Checkbox("Å®",cg,false);
+		Checkbox sex1 = new Checkbox("ç”·",cg,false);
+		Checkbox sex2 = new Checkbox("å¥³",cg,false);
 		Panel sp = new Panel();
 		sp.add(sex1);
 		sp.add(sex2);
 		career = new Choice();
-		career.add("IT¼¼ÊõÈËÔ±");
-		career.add("¹¤ÉÌ¹ÜÀí");
-		career.add("½ÌÓı");
-		career.add("½ğÈÚ");
+		career.add("ITæŠ€æœ¯äººå‘˜");
+		career.add("å·¥å•†ç®¡ç†");
+		career.add("æ•™è‚²");
+		career.add("é‡‘è");
 		city = new List(4,false);
-		city.add("±±¾©");
-		city.add("ÉÏº£");
-		city.add("Ìì½ò");
-		city.add("¹ãÖİ");
-		city.add("Ì«Ô­");
-		city.add("Ê¯¼Ò×¯");
-		city.add("¹ş¶û±õ");
-		city.add("ÈıÑÇ");
-		city.add("Íşº£");
+		city.add("åŒ—äº¬");
+		city.add("ä¸Šæµ·");
+		city.add("å¤©æ´¥");
+		city.add("å¹¿å·");
+		city.add("å¤ªåŸ");
+		city.add("çŸ³å®¶åº„");
+		city.add("å“ˆå°”æ»¨");
+		city.add("ä¸‰äºš");
+		city.add("å¨æµ·");
 		
-		p.add(new Label("ĞÕÃû:"));
+		p.add(new Label("å§“å:"));
 		p.add(name);
-		p.add(new Label("ĞÔ±ğ:"));
+		p.add(new Label("æ€§åˆ«:"));
 		p.add(sp);
-		p.add(new Label("Ö°Òµ:"));
+		p.add(new Label("èŒä¸š:"));
 		p.add(career);
-		p.add(new Label("³ÇÊĞ:"));
+		p.add(new Label("åŸå¸‚:"));
 		p.add(city);
-		p.add(new Label("°®ºÃ:"));
+		p.add(new Label("çˆ±å¥½:"));
 
-		String[] sf = {"ÂÃÓÎ","¶ÁÊé","Ê±×°","Æû³µ","½¡ÃÀ"};
+		String[] sf = {"æ—…æ¸¸","è¯»ä¹¦","æ—¶è£…","æ±½è½¦","å¥ç¾"};
 		favorite = new Checkbox[sf.length];
 		for(int i=0;i<sf.length;i++){
 			favorite[i] = new Checkbox(sf[i]);
@@ -59,8 +59,8 @@ public class TestChoice implements ItemListener,ActionListener{
 
 		Panel psouth = new Panel();
 		psouth.setLayout(new GridLayout(1,2));
-		Button submit = new Button("Ìá½»");
-		Button reset = new Button("ÍË³ö");		
+		Button submit = new Button("æäº¤");
+		Button reset = new Button("é€€å‡º");		
 		submit.addActionListener(this);
 		reset.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e){
@@ -83,18 +83,18 @@ public class TestChoice implements ItemListener,ActionListener{
 	public void itemStateChanged(ItemEvent e){
 		String s = e.getItem().toString();
 		if(e.getStateChange() == ItemEvent.SELECTED){
-			System.out.println("Äú¸ÕÑ¡ÖĞÁËÏîÄ¿£º" + s);	
+			System.out.println("æ‚¨åˆšé€‰ä¸­äº†é¡¹ç›®ï¼š" + s);	
 		}else{
-			System.out.println("Äú¸ÕÈ¡ÏûÁËÏîÄ¿£º" + s);	
+			System.out.println("æ‚¨åˆšå–æ¶ˆäº†é¡¹ç›®ï¼š" + s);	
 		}		
 	}
 	public void actionPerformed(ActionEvent e){
-		if(e.getActionCommand().equals("Ìá½»")){
-			String info = "ÄúÌá½»µÄĞÅÏ¢ÈçÏÂ£º\nĞÕÃû:" + name.getText() + 
-				"\nĞÔ±ğ:" + cg.getSelectedCheckbox().getLabel() + 
-				"\nÖ°Òµ:" + career.getSelectedItem() + 	
-				"\n³ÇÊĞ:" + city.getSelectedItem() + 	
-				"\n°®ºÃ:" ;
+		if(e.getActionCommand().equals("æäº¤")){
+			String info = "æ‚¨æäº¤çš„ä¿¡æ¯å¦‚ä¸‹ï¼š\nå§“å:" + name.getText() + 
+				"\næ€§åˆ«:" + cg.getSelectedCheckbox().getLabel() + 
+				"\nèŒä¸š:" + career.getSelectedItem() + 	
+				"\nåŸå¸‚:" + city.getSelectedItem() + 	
+				"\nçˆ±å¥½:" ;
 			for(Checkbox f:favorite){
 				info += f.getState()?(f.getLabel() + ". "):"";	
 			}

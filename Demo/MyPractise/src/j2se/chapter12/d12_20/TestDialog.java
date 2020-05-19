@@ -11,18 +11,18 @@ public class TestDialog implements ActionListener{
 	}
 	
 	public void init(){
-		Frame f = new Frame("×¢²á´°¿Ú");
-		Button login = new Button("µÇÂ¼");
-		Button regist = new Button("×¢²á");
-		Button help = new Button("°ïÖú");
-		Button exit = new Button("ÍË³ö");
+		Frame f = new Frame("æ³¨å†Œçª—å£");
+		Button login = new Button("ç™»å½•");
+		Button regist = new Button("æ³¨å†Œ");
+		Button help = new Button("å¸®åŠ©");
+		Button exit = new Button("é€€å‡º");
 		Panel p = new Panel();
 		p.setLayout(new GridLayout(1,4));		
 		p.add(login);
 		p.add(regist);
 		p.add(help);
 		p.add(exit);
-		info = new Label("ÄúÉĞÎ´µÇÂ¼");
+		info = new Label("æ‚¨å°šæœªç™»å½•");
 		f.add(p,"North");		
 		f.add(info,"Center");
 		
@@ -41,13 +41,13 @@ public class TestDialog implements ActionListener{
 	}
 	
 	public Dialog createLoginDialog(Frame f){
-		Dialog d = new Dialog(f,"µÇÂ¼¶Ô»°¿ò",true);
-		Label note = new Label("ÇëÊäÈë×¢²áĞÅÏ¢");
+		Dialog d = new Dialog(f,"ç™»å½•å¯¹è¯æ¡†",true);
+		Label note = new Label("è¯·è¾“å…¥æ³¨å†Œä¿¡æ¯");
 		
 		Panel pa = new Panel();
 		pa.setLayout(new GridLayout(2,1));
-		pa.add(new Label("ÓÃ»§Ãû:"));		
-		pa.add(new Label("ÃÜ  Âë:"));	
+		pa.add(new Label("ç”¨æˆ·å:"));		
+		pa.add(new Label("å¯†  ç :"));	
 		
 		Panel pc = new Panel();	
 		pc.setLayout(new GridLayout(2,1));
@@ -59,8 +59,8 @@ public class TestDialog implements ActionListener{
 		
 		Panel pb = new Panel();
 		pb.setLayout(new GridLayout(1,2));
-		Button submit = new Button("Ìá½»");	
-		Button cancel = new Button("È¡Ïû");	
+		Button submit = new Button("æäº¤");	
+		Button cancel = new Button("å–æ¶ˆ");	
 		submit.setActionCommand("submitLogin");
 		cancel.setActionCommand("cancelLogin");
 		submit.addActionListener(this);
@@ -78,12 +78,12 @@ public class TestDialog implements ActionListener{
 	}
 	
 	public Dialog createQuitDialog(Frame f){
-		Dialog d = new Dialog(f,"È·ÈÏÍË³ö¶Ô»°¿ò",true);
-		Label note = new Label("ÄúÈ·¶¨ÒªÍË³ö³ÌĞòÂğ£¿");
+		Dialog d = new Dialog(f,"ç¡®è®¤é€€å‡ºå¯¹è¯æ¡†",true);
+		Label note = new Label("æ‚¨ç¡®å®šè¦é€€å‡ºç¨‹åºå—ï¼Ÿ");
 		Panel p = new Panel();
 		//p.setLayout(new GridLayout(1,2));
-		Button confirm = new Button("È·¶¨");	
-		Button cancel = new Button("È¡Ïû");	
+		Button confirm = new Button("ç¡®å®š");	
+		Button cancel = new Button("å–æ¶ˆ");	
 		confirm.setActionCommand("confirmQuit");
 		cancel.setActionCommand("cancelQuit");
 		confirm.addActionListener(this);
@@ -99,9 +99,9 @@ public class TestDialog implements ActionListener{
 	
 	public void actionPerformed(ActionEvent e){
 		String s = e.getActionCommand();
-		if(s.equals("µÇÂ¼")){
+		if(s.equals("ç™»å½•")){
 			loginDialog.setVisible(true);
-		}else if(s.equals("ÍË³ö")){
+		}else if(s.equals("é€€å‡º")){
 			this.quit();	
 		}else if(s.equals("confirmQuit")){
 			System.exit(0);	
@@ -111,9 +111,9 @@ public class TestDialog implements ActionListener{
 			String name = tf_name.getText();
 			String password = tf_psw.getText();
 			if(name.equals("Scott") && password.equals("Tiger")){
-				info.setText("»¶Ó­Äú: " + name + " ÓÃ»§");	
+				info.setText("æ¬¢è¿æ‚¨: " + name + " ç”¨æˆ·");	
 			}else{
-				info.setText("ÑéÖ¤Ê§°Ü£¬´íÎóµÄÓÃ»§Ãû/ÃÜÂë!");	
+				info.setText("éªŒè¯å¤±è´¥ï¼Œé”™è¯¯çš„ç”¨æˆ·å/å¯†ç !");	
 			}
 			loginDialog.setVisible(false);	
 		}else if(s.equals("cancelLogin")){

@@ -1,3 +1,5 @@
+package j2se.chapter03.d3_05;
+
 public class TestFloatingPointNumber{
 	public static void main(String[] args){
 		double d1 = 15000.34;

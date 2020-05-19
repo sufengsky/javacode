@@ -1,12 +1,12 @@
 class Tool{
 	public void display(int i){
-		System.out.println("Êä³öÕûÊı£º" + i);
+		System.out.println("è¾“å‡ºæ•´æ•°ï¼š" + i);
 	}
 	public void display(double d){
-		System.out.println("Êä³ö·ûµãÊı£º" + d);
+		System.out.println("è¾“å‡ºç¬¦ç‚¹æ•°ï¼š" + d);
 	}
 	public void display(String s){
-		System.out.println("Êä³öÎÄ±¾£º" + s);
+		System.out.println("è¾“å‡ºæ–‡æœ¬ï¼š" + s);
 	}		
 }
 
@@ -15,6 +15,6 @@ public class TestOverLoad{
 		Tool t = new Tool();
 		t.display(3);
 		t.display(3.14);
-		t.display("Hello,ÄãºÃ£¡");	
+		t.display("Hello,ä½ å¥½ï¼");	
 	}	
 }

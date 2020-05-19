@@ -1,13 +1,13 @@
 public class Test{
 	public static void main(String[] args){
 		Person<String> p1 = new Person<String>(101);
-		p1.setSsecrecy("Ö¥Âé¿ªÃÅ");		
+		p1.setSsecrecy("èŠéº»å¼€é—¨");		
 		String s = p1.getSecrecy();
-		System.out.println(p1.getId() + "\tÃÜÂëÊÇ:" + s);
+		System.out.println(p1.getId() + "\tå¯†ç æ˜¯:" + s);
 		
 		Person<Double> p2 = new Person<Double>(102);
 		p2.setSsecrecy(8700.45);
 		double money = p2.getSecrecy();
-		System.out.println(p2.getId() + "\tÃØÃÜ×Ê½ğÊı¶î:" + money);
+		System.out.println(p2.getId() + "\tç§˜å¯†èµ„é‡‘æ•°é¢:" + money);
 	}
 }

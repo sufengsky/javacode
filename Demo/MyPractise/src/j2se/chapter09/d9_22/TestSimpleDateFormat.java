@@ -15,7 +15,7 @@ public class TestSimpleDateFormat{
 		SimpleDateFormat sdf4 = new SimpleDateFormat(
 			"yyyy/MM/dd hh:mm:ss E a z",locale2);
 		SimpleDateFormat sdf5 = new SimpleDateFormat(
-			"yyyyÄêMMÔÂddÈÕ E a HHµãmm·ÖssÃë");
+			"yyyyå¹´MMæœˆddæ—¥ E a HHç‚¹mmåˆ†ssç§’");
 		SimpleDateFormat sdf6 = new SimpleDateFormat(
 			"'On 'yyyy-MM-dd HH' 0''clock,We tested it.'");
 		
@@ -30,7 +30,7 @@ public class TestSimpleDateFormat{
 		try{
 			d = sdf2.parse("2008/08/08 17:23:45");
 			System.out.println(d);
-			d = sdf5.parse("2007Äê04ÔÂ17ÈÕ ĞÇÆÚ¶ş ÉÏÎç 10µã02·Ö54Ãë");
+			d = sdf5.parse("2007å¹´04æœˆ17æ—¥ æ˜ŸæœŸäºŒ ä¸Šåˆ 10ç‚¹02åˆ†54ç§’");
 			System.out.println(d);
 		}catch(java.text.ParseException e){
 			e.printStackTrace();	

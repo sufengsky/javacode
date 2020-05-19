@@ -14,11 +14,11 @@ public class TestFileDialog implements ActionListener{
 	public void init(){
 		frame = new Frame("My Notepad");
 		MenuBar mb = new MenuBar();
-		Menu file = new Menu("ÎÄ¼ş");
-		Menu help = new Menu("°ïÖú");
-		MenuItem open = new MenuItem("´ò¿ª");
-		MenuItem save = new MenuItem("±£´æ");
-		MenuItem saveAs = new MenuItem("Áí´æÎª");		
+		Menu file = new Menu("æ–‡ä»¶");
+		Menu help = new Menu("å¸®åŠ©");
+		MenuItem open = new MenuItem("æ‰“å¼€");
+		MenuItem save = new MenuItem("ä¿å­˜");
+		MenuItem saveAs = new MenuItem("å¦å­˜ä¸º");		
 		file.add(open);
 		file.add(save);
 		file.add(saveAs);
@@ -38,13 +38,13 @@ public class TestFileDialog implements ActionListener{
 		frame.setSize(400,200);
 		frame.setLocation(450,200);
 		frame.setVisible( true);		
-		fd_load = new FileDialog(frame,"´ò¿ªÎÄ¼ş",FileDialog.LOAD);
-		fd_save = new FileDialog(frame,"±£´æÎÄ¼ş",FileDialog.SAVE);
+		fd_load = new FileDialog(frame,"æ‰“å¼€æ–‡ä»¶",FileDialog.LOAD);
+		fd_save = new FileDialog(frame,"ä¿å­˜æ–‡ä»¶",FileDialog.SAVE);
 	}
 
 	public void actionPerformed(ActionEvent e){
 		String s = e.getActionCommand();
-		if(s.equals("´ò¿ª")){
+		if(s.equals("æ‰“å¼€")){
 			fd_load.setVisible(true);
 			String d = fd_load.getDirectory();
 			String f = fd_load.getFile();
@@ -52,13 +52,13 @@ public class TestFileDialog implements ActionListener{
 				file = d + f;
 				this.loadFile();	
 			}
-		}else if(s.equals("±£´æ")){
+		}else if(s.equals("ä¿å­˜")){
 			if((file==null) || file.equals("")){
 				this.saveFileAs();
 			}else{
 				this.saveFile();
 			}
-		}else if(s.equals("Áí´æÎª")){
+		}else if(s.equals("å¦å­˜ä¸º")){
 			this.saveFileAs();
 		}
 	}	

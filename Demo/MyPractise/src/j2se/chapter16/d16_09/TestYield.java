@@ -27,6 +27,6 @@ class MyThread extends Thread{
 			System.out.print(this.getName() + ": " + i + "\t");
 		}
 		long end = new Date().getTime();
-		System.out.println("\n" + this.getName() + "Ö´ÐÐÊ±¼ä: " + (end - start) + "ºÁÃë");
+		System.out.println("\n" + this.getName() + "æ‰§è¡Œæ—¶é—´: " + (end - start) + "æ¯«ç§’");
 	}
 }

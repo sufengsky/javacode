@@ -7,12 +7,12 @@ public class TestPlaceholder{
 	private static int num = 10000;
 	public static void main(String args[]){	
 		TestPlaceholder tmf = new TestPlaceholder();
-		System.out.print("ÇëÊäÈëÄúµÄĞÕÃû:");
+		System.out.print("è¯·è¾“å…¥æ‚¨çš„å§“å:");
 		String userName = new Scanner(System.in).next();
 		System.out.println(tmf.formatMsg(userName));
 	}
 	public String formatMsg(String name){	
-		String msg = "{0},ÄúºÃ! ÄúÊÇµÚ{1}Î»·Ã¿Í,½ñÌìÊÇ{2,date,medium},µ±Ç°Ê±¼ä{2,time,short}";
+		String msg = "{0},æ‚¨å¥½! æ‚¨æ˜¯ç¬¬{1}ä½è®¿å®¢,ä»Šå¤©æ˜¯{2,date,medium},å½“å‰æ—¶é—´{2,time,short}";
 		Locale locale = Locale.getDefault();
 		MessageFormat mf = new MessageFormat(msg,locale);
 		Object[] msgArgs = {name,++num,new Date()};

@@ -2,8 +2,8 @@ import java.util.Scanner;
 public class TestThrowException{
 	public static void main(String[] args){
 		TestThrowException t = new TestThrowException();
-		System.out.print("ÇëÊäÈëÄúµÄÄêÁä£º");
-		System.out.println("ÄúµÄÄêÁä£º" + t.inputAge());
+		System.out.print("è¯·è¾“å…¥æ‚¨çš„å¹´é¾„ï¼š");
+		System.out.println("æ‚¨çš„å¹´é¾„ï¼š" + t.inputAge());
 	}
 	
 	public int inputAge(){
@@ -13,12 +13,12 @@ public class TestThrowException{
 			try{
 				result = scan.nextInt();
 				if(result<0 || result>130){
-					Exception me = new Exception("ÄêÁä³¬³öºÏÀí·¶Î§£¡");
+					Exception me = new Exception("å¹´é¾„è¶…å‡ºåˆç†èŒƒå›´ï¼");
 					throw me;	
 				}
 				break;					
 			}catch(Exception e1){
-				System.out.print(e1.getMessage() + "ÇëÖØĞÂÊäÈë£º");
+				System.out.print(e1.getMessage() + "è¯·é‡æ–°è¾“å…¥ï¼š");
 				continue;
 			}	
 		}

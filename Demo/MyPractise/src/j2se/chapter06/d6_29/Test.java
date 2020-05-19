@@ -6,7 +6,7 @@ public class Test {
 	public static void main(String[] args) {
 		double r = 10;
 		double s = 2*PI*10;
-		System.out.println("°ë¾¶Îª" + r + "µÄÔ²µÄÃæ»ıÎª:"+ s);
+		System.out.println("åŠå¾„ä¸º" + r + "çš„åœ†çš„é¢ç§¯ä¸º:"+ s);
 		System.out.println(getArea(30,40));
 	}
 }

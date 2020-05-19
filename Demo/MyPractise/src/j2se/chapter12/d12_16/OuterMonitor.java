@@ -23,7 +23,7 @@ public class OuterMonitor extends MouseMotionAdapter implements ActionListener{
 		if(s.equals("RESET")){
 			msgBoard.setText("");
 		}else if(s.equals("SUBMIT") ){
-			System.out.println("ÄãµÄÁôÑÔÎª£º\n  " + msgBoard.getText());	
+			System.out.println("ä½ çš„ç•™è¨€ä¸ºï¼š\n  " + msgBoard.getText());	
 		}else if(s.equals("COPY")){
 			clipBoard = msgBoard.getSelectedText();
 			msgBoard.setSelectionStart(msgBoard.getSelectionEnd());

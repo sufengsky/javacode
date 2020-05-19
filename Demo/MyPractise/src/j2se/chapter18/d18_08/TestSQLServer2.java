@@ -8,9 +8,9 @@ public class TestSQLServer2{
 			Statement stmt = con.createStatement();
 			ResultSet rs   = stmt.executeQuery("select * from mytable1");
 			while(rs.next()){
-					System.out.print("±àºÅ£º" + rs.getInt(1));
-					System.out.print("\tĞÕÃû£º" + rs.getString(2).trim());
-					System.out.print("\tĞÔ±ğ£º" + rs.getString(3).trim());
+					System.out.print("ç¼–å·ï¼š" + rs.getInt(1));
+					System.out.print("\tå§“åï¼š" + rs.getString(2).trim());
+					System.out.print("\tæ€§åˆ«ï¼š" + rs.getString(3).trim());
 					System.out.println();
 			}
 			rs.close();

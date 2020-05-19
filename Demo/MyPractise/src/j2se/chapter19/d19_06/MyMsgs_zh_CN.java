@@ -2,8 +2,8 @@ import java.awt.Color;
 import java.util.ListResourceBundle;
 public class MyMsgs_zh_CN extends ListResourceBundle {
 	private final Object my_data[][] = {
-		{"note","ÇëÊäÈëÄúµÄĞÕÃû: "},
-		{"msg","{0},ÄúºÃ! ÄúÊÇµÚ{1}Î»·Ã¿Í,½ñÌìÊÇ{2,date,medium},µ±Ç°Ê±¼ä{2,time,short}"}
+		{"note","è¯·è¾“å…¥æ‚¨çš„å§“å: "},
+		{"msg","{0},æ‚¨å¥½! æ‚¨æ˜¯ç¬¬{1}ä½è®¿å®¢,ä»Šå¤©æ˜¯{2,date,medium},å½“å‰æ—¶é—´{2,time,short}"}
 	};
 	public Object[][] getContents() {
 		return my_data;

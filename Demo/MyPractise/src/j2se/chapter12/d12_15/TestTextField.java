@@ -11,15 +11,15 @@ public class TestTextField implements ActionListener{
 	}
 	
 	public void createUI(){
-		Frame f = new Frame("µÇÂ¼½çÃæ");
-		f.add(new Label("ÇëÊäÈëÄúµÄÓÃ»§ĞÅÏ¢:"),"North");
+		Frame f = new Frame("ç™»å½•ç•Œé¢");
+		f.add(new Label("è¯·è¾“å…¥æ‚¨çš„ç”¨æˆ·ä¿¡æ¯:"),"North");
 		
 		Panel p1 = new Panel();
 		p1.setLayout(new BorderLayout());		
 		Panel p11 = new Panel();
 		p11.setLayout(new GridLayout(2,1));
-		p11.add(new Label("ÓÃ»§Ãû:"));
-		p11.add(new Label("ÃÜ  Âë:"));		
+		p11.add(new Label("ç”¨æˆ·å:"));
+		p11.add(new Label("å¯†  ç :"));		
 		Panel p12 = new Panel();
 		p12.setLayout(new GridLayout(2,1));
 		name = new TextField(10);
@@ -33,8 +33,8 @@ public class TestTextField implements ActionListener{
 		p1.add(p12,"Center");
 		
 		Panel p2 = new Panel();		
-		Button submit = new Button("Ìá½»");
-		Button reset = new Button("ÖØÖÃ");
+		Button submit = new Button("æäº¤");
+		Button reset = new Button("é‡ç½®");
 		submit.addActionListener(this);
 		reset.addActionListener(this);
 
@@ -55,9 +55,9 @@ public class TestTextField implements ActionListener{
 	
 	public void actionPerformed(ActionEvent e){
 		String s = e.getActionCommand();
-		if(s.equals("ÖØÖÃ")){
+		if(s.equals("é‡ç½®")){
 			this.clear();
-		}else if(s.equals("Ìá½»") || (e.getSource()==name) || (e.getSource()==password)){
+		}else if(s.equals("æäº¤") || (e.getSource()==name) || (e.getSource()==password)){
 			this.submit();	
 		}			
 	}	
@@ -68,6 +68,6 @@ public class TestTextField implements ActionListener{
 	public void submit(){
 		String n = name.getText();
 		String psw = password.getText();
-		System.out.println("ÓÃ»§Ãû:" + n + "\tÃÜÂë:" + psw);	
+		System.out.println("ç”¨æˆ·å:" + n + "\tå¯†ç :" + psw);	
 	}
 }

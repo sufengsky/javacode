@@ -8,22 +8,22 @@ public class TestArrayList{
 		h.add("2nd");
 		h.add(new Integer(3));
 		h.add(new Double(4.0));
-		h.add("2nd");      // ÖØ¸´ÔªËØ, ¼ÓÈë
-		h.add(new Integer(3)); // ÖØ¸´ÔªËØ,¼ÓÈë
+		h.add("2nd");      // é‡å¤å…ƒç´ , åŠ å…¥
+		h.add(new Integer(3)); // é‡å¤å…ƒç´ ,åŠ å…¥
 		System.out.println(h);		
 		System.out.println("size=" + h.size());
-		System.out.println("-----Ìæ»»Ö¸¶¨ÔªËØ-----");	
+		System.out.println("-----æ›¿æ¢æŒ‡å®šå…ƒç´ -----");	
 		h.set(3,"replace");		
-		System.out.println("-----forÑ­»·±éÀú-----");
+		System.out.println("-----forå¾ªç¯éå†-----");
 		for(int i=0;i<h.size();i++){
 			System.out.println(h.get(i));
 		}		
-		System.out.println("-----È¡ÓÃÌØ¶¨ÔªËØ-----");		
+		System.out.println("-----å–ç”¨ç‰¹å®šå…ƒç´ -----");		
 		Integer it = (Integer)h.get(2);
 		System.out.println(it.intValue());
-		System.out.println("-----²åÈëÔªËØ-----");		
+		System.out.println("-----æ’å…¥å…ƒç´ -----");		
 		h.add(3,new Date());
-		System.out.println("-----×ª»»ÎªÊı×é-----");	
+		System.out.println("-----è½¬æ¢ä¸ºæ•°ç»„-----");	
 		Object[] os = h.toArray();
 		for(Object o : os){
 			System.out.println(o);	

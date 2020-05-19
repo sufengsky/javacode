@@ -21,7 +21,7 @@ public class Game{
 	}
 	
 	public void display(){
-		String[] player = {"东家","西家","南家","北家"};
+		String[] player = {"涓滃","瑗垮","鍗楀","鍖楀"};
 		for(int i=0;i<4;i++){
 			System.out.print(player[i] + ": ");
 			for(int j=i*13;j<(i+1)*13;j++){

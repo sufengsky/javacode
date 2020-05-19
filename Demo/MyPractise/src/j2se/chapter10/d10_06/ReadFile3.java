@@ -6,10 +6,10 @@ public class ReadFile3{
 		Scanner scan = new Scanner(System.in);
 		String name;
 		do{
-			System.out.print("ÇëÖ¸¶¨Òª¶ÁÈ¡µÄÎÄ¼ş:");
+			System.out.print("è¯·æŒ‡å®šè¦è¯»å–çš„æ–‡ä»¶:");
 			name = scan.next();	
 			readOneFile(name);
-			System.out.print("¼ÌĞø¶ÁÈ¡ÆäËüÎÄ¼şÂğ£¿(y/Y):");
+			System.out.print("ç»§ç»­è¯»å–å…¶å®ƒæ–‡ä»¶å—ï¼Ÿ(y/Y):");
 			boolean next = scan.next().equalsIgnoreCase("y");
 			if(!next)
 				break;				
@@ -22,7 +22,7 @@ public class ReadFile3{
 			BufferedReader br = new BufferedReader(fr);
 			String s;
 			while ( (s = br.readLine()) != null ) {
-				System.out.println("¶ÁÈë: " + s);
+				System.out.println("è¯»å…¥: " + s);
 			}			
 			br.close();
 		}catch (IOException e) {

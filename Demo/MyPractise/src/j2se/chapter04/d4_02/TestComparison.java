@@ -4,16 +4,16 @@ public class TestComparison{
 		int b = 5;
 		
 		if(a == b)
-			System.out.println("a等于b");
+			System.out.println("a绛変簬b");
 		if(a != b)
-			System.out.println("a不等于b");
+			System.out.println("a涓嶇瓑浜巄");
 		if(a > b)
-			System.out.println("a大于b");
+			System.out.println("a澶т簬b");
 		if(a < b)
-			System.out.println("a小于b");
+			System.out.println("a灏忎簬b");
 		if(a >= b)
-			System.out.println("a大于等于b");
+			System.out.println("a澶т簬绛変簬b");
 		if(a <= b)
-			System.out.println("a小于等于b");
+			System.out.println("a灏忎簬绛変簬b");
 	}	
 }

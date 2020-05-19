@@ -14,7 +14,7 @@ public class TestVarargs2{
 		A a = new B();
 		a.ma("Tom","Billy","Nancy");
 		B b = new B();
-		//b.ma("Tom","Billy","Nancy");  //∑«∑®
+		//b.ma("Tom","Billy","Nancy");  //ÈùûÊ≥ï
 		String[] friends = {"Tom","Billy","Nancy"};
 		b.ma(friends);
 	}		

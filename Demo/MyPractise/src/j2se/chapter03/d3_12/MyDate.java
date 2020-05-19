@@ -9,16 +9,16 @@ public class MyDate{
 		this.year = year;	
 	}	
 	public void setDay(int day){
-		this.day = day;    	//²»Í¬ÓÚ	day = day;
+		this.day = day;    	//ä¸åŒäº	day = day;
 	}
 	public int getDay(){
-		return this.day;	//µÈ¼ÛÓÚ	return day;
+		return this.day;	//ç­‰ä»·äº	return day;
 	}
 	public void setMonth(int m){
-		month = m;	    	//µÈ¼ÛÓÚ	this.month = m;
+		month = m;	    	//ç­‰ä»·äº	this.month = m;
 	}
 	public int getMonth(){
-		return month;		//µÈ¼ÛÓÚ	return this.month;
+		return month;		//ç­‰ä»·äº	return this.month;
 	}
 	public void setYear(int year){
 		this.year = year;	
@@ -30,11 +30,11 @@ public class MyDate{
 	public void setAll(){
 		this.setYear(2008);
 		this.setMonth(8);
-		setDay(8);			//µÈ¼ÛÓÚ	this.setDay(8);	
+		setDay(8);			//ç­‰ä»·äº	this.setDay(8);	
 	}	
 	
 	public void display(){
-		System.out.println(year + "-" + month + "-" + day);	  //µÈ¼ÛÓÚ£º
+		System.out.println(year + "-" + month + "-" + day);	  //ç­‰ä»·äºï¼š
 		System.out.println(this.year + "-" + this.month + "-" + this.day);
 	}	
 }

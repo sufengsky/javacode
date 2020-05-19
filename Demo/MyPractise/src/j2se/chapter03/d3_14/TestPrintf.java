@@ -9,8 +9,8 @@ public class TestPrintf{
 		System.out.printf("%x\n",0x4a3b);
 		System.out.printf("%#x\n",0x4a3b);		
 		System.out.println("------------");	
-		System.out.printf("ÄãºÃ:%s,%3dËê,¹¤×Ê%-7.2f\n","ÕÅÈı",38,15000.00);		
-		System.out.printf("ÄãºÃ:%1$s,%2$3dËê,%2$#xËê\n","ÕÅÈı",38);		
+		System.out.printf("ä½ å¥½:%s,%3då²,å·¥èµ„%-7.2f\n","å¼ ä¸‰",38,15000.00);		
+		System.out.printf("ä½ å¥½:%1$s,%2$3då²,%2$#xå²\n","å¼ ä¸‰",38);		
 		System.out.printf("%3d,%#<x",38);
 	}	
 }

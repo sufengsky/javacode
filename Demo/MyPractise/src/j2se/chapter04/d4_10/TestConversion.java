@@ -1,22 +1,22 @@
 public class TestConversion{
 	public static void main(String args[]){
 		int i1 = 1234567891;
-		float f = i1;    //ºÏ·¨£¬µ«ÈÔÈ»¿ÉÄÜ´æÔÚ¾«¶ÈËğÊ§
+		float f = i1;    //åˆæ³•ï¼Œä½†ä»ç„¶å¯èƒ½å­˜åœ¨ç²¾åº¦æŸå¤±
 		System.out.println(f);
-		double d1 = i1;	//ºÏ·¨£¬²»´æÔÚ¾«¶ÈËğÊ§
+		double d1 = i1;	//åˆæ³•ï¼Œä¸å­˜åœ¨ç²¾åº¦æŸå¤±
 		System.out.println(d1);
 		
 		double d2 = 3.99;
 		int i2 = (int)d2;
 		System.out.println(i2);		
 		
-		byte a = 37;		//ºÏ·¨
-		byte b = 112;		//ºÏ·¨
-		//byte c = 200;		//·Ç·¨£¬³¬³ö±íÊı·¶Î§
-		//byte d = a + b;	//·Ç·¨£¬¿ÉÄÜ´æÔÚ¾«¶ÈËğÊ§
-		int  e = a + b;		//ºÏ·¨
+		byte a = 37;		//åˆæ³•
+		byte b = 112;		//åˆæ³•
+		//byte c = 200;		//éæ³•ï¼Œè¶…å‡ºè¡¨æ•°èŒƒå›´
+		//byte d = a + b;	//éæ³•ï¼Œå¯èƒ½å­˜åœ¨ç²¾åº¦æŸå¤±
+		int  e = a + b;		//åˆæ³•
 		System.out.println(e);
 		int k = 12;			
-		//byte b1 = k;		//·Ç·¨£¬¿ÉÄÜ´æÔÚ¾«¶ÈËğÊ§				
+		//byte b1 = k;		//éæ³•ï¼Œå¯èƒ½å­˜åœ¨ç²¾åº¦æŸå¤±				
 	}		
 }

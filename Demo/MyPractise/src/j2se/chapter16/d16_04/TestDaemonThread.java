@@ -1,18 +1,18 @@
 public class TestDaemonThread {	
 	public static void main(String args[]){
 		Thread t1 = new MyRunner(10);
-		t1.setName("ÓÃ»§Ïß³Ìt1");
+		t1.setName("ç”¨æˆ·çº¿ç¨‹t1");
 		t1.start();
 		
 		Thread t2 = new MyRunner(100);
 		t2.setDaemon(true);
-		t2.setName("ºóÌ¨Ïß³Ìt2");
+		t2.setName("åå°çº¿ç¨‹t2");
 		t2.start();
 		
 		for(int i=0;i<10;i++){
 			System.out.println(Thread.currentThread().getName() + ": " + i);	
 		}
-		System.out.println("Ö÷Ïß³Ì½áÊø!");
+		System.out.println("ä¸»çº¿ç¨‹ç»“æŸ!");
     }
 }
 
@@ -25,6 +25,6 @@ class MyRunner extends Thread {
 		for(int i=0; i<n; i++) {	
 				System.out.println(this.getName() + ": " + i);
 		}
-		System.out.println(this.getName() + "½áÊø!");
+		System.out.println(this.getName() + "ç»“æŸ!");
 	}
 }

@@ -1,5 +1,5 @@
 public class Soldier extends Person{
-	private String type;	//¾ü±øÖÖ£¬ÈçÂ½¾ü/º£¾ü/¿Õ¾üµÈ
+	private String type;	//å†›å…µç§ï¼Œå¦‚é™†å†›/æµ·å†›/ç©ºå†›ç­‰
 	public void setType(String type){
 		this.type = type ;	
 	}

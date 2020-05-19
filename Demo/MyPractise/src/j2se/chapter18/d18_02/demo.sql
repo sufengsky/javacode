@@ -4,6 +4,6 @@ create table student(
   age number(3));
   
   
-insert into student values('J001','张三',18);
-insert into student values('J002','李四',20);
-insert into student values('J003','王五',19);  
+insert into student values('J001','寮犱笁',18);
+insert into student values('J002','鏉庡洓',20);
+insert into student values('J003','鐜嬩簲',19);  

@@ -5,7 +5,7 @@ public class TestForEachLoop{
 			System.out.println(k);	
 		}		
 		
-		//等价于：
+		//绛変环浜庯細
 		int k;
 		for(int i=0; i<a.length; i++){
 			k = a[i];

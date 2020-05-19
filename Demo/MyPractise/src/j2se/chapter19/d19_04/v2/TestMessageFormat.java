@@ -7,12 +7,12 @@ public class TestMessageFormat{
 	private static int num = 10000;
 	public static void main(String args[]){	
 		TestMessageFormat tmf = new TestMessageFormat();
-		System.out.print("ÇëÊäÈëÄúµÄĞÕÃû:");
+		System.out.print("è¯·è¾“å…¥æ‚¨çš„å§“å:");
 		String userName = new Scanner(System.in).next();
 		System.out.println(tmf.formatMsg(userName));
 	}
 	public String formatMsg(String name){	
-		String msg = "{0},»¶Ó­Äú! ÄúÊÇµÚ{2}Î»·Ã¿Í,µ±Ç°Ê±¼äÊÇ{1}";
+		String msg = "{0},æ¬¢è¿æ‚¨! æ‚¨æ˜¯ç¬¬{2}ä½è®¿å®¢,å½“å‰æ—¶é—´æ˜¯{1}";
 		Object[] msgArgs = {name,new Date(),++num};
 		return MessageFormat.format(msg,msgArgs);		
 	}

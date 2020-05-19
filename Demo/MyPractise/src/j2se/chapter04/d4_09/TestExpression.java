@@ -1,19 +1,19 @@
 public class TestExpression{
 	public static void main(String args[]){
 		int i,j,k;
-		i = j = k = 5 + 3;   	//µÈ¼ÛÓÚ i = (j = (k = 5));
+		i = j = k = 5 + 3;   	//ç­‰ä»·äº i = (j = (k = 5));
 		System.out.println(i + "\t" + j + "\t" + k); 
 		
 		boolean b = false;
-		if(b = true)			//×¢Òâ£¬ÕâÀïÖ»ÓĞÒ»¸ö"="ºÅ
+		if(b = true)			//æ³¨æ„ï¼Œè¿™é‡Œåªæœ‰ä¸€ä¸ª"="å·
 			System.out.println("ok!");
 		else
 			System.out.println("error!");
 					  
 		A a = new A();
-		a.ma(); 	//ºÏ·¨		
-		//System.out.println(a.ma());     //·Ç·¨
-		//int result = a.ma();			//·Ç·¨ 
+		a.ma(); 	//åˆæ³•		
+		//System.out.println(a.ma());     //éæ³•
+		//int result = a.ma();			//éæ³• 
 	}		
 }
 

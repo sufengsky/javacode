@@ -6,7 +6,7 @@ public class MyMonitor implements ActionListener{
 	public void actionPerformed(ActionEvent e){
 		String s = e.getActionCommand();
 		System.out.println(s);
-		if(s.equals("ÍË³ö")){
+		if(s.equals("é€€å‡º")){
 			System.exit(0);	
 		}	
 	}

@@ -8,11 +8,11 @@ public class TestBreakOuter{
 			i = scan.nextInt();
 			for(int j=2; j<i; j++){
 				if(i%j == 0){
-					System.out.println(i + "²»ÊÇËØÊý£¬³ÌÐòÍË³ö");	
+					System.out.println(i + "ä¸æ˜¯ç´ æ•°ï¼Œç¨‹åºé€€å‡º");	
 					break outer;
 				}	
 			}
-			System.out.println(i + "ÊÇËØÊý£¬Çë¼ÌÐø£¡");	
+			System.out.println(i + "æ˜¯ç´ æ•°ï¼Œè¯·ç»§ç»­ï¼");	
 		}		
 	}
 }

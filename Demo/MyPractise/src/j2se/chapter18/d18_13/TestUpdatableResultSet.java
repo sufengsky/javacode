@@ -10,32 +10,32 @@ public class TestUpdatableResultSet{
 			ResultSet rs = stmt.executeQuery("select tid,name,salary from teacher");
 			//ResultSet rs = stmt.executeQuery("select teacher.* from teacher");
 			
-			//¸üĞÂÇ°½á¹û¼¯ÖĞÊı¾İ
+			//æ›´æ–°å‰ç»“æœé›†ä¸­æ•°æ®
 			while(rs.next()){
 				showOneRow(rs);		
 			}
 			
-			//¸üĞÂºÍÉ¾³ı¼ÇÂ¼
+			//æ›´æ–°å’Œåˆ é™¤è®°å½•
 			rs.beforeFirst();
 			while(rs.next()){
 				String name = rs.getString("name").trim();
-				if(name.equals("ÀîËÄ")){
+				if(name.equals("æå››")){
 					double sal = rs.getDouble("salary");
 					rs.updateDouble("salary", sal + 8888);
 					rs.updateRow();	
-				}else if(name.equals("ÕÅÈı")){
+				}else if(name.equals("å¼ ä¸‰")){
 					rs.deleteRow();	
 				}	
 			}
-			//²åÈëĞÂ¼ÇÂ¼
+			//æ’å…¥æ–°è®°å½•
 			rs.moveToInsertRow();
 			rs.updateInt("tid",1005);
-			rs.updateString("name","ÔÆ·ÉÑï");
+			rs.updateString("name","äº‘é£æ‰¬");
 			rs.updateDouble("salary",2840);
 			rs.insertRow();
 			rs.close();
 			
-			//½á¹û¼¯¸üĞÂºóºóÊı¾İ¿âÖĞÊı¾İ
+			//ç»“æœé›†æ›´æ–°ååæ•°æ®åº“ä¸­æ•°æ®
 			System.out.println("--------------------------------------------");
 			rs = stmt.executeQuery("select * from teacher");
 			while(rs.next()){
@@ -56,7 +56,7 @@ public class TestUpdatableResultSet{
     }
     
     public static void showOneRow(ResultSet rs) throws SQLException{
-    	System.out.print("µÚ" + rs.getRow() + "ĞĞ: ");
+    	System.out.print("ç¬¬" + rs.getRow() + "è¡Œ: ");
 		System.out.print(rs.getInt(1));
 		System.out.print("\t" + rs.getString(2));
 		System.out.print("\t" + rs.getDouble(3));

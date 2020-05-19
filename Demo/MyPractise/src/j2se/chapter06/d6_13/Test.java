@@ -1,14 +1,14 @@
 public class Test{
 	public static void main(String args[]){
 
-		System.out.println("----------正常方法调用---------");
+		System.out.println("----------姝ｅ父鏂规硶璋冪敤---------");
 		Test t = new Test();		
 		Book b = new Book();
 		b.setName("English Language");
 		b.setPrice(43);
 		t.process(b);
 		
-		System.out.println("----------需方法调用---------");
+		System.out.println("----------闇�鏂规硶璋冪敤---------");
 		Novel v = new Novel();
 		v.setName("Great Expectations");
 		v.setPrice(35.48);
@@ -17,7 +17,7 @@ public class Test{
 	}
 	
 	public void process(Book b){
-		//其它代码
+		//鍏跺畠浠ｇ爜
 		b.show();	
 	}
 }

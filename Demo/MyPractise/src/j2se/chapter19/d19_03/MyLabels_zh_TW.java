@@ -2,17 +2,17 @@ import java.awt.Color;
 import java.util.ListResourceBundle;
 public class MyLabels_zh_TW extends ListResourceBundle
 {
-	//¶¨ÁxÙYÔ´
+	//å®šç¾©è³‡æº
 	private final Object my_data[][]=
 	{
-		{"title","ÎÒµÄ‡øëH»¯³ÌÊ½"},
-		{"menu.file","ÎÄ™n"}	,
-		{"menu.edit","¾İ‹"},
-		{"menu.help","ÍÖú"},
-		{"currentEnv","®”Ç°ÓÃ‘ô­h¾³: "},
+		{"title","æˆ‘çš„åœ‹éš›åŒ–ç¨‹å¼"},
+		{"menu.file","æ–‡æª”"}	,
+		{"menu.edit","ç·¨è¼¯"},
+		{"menu.help","å¹«åŠ©"},
+		{"currentEnv","ç•¶å‰ç”¨æˆ¶ç’°å¢ƒ: "},
 		{"bgColor",Color.BLUE}
 	};
-	//Œ¬F³éÏó·½·¨getContents()
+	//å¯¦ç¾æŠ½è±¡æ–¹æ³•getContents()
 	public Object[][] getContents()
 	{
 		return my_data;

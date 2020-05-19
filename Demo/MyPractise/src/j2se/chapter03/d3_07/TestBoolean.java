@@ -1,3 +1,5 @@
+package j2se.chapter03.d3_07;
+
 public class TestBoolean{
 	public static void main(String[] args){
 		boolean b = true;

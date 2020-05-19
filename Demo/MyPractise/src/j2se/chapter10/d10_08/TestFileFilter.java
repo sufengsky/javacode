@@ -11,8 +11,8 @@ public class TestFileFilter{
 		File directory = new File(path);
 		MyFilter mf = new MyFilter(extension);		
 		File[] files = directory.listFiles(mf);
-		System.out.println("Â·¾¶:\t" + path);	
-		System.out.print("ÎÄ¼þ:");	
+		System.out.println("è·¯å¾„:\t" + path);	
+		System.out.print("æ–‡ä»¶:");	
 		for(File file : files){
 			System.out.println("\t" + file.getName());	
 		}

@@ -3,16 +3,16 @@ import java.util.Scanner;
 public class TestInput{
 	public static void main(String args[]){
 		Scanner s = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÄãµÄĞÕÃû:");
+		System.out.println("è¯·è¾“å…¥ä½ çš„å§“å:");
 		String name = s.nextLine();
 		
-		System.out.println("ÇëÊäÈëÄêÁä:");
+		System.out.println("è¯·è¾“å…¥å¹´é¾„:");
 		int age = s.nextInt();
 		
-		System.out.println("ÇëÊäÈëÄãµÄ¹¤×ÊÊı¶î:");
+		System.out.println("è¯·è¾“å…¥ä½ çš„å·¥èµ„æ•°é¢:");
 		double salary = s.nextDouble();
 			
-		System.out.println("ÄúµÄ¸öÈËĞÅÏ¢:\nĞÕÃû" 
-			+ name + "\tÄêÁä" + age + "Ëê\t¹¤×Ê" + salary + "Ôª");
+		System.out.println("æ‚¨çš„ä¸ªäººä¿¡æ¯:\nå§“å" 
+			+ name + "\tå¹´é¾„" + age + "å²\tå·¥èµ„" + salary + "å…ƒ");
 	}	
 }

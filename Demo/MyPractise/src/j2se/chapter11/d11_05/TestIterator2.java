@@ -4,18 +4,18 @@ import java.util.Iterator;
 public class TestIterator2{
 	public static void main(String[] args) {
 		Vector v = new Vector();
-		v.addElement(new Person("张三",18));
-		v.addElement(new Person("李四",26));
-		v.addElement(new Person("王五",34));
-		v.addElement(new Person("赵六",40));
+		v.addElement(new Person("寮犱笁",18));
+		v.addElement(new Person("鏉庡洓",26));
+		v.addElement(new Person("鐜嬩簲",34));
+		v.addElement(new Person("璧靛叚",40));
 
 		Iterator it = v.iterator();
 		while(it.hasNext()){
 			Person p = (Person)it.next();
 			System.out.println(p);	
-			if(p.getName().equals("王五")){
+			if(p.getName().equals("鐜嬩簲")){
 				p.setAge(p.getAge() + 50);
-			}else if(p.getName().equals("李四")){
+			}else if(p.getName().equals("鏉庡洓")){
 				it.remove();
 			}			
 		}	

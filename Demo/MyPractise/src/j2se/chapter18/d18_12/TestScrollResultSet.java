@@ -36,7 +36,7 @@ public class TestScrollResultSet{
     }
     
     public static void showOneRow(ResultSet rs) throws SQLException{
-    	System.out.print("µÚ" + rs.getRow() + "ÐÐ: ");
+    	System.out.print("ç¬¬" + rs.getRow() + "è¡Œ: ");
 		System.out.print(rs.getString(1));
 		System.out.print("\t" + rs.getString(2));
 		System.out.print("\t" + rs.getString(3));

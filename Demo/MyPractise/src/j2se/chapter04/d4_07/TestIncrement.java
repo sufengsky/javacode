@@ -1,11 +1,11 @@
 public class TestIncrement{
 	public static void main(String args[]){
 		int i = 5,j;
-		j = ++i;	  //µÈ¼ÛÓÚ	j = i + 1;	j = i;	
+		j = ++i;	  //ç­‰ä»·äºŽ	j = i + 1;	j = i;	
 		System.out.println("i=" + i + "\tj=" + j);
-		j = i++;	  //µÈ¼ÛÓÚ	j = i;		j = i + 1;		
+		j = i++;	  //ç­‰ä»·äºŽ	j = i;		j = i + 1;		
 		System.out.println("i=" + i + "\tj=" + j);
-		j = 4 * i--;  //µÈ¼ÛÓÚ	j = 4 * i;	i = i - 1;
+		j = 4 * i--;  //ç­‰ä»·äºŽ	j = 4 * i;	i = i - 1;
 		System.out.println("i=" + i + "\tj=" + j);
 	}	
 }

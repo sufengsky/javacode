@@ -20,7 +20,7 @@ public class TestClient {
 				if(info.equals("bye"))
 					break;
 				info = dis.readUTF();
-				System.out.println("¶Ô·½Ëµ: " + info);
+				System.out.println("å¯¹æ–¹è¯´: " + info);
 				if(info.equals("bye"))
 					break;
 			}
@@ -28,7 +28,7 @@ public class TestClient {
 			dos.close();
 			s1.close();
 		}catch (SocketException e) {
-				System.out.println("ÍøÂçÁ¬½ÓÒì³££¬³ÌĞòÍË³ö!");
+				System.out.println("ç½‘ç»œè¿æ¥å¼‚å¸¸ï¼Œç¨‹åºé€€å‡º!");
 		}catch (IOException e) {
 			e.printStackTrace();		
 		}

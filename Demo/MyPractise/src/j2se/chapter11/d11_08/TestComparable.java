@@ -4,10 +4,10 @@ import java.util.Iterator;
 public class TestComparable{
 	public static void main(String[] args) {
 		TreeSet ts = new TreeSet();
-		ts.add(new Person(1003,"张三",15));
-		ts.add(new Person(1008,"李四",25));
-		ts.add(new Person(1015,"王五",73));
-		ts.add(new Person(1001,"赵六",49));
+		ts.add(new Person(1003,"寮犱笁",15));
+		ts.add(new Person(1008,"鏉庡洓",25));
+		ts.add(new Person(1015,"鐜嬩簲",73));
+		ts.add(new Person(1001,"璧靛叚",49));
 
 		Iterator it = ts.iterator();
 		while(it.hasNext()){

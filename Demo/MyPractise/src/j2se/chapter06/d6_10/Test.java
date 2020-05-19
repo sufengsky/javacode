@@ -3,7 +3,7 @@ class Animal{
 }
 
 class Person extends Animal{
-	protected int i = 2;  //ÓÃÓÚ²âÊÔÍ¬ÃûÊôĞÔ£¬ÎŞÏÖÊµº¬Òå
+	protected int i = 2;  //ç”¨äºæµ‹è¯•åŒåå±æ€§ï¼Œæ— ç°å®å«ä¹‰
 	private String name = "Tom";
 	private int age = 9;
 	public String getInfo(){

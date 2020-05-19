@@ -8,22 +8,22 @@ public class TestVector{
 		v.add("2nd");
 		v.add(new Integer(3));
 		v.add(new Double(4.0));
-		v.add("2nd");      // ÖØ¸´ÔªËØ, ¼ÓÈë
-		v.add(new Integer(3)); // ÖØ¸´ÔªËØ,¼ÓÈë
+		v.add("2nd");      // é‡å¤å…ƒç´ , åŠ å…¥
+		v.add(new Integer(3)); // é‡å¤å…ƒç´ ,åŠ å…¥
 		System.out.println(v);		
 		System.out.println("size=" + v.size());
-		System.out.println("-----Ìæ»»Ö¸¶¨ÔªËØ-----");	
+		System.out.println("-----æ›¿æ¢æŒ‡å®šå…ƒç´ -----");	
 		v.set(3,"replace");		
-		System.out.println("-----forÑ­»·±éÀú-----");
+		System.out.println("-----forå¾ªç¯éå†-----");
 		for(int i=0;i<v.size();i++){
 			System.out.println(v.get(i));
 		}		
-		System.out.println("-----È¡ÓÃÌØ¶¨ÔªËØ-----");		
+		System.out.println("-----å–ç”¨ç‰¹å®šå…ƒç´ -----");		
 		Integer it = (Integer)v.get(2);
 		System.out.println(it.intValue());
-		System.out.println("-----²åÈëÔªËØ-----");		
+		System.out.println("-----æ’å…¥å…ƒç´ -----");		
 		v.add(3,new Date());
-		System.out.println("-----×ª»»ÎªÊı×é-----");	
+		System.out.println("-----è½¬æ¢ä¸ºæ•°ç»„-----");	
 		Object[] os = v.toArray();
 		for(Object o : os){
 			System.out.println(o);	
