@@ -1,3 +1,5 @@
+package j2se.chapter03.d3_10;
+
 class C{
 	private int a = 1;
 	private int b = 5;

@@ -1,3 +1,5 @@
+package j2se.chapter03.d3_13;
+
 import java.util.Scanner;
 
 public class TestInput{

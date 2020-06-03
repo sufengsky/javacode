@@ -1,3 +1,5 @@
+package j2se.chapter03.d3_11;
+
 public class TestPassingValue{
 	public void test(MyDate m){
 		m.setDay(22);			
