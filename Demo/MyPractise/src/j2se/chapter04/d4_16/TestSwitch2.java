@@ -1,3 +1,5 @@
+package j2se.chapter04.d4_16;
+
 public class TestSwitch2{
 	public static void main(String args[]){
 		TestSwitch2 ts = new TestSwitch2();

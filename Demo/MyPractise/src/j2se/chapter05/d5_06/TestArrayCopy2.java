@@ -1,3 +1,5 @@
+package j2se.chapter05.d5_06;
+
 public class TestArrayCopy2{
 	public static void main(String args[]){
 		TestArrayCopy2 tac = new TestArrayCopy2();		

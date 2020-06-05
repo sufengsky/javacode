@@ -1,3 +1,5 @@
+package j2se.chapter09.d9_09;
+
 public class TestDeepCopy{
 	public static void main(String args[]){
 		Book b1 = new Book("Java编程",30.50,new Person("张三",34));

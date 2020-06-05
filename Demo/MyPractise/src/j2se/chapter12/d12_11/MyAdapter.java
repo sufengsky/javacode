@@ -1,3 +1,5 @@
+package j2se.chapter12.d12_11;
+
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowAdapter;
 

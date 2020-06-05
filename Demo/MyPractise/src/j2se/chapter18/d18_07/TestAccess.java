@@ -1,3 +1,5 @@
+package j2se.chapter18.d18_07;
+
 import java.sql.*;
 
 public class TestAccess{

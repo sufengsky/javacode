@@ -1,3 +1,5 @@
+package j2se.chapter12.d12_09;
+
 import java.awt.Frame;
 import java.awt.Button;
 public class TestActionEvent2 {

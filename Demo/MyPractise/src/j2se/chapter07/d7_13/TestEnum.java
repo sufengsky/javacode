@@ -1,3 +1,5 @@
+package j2se.chapter07.d7_13;
+
 public class TestEnum{
 	public static void main(String[] args){
 		TestEnum te = new TestEnum();

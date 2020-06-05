@@ -1,3 +1,5 @@
+package j2se.chapter10.d10_09;
+
 interface A{
 	void ma(String... names);	
 }

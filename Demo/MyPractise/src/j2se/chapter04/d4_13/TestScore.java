@@ -1,3 +1,5 @@
+package j2se.chapter04.d4_13;
+
 import java.util.*;
 
 public class TestScore{

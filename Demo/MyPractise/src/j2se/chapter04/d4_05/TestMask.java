@@ -1,3 +1,5 @@
+package j2se.chapter04.d4_05;
+
 public class TestMask{
 	
 	/*获取指定整数num二进制表示从右侧数第n位的值

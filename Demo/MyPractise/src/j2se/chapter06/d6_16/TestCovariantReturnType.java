@@ -1,3 +1,5 @@
+package j2se.chapter06.d6_16;
+
 class A{
 	public Person getAssistor(){
 		Person p = new Person();

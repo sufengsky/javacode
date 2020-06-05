@@ -1,3 +1,5 @@
+package j2se.chapter06.d6_14;
+
 public class Test{
 	public void cast(Person p){
 		p = new Person();

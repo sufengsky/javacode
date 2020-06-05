@@ -1,3 +1,5 @@
+package j2se.chapter11.d11_10;
+
 public class MyKey implements Comparable{
 	private final int id;
 	public MyKey(int id){

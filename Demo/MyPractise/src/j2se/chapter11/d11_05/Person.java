@@ -1,3 +1,5 @@
+package j2se.chapter11.d11_05;
+
 public class Person{
 	private String name;
 	private int age;

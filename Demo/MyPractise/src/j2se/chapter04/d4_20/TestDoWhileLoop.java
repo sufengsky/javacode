@@ -1,3 +1,5 @@
+package j2se.chapter04.d4_20;
+
 public class TestDoWhileLoop{
 	public static void main(String args[]){
 		int i = 1;

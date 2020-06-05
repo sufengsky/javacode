@@ -1,3 +1,5 @@
+package j2se.chapter09.d9_25;
+
 import java.util.Random;
 public class TestRandom2{
 	public static void main(String args[]){

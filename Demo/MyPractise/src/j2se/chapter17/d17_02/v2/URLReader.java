@@ -1,3 +1,5 @@
+package j2se.chapter17.d17_02.v2;
+
 import java.util.Scanner;
 import java.net.URL;
 import java.io.IOException;

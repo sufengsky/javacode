@@ -1,4 +1,6 @@
-public class TestThread3 {	
+package j2se.chapter16.d16_03;
+
+public class TestThread3 {
 	public static void main(String args[]){
 		Thread t = new Runner3();
 		t.start();

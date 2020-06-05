@@ -1,3 +1,5 @@
+package j2se.chapter06.d6_25;
+
 public class Person {
 	private int id;
 	private static int total = 0;

@@ -1,3 +1,5 @@
+package j2se.chapter09.d9_02;
+
 public class TestOverride{
 	public static void main(String[] args){
 		Person p1 = new Person(18);

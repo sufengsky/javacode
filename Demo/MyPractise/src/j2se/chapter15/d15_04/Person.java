@@ -1,3 +1,5 @@
+package j2se.chapter15.d15_04;
+
 public class Person<T>{
 	private final int id;
 	private T secrecy;

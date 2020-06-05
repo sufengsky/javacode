@@ -1,3 +1,5 @@
+package j2se.chapter08.d8_11;
+
 import java.util.Scanner;
 public class TestThrowException{
 	public static void main(String[] args){

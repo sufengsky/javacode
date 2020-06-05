@@ -1,3 +1,5 @@
+package j2se.chapter06.d6_30;
+
 public class TestSingle{
 	public static void m1(){
 		Single  s2 = Single.getSingle();

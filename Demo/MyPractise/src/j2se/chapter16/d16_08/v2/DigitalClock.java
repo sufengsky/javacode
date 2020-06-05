@@ -1,3 +1,5 @@
+package j2se.chapter16.d16_08.v2;
+
 import java.util.*;
 import javax.swing.*;
 

@@ -1,4 +1,6 @@
-public class TestDaemonThread {	
+package j2se.chapter16.d16_04;
+
+public class TestDaemonThread {
 	public static void main(String args[]){
 		Thread t1 = new MyRunner(10);
 		t1.setName("用户线程t1");

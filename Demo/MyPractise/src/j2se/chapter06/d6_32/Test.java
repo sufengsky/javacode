@@ -1,3 +1,5 @@
+package j2se.chapter06.d6_32;
+
 public class Test{
 	public static final String country = "China";	
 	private static int totalNumber = 1000;

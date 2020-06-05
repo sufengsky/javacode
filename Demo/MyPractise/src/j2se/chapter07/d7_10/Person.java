@@ -1,3 +1,5 @@
+package j2se.chapter07.d7_10;
+
 public abstract class Person{
 	private String name;
 	private int age;

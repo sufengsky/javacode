@@ -1,3 +1,5 @@
+package j2se.chapter07.d7_04;
+
 interface D{
 	int age = 5;
 }

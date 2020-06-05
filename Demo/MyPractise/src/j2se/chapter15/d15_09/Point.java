@@ -1,3 +1,5 @@
+package j2se.chapter15.d15_09;
+
 import java.lang.Number;
 public class Point<T extends Number>{
 	private T x;

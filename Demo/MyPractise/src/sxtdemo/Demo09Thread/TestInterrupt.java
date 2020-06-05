@@ -1,3 +1,5 @@
+package sxtdemo.Demo09Thread;
+
 import java.util.*;
 public class TestInterrupt {
   public static void main(String[] args) {

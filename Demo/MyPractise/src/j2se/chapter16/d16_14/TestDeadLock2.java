@@ -1,3 +1,5 @@
+package j2se.chapter16.d16_14;
+
 public class TestDeadLock2{
 	public static void main(String args[]){
 		char[] a = {'A','B','C'};

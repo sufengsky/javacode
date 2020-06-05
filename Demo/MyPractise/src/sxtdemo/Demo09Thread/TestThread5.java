@@ -1,4 +1,6 @@
-public class TestThread5 {	
+package sxtdemo.Demo09Thread;
+
+public class TestThread5 {
 	public static void main(String args[]){
 		Runner5 r = new Runner5();
        	Thread t = new Thread(r);

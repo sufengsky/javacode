@@ -1,3 +1,5 @@
+package j2se.chapter14.d14_07;
+
 import java.io.*;
 
 public class TestSetInput{

@@ -1,3 +1,5 @@
+package j2se.chapter10.d10_07;
+
 import java.io.*;
 
 public class TestWriteFile{

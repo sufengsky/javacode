@@ -1,3 +1,5 @@
+package j2se.chapter09.d9_06;
+
 public class TestFinalize{
 	public static void main(String args[]){
 		for(int i=0;i<10;i++){

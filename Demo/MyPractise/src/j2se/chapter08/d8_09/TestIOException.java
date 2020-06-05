@@ -1,3 +1,5 @@
+package j2se.chapter08.d8_09;
+
 import java.io.*;
 public class TestIOException{
 	public static void main(String[] args) {

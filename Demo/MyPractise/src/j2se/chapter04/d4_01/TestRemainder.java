@@ -1,3 +1,5 @@
+package j2se.chapter04.d4_01;
+
 public class TestRemainder{
 	public static void main(String args[]){
 		int i = 10 % 3;

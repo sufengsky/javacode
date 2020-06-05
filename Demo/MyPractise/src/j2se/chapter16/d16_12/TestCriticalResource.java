@@ -1,3 +1,5 @@
+package j2se.chapter16.d16_12;
+
 public class TestCriticalResource{
 	public static void main(String args[]){
 		Stack s = new Stack();

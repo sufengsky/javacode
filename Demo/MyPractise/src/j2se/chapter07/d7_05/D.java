@@ -1,3 +1,5 @@
+package j2se.chapter07.d7_05;
+
 interface A{
 	public void ma();
 }

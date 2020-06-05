@@ -1,3 +1,5 @@
+package j2se.chapter08.d8_04;
+
 class Person{
 	public int age;
 }

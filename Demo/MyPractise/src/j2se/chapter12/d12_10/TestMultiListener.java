@@ -1,3 +1,5 @@
+package j2se.chapter12.d12_10;
+
 import java.awt.Frame;
 import java.awt.Label;
 import java.awt.TextField;

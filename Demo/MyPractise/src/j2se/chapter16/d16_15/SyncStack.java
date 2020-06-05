@@ -1,3 +1,5 @@
+package j2se.chapter16.d16_15;
+
 public class SyncStack{  //支持多线程同步操作的堆栈的实现
 	private int index = 0;
 	private char []data = new char[6];	

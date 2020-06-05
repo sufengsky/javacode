@@ -1,3 +1,5 @@
+package j2se.chapter14.d14_10;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;

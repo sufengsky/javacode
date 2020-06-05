@@ -1,4 +1,6 @@
-public class Test{ 
+package j2se.chapter06.d6_26;
+
+public class Test{
 	private int i = 5;
 	public void m1(){
 		i++;

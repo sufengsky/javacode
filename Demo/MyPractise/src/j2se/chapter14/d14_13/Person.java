@@ -1,3 +1,5 @@
+package j2se.chapter14.d14_13;
+
 import java.io.Serializable;
 public class Person implements Serializable{
 	private static int resource = 100;

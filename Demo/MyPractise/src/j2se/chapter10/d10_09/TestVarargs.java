@@ -1,3 +1,5 @@
+package j2se.chapter10.d10_09;
+
 import java.util.Date;
 
 public class TestVarargs{

@@ -1,3 +1,5 @@
+package j2se.chapter10.d10_03;
+
 import java.io.InputStreamReader;
 import java.io.BufferedReader;
 import java.io.IOException;

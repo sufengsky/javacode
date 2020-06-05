@@ -1,3 +1,5 @@
+package j2se.chapter15.d15_02;
+
 import java.util.Hashtable;
 
 public class TestHashtable{

@@ -1,3 +1,5 @@
+package j2se.chapter07.d7_08;
+
 class A{
 	private int s = 111;
 	public class B {

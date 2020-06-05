@@ -1,3 +1,5 @@
+package j2se.chapter18.d18_12;
+
 import java.sql.*;
 public class TestScrollResultSet{
     public static void main(String args[]){

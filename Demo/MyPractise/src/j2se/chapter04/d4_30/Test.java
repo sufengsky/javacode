@@ -1,3 +1,5 @@
+package j2se.chapter04.d4_30;
+
 public class Test{
 	private int n = 0;
 	public static void main(String args[]){

@@ -1,3 +1,5 @@
+package j2se.chapter08.d8_03;
+
 public class TestVirtualMachineError{
 	public static void main(String[] args) {
 		TestVirtualMachineError tvme = new TestVirtualMachineError();

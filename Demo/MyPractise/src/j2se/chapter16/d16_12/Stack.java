@@ -1,3 +1,5 @@
+package j2se.chapter16.d16_12;
+
 class Stack{
 	int idx=0;
 	char[ ] data = new char[6];

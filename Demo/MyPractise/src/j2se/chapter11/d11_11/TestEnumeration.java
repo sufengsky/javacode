@@ -1,3 +1,5 @@
+package j2se.chapter11.d11_11;
+
 import java.util.Hashtable;
 import java.util.Enumeration;
 

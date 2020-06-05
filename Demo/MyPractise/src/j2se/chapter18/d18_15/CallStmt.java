@@ -1,3 +1,5 @@
+package j2se.chapter18.d18_15;
+
 import java.sql.*;
 public class CallStmt{
 	public static void main(String[] args){

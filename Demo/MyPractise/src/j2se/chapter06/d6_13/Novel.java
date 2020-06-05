@@ -1,3 +1,5 @@
+package j2se.chapter06.d6_13;
+
 public class Novel extends Book{
 	private String author;
 	public void setAuthor(String author){

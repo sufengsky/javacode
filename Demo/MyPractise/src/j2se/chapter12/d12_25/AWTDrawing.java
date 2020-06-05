@@ -1,3 +1,5 @@
+package j2se.chapter12.d12_25;
+
 import java.awt.*;
 class MyCanvas extends Canvas{
 	public void paint(Graphics g){

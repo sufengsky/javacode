@@ -1,3 +1,5 @@
+package j2se.chapter09.d9_01;
+
 public class TestHashCode{
 	public static void main(String[] args){
 		Person p1 = new Person(18);

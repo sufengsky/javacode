@@ -1,3 +1,5 @@
+package j2se.chapter10.d10_02;
+
 import java.util.Properties;
 import java.util.Enumeration;
 public class TestSystemProperties {

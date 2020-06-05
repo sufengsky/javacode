@@ -1,3 +1,5 @@
+package j2se.chapter04.d4_21;
+
 public class TestForEachLoop{
 	public static void main(String args[]){
 		int[] a = {3,5,78,12};

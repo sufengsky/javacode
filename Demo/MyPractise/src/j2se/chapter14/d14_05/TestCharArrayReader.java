@@ -1,3 +1,5 @@
+package j2se.chapter14.d14_05;
+
 import java.io.*;
 public class TestCharArrayReader{
 	public static void main(String[] args){

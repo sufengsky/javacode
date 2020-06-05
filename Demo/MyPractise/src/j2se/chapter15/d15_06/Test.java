@@ -1,3 +1,5 @@
+package j2se.chapter15.d15_06;
+
 import java.util.Vector;
 public class Test{
 	public static void main(String[] args){

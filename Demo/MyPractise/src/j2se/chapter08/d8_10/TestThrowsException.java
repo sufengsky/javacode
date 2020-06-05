@@ -1,3 +1,5 @@
+package j2se.chapter08.d8_10;
+
 import java.io.*;
 public class TestThrowsException{
 	public static void main(String[] args){

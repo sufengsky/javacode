@@ -1,3 +1,5 @@
+package j2se.chapter16.d16_01;
+
 public class TestThread1 {
 	public static void main(String args[]) {
 		Runner1 r = new Runner1();

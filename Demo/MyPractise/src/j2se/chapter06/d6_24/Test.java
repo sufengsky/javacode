@@ -1,3 +1,5 @@
+package j2se.chapter06.d6_24;
+
 public class Test {
 	public static void main(String args[]) {
 		Person.total = 100;

@@ -1,3 +1,5 @@
+package j2se.chapter12.d12_22;
+
 import java.awt.*;
 import java.awt.event.*;
 public class TestColorPalette implements AdjustmentListener{

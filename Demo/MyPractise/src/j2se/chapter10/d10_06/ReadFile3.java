@@ -1,3 +1,5 @@
+package j2se.chapter10.d10_06;
+
 import java.io.*;
 import java.util.Scanner;
 

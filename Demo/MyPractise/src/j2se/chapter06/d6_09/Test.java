@@ -1,3 +1,5 @@
+package j2se.chapter06.d6_09;
+
 class Person{
 	int age = 5;
 	public int getAge(){

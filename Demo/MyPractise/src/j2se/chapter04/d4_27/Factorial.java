@@ -1,3 +1,5 @@
+package j2se.chapter04.d4_27;
+
 public class Factorial{
 	public int f(int n){
 		if(n == 1){

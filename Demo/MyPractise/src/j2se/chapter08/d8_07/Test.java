@@ -1,3 +1,5 @@
+package j2se.chapter08.d8_07;
+
 public class Test{
 	public static void main(String[] args)    {
 		String friends[]={"Lisa","Billy","Kessy"};

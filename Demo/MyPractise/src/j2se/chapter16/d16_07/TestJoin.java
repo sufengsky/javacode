@@ -1,4 +1,6 @@
-public class TestJoin {	
+package j2se.chapter16.d16_07;
+
+public class TestJoin {
 	public static void main(String args[]){
 		MyRunner r = new MyRunner();
 		Thread t = new Thread(r);

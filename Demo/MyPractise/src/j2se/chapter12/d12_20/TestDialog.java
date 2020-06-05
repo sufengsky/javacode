@@ -1,3 +1,5 @@
+package j2se.chapter12.d12_20;
+
 import java.awt.*;
 import java.awt.event.*;
 public class TestDialog implements ActionListener{

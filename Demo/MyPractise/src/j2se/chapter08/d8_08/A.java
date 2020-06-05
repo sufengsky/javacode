@@ -1,3 +1,5 @@
+package j2se.chapter08.d8_08;
+
 public class A{
 	public void work(int[] a){
 		String s = this.contain(a,3);

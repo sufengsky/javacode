@@ -1,3 +1,5 @@
+package j2se.chapter09.d9_06;
+
 public class Person{
 	private String name;
 	public Person(String name){

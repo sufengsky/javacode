@@ -1,3 +1,5 @@
+package j2se.chapter12.d12_27;
+
 import java.awt.*;
 import java.awt.event.*;
 import java.awt.image.*;

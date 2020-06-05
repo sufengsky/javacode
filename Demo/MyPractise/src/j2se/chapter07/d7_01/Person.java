@@ -1,3 +1,5 @@
+package j2se.chapter07.d7_01;
+
 public class Person extends Animal{
 	private String name;
 	public void setName(String name){

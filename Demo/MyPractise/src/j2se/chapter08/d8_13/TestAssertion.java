@@ -1,3 +1,5 @@
+package j2se.chapter08.d8_13;
+
 public class TestAssertion{
 	public static void main(String[] args){
 		new TestAssertion().process(-12);

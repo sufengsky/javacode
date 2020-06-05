@@ -1,3 +1,5 @@
+package j2se.chapter07.d7_10;
+
 public class TestAnonymous{
 	public static void main(String args[]){
 		Person sp = new Person(){

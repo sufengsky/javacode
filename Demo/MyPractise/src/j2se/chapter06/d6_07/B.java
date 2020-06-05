@@ -1,4 +1,4 @@
-package p2;
+package j2se.chapter06.d6_07;
 import p1.A;
 public class B extends A{	
 	public void mb(){

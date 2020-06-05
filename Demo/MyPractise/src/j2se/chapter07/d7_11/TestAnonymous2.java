@@ -1,3 +1,5 @@
+package j2se.chapter07.d7_11;
+
 public class TestAnonymous2{
 	public static void main(String args[]){
 		TestAnonymous2 ta = new TestAnonymous2();

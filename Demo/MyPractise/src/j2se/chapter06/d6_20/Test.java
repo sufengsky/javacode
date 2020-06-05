@@ -1,3 +1,4 @@
+package j2se.chapter06.d6_20;
 
 public class Test{
 	public static void main(String args[]){

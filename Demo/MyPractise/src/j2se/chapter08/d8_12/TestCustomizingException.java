@@ -1,3 +1,5 @@
+package j2se.chapter08.d8_12;
+
 public class TestCustomizingException{
 	public void regist(int num) throws MyException {
 		if (num < 0) {

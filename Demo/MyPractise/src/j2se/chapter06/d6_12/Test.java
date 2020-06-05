@@ -1,3 +1,5 @@
+package j2se.chapter06.d6_12;
+
 public class Test{
 	public void show(Person p){
 		//---	

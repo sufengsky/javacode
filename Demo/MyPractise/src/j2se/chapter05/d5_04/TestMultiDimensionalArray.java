@@ -1,3 +1,5 @@
+package j2se.chapter05.d5_04;
+
 public class TestMultiDimensionalArray{
 	public static void main(String args[]){
 		int[][] a = {{1,2},{3,4,0,9},{5,6,7}};

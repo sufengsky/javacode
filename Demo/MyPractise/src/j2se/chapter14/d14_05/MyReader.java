@@ -1,3 +1,5 @@
+package j2se.chapter14.d14_05;
+
 import java.io.*;
 public class MyReader{
 	public void getInfo(Reader reader){

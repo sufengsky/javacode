@@ -1,3 +1,5 @@
+package j2se.chapter09.d9_09;
+
 public class Person implements Cloneable{
 	private String name;
 	private int age;

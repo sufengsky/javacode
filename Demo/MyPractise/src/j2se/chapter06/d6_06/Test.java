@@ -1,3 +1,5 @@
+package j2se.chapter06.d6_06;
+
 public class Test{
 	public static void main(String[] args){
 		Student s = new Student();

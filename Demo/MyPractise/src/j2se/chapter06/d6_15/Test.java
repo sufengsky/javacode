@@ -1,3 +1,5 @@
+package j2se.chapter06.d6_15;
+
 class Person{
 	//---
 }

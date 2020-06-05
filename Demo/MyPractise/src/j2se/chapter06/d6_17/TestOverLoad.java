@@ -1,3 +1,5 @@
+package j2se.chapter06.d6_17;
+
 class Tool{
 	public void display(int i){
 		System.out.println("输出整数：" + i);

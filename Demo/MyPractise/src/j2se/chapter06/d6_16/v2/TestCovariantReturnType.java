@@ -1,3 +1,5 @@
+package j2se.chapter06.d6_16.v2;
+
 class B extends A{
 	public Person getAssistor(){
 		Student s = new Student();

@@ -1,3 +1,5 @@
+package j2se.chapter12.d12_04;
+
 import java.awt.Frame;
 import java.awt.Button;
 public class TestBorderLayout {

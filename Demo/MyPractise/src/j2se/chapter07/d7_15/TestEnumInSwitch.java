@@ -1,3 +1,5 @@
+package j2se.chapter07.d7_15;
+
 public class TestEnumInSwitch{
 	public static void main(String[] args){
 		TestEnumInSwitch teis = new TestEnumInSwitch();

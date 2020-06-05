@@ -1,3 +1,5 @@
+package j2se.chapter12.d12_26;
+
 import java.awt.*;
 import java.awt.event.*;
 class MyCanvas extends Canvas{

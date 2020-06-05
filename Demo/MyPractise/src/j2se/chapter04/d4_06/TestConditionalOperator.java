@@ -1,3 +1,5 @@
+package j2se.chapter04.d4_06;
+
 import java.util.Scanner;
 
 public class TestConditionalOperator{

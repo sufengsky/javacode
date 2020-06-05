@@ -1,3 +1,5 @@
+package j2se.chapter07.d7_09;
+
 public class Person{
 	private String name;
 	private double free = 1200;

@@ -1,3 +1,5 @@
+package j2se.chapter07.d7_03;
+
 public class Person implements Runner{
 	public void start(){
 		System.out.println("弯腰、蹬腿、咬牙、瞪眼、 开跑");	

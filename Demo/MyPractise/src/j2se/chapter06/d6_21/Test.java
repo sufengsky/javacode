@@ -1,3 +1,5 @@
+package j2se.chapter06.d6_21;
+
 public class Test{
 	public void m1(int i){
 		System.out.println("int data: " + i);	

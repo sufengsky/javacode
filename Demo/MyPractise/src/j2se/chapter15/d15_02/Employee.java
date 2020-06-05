@@ -1,3 +1,5 @@
+package j2se.chapter15.d15_02;
+
 public class Employee{
 	private final int id;
 	private String name;

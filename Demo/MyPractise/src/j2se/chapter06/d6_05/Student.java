@@ -1,3 +1,5 @@
+package j2se.chapter06.d6_05;
+
 public class Student{
 	private String name;
 	private int age;

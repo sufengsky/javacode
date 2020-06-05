@@ -1,3 +1,5 @@
+package j2se.chapter06.d6_02;
+
 import p1.Test;
 
 public class TestPackage{

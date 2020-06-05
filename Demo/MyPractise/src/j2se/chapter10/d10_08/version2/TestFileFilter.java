@@ -1,3 +1,5 @@
+package j2se.chapter10.d10_08.version2;
+
 import java.io.File;
 
 public class TestFileFilter{

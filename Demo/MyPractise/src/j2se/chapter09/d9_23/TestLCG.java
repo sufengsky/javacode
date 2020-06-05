@@ -1,3 +1,5 @@
+package j2se.chapter09.d9_23;
+
 public class TestLCG{
 	public static void main(String args[]){
 		test(32,5,8,7);		

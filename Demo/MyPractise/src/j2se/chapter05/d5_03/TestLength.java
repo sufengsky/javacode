@@ -1,3 +1,5 @@
+package j2se.chapter05.d5_03;
+
 public class TestLength{
 	public static void main(String args[]){
 		String[] friends = new String[3];

@@ -1,3 +1,5 @@
+package j2se.chapter04.d4_26;
+
 public class TestContinueOuter{
 	public static void main(String args[]){
 		int n = 0;

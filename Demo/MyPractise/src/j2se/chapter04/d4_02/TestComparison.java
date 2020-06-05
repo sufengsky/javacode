@@ -1,3 +1,5 @@
+package j2se.chapter04.d4_02;
+
 public class TestComparison{
 	public static void main(String args[]){
 		int a = 4;

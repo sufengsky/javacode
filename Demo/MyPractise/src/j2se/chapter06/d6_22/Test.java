@@ -1,3 +1,5 @@
+package j2se.chapter06.d6_22;
+
 public class Test{
 	public void m1(int i,double d){
 		System.out.println("int - double!");	

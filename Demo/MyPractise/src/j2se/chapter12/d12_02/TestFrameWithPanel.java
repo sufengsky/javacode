@@ -1,3 +1,5 @@
+package j2se.chapter12.d12_02;
+
 import java.awt.Frame;
 import java.awt.Panel;
 import java.awt.Color;

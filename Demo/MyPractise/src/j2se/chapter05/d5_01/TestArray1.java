@@ -1,3 +1,5 @@
+package j2se.chapter05.d5_01;
+
 public class TestArray1{
 	public static void main(String[] args){
 		int[] a = new int[3];

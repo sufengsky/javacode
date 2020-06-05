@@ -1,3 +1,5 @@
+package j2se.chapter19.d19_02.v2;
+
 import javax.swing.*;
 import java.util.Date;
 import java.util.Locale;

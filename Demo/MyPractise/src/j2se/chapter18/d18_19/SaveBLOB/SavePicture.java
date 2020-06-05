@@ -1,3 +1,5 @@
+package j2se.chapter18.d18_19.SaveBLOB;
+
 import java.sql.*;
 import java.io.*;
 

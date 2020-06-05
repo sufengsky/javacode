@@ -1,3 +1,5 @@
+package j2se.chapter06.d6_33;
+
 public class Test{
 	public static void main(String[] args) {
 		final Person p1 = new Person("Tom",18);

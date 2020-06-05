@@ -1,3 +1,5 @@
+package j2se.chapter06.d6_30.v2;
+
 public class Single{
 	private String name;
 	private static Single onlyone;

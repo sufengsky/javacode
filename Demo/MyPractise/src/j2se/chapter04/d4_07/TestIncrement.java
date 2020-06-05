@@ -1,3 +1,5 @@
+package j2se.chapter04.d4_07;
+
 public class TestIncrement{
 	public static void main(String args[]){
 		int i = 5,j;

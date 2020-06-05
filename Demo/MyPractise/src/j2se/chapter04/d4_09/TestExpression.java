@@ -1,3 +1,5 @@
+package j2se.chapter04.d4_09;
+
 public class TestExpression{
 	public static void main(String args[]){
 		int i,j,k;

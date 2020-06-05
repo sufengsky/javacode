@@ -1,3 +1,5 @@
+package j2se.chapter07.d7_07;
+
 public class TestInner2 {
 	public static void main(String[] args) {
 		A a = new A();

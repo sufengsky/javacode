@@ -1,3 +1,5 @@
+package j2se.chapter19.d19_06;
+
 import java.awt.Color;
 import java.util.ListResourceBundle;
 public class MyMsgs extends ListResourceBundle {

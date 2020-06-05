@@ -1,3 +1,5 @@
+package j2se.chapter16.d16_05;
+
 import java.awt.*;
 import java.awt.event.*;
 public class TestGUIThread {	

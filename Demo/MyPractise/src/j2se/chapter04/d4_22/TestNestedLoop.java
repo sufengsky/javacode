@@ -1,3 +1,5 @@
+package j2se.chapter04.d4_22;
+
 public class TestNestedLoop{
 	public static void main(String args[]){
 		TestNestedLoop tn = new TestNestedLoop();

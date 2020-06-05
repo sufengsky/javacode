@@ -1,3 +1,5 @@
+package j2se.chapter04.d4_28;
+
 public class Test{
 	public static void main(String args[]){
 		Test t = new Test();

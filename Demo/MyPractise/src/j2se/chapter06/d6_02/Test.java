@@ -1,4 +1,4 @@
-package p1;
+package j2se.chapter06.d6_02;
 
 public class Test{
 	public void m1(){

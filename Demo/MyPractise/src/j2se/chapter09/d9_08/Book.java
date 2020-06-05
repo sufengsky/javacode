@@ -1,3 +1,5 @@
+package j2se.chapter09.d9_08;
+
 public class Book implements Cloneable{
 	String bookName;
 	double price;

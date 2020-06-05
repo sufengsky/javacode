@@ -1,3 +1,5 @@
+package j2se.chapter06.d6_13;
+
 public class Book{
 	private String name;
 	private double price;

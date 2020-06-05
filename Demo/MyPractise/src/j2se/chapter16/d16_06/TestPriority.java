@@ -1,4 +1,6 @@
-public class TestPriority {	
+package j2se.chapter16.d16_06;
+
+public class TestPriority {
 	public static void main(String args[]){
 		System.out.println("线程名\t优先级");
 		Thread current = Thread.currentThread();

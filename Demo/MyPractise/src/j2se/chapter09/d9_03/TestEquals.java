@@ -1,3 +1,5 @@
+package j2se.chapter09.d9_03;
+
 public class TestEquals{
 	public static void main(String[] args){
 		int i=5,j=5;

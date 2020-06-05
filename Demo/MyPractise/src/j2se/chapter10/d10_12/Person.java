@@ -1,3 +1,5 @@
+package j2se.chapter10.d10_12;
+
 //import java.lang.Override;
 public class Person{
 	private String name;

@@ -1,3 +1,5 @@
+package j2se.chapter19.d19_03;
+
 import java.awt.Color;
 import java.util.ListResourceBundle;
 public class MyLabels_zh_TW extends ListResourceBundle

@@ -1,3 +1,5 @@
+package j2se.chapter19.d19_05;
+
 import java.util.Date;
 import java.util.Locale;
 import java.text.MessageFormat;

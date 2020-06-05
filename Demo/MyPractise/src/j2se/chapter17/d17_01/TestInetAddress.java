@@ -1,3 +1,5 @@
+package j2se.chapter17.d17_01;
+
 import java.net.InetAddress;
 
 public class TestInetAddress {

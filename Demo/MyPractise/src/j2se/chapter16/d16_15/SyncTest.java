@@ -1,3 +1,5 @@
+package j2se.chapter16.d16_15;
+
 public class SyncTest{
     public static void main(String args[]){
 		SyncStack stack = new SyncStack();

@@ -1,3 +1,5 @@
+package j2se.chapter09.d9_18;
+
 import java.util.*;
 
 public class TestLocale{

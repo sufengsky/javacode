@@ -1,3 +1,5 @@
+package j2se.chapter11.d11_08;
+
 public class Person implements java.lang.Comparable{
 	private final int id;
 	private String name;

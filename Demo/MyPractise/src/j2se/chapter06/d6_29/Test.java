@@ -1,3 +1,5 @@
+package j2se.chapter06.d6_29;
+
 import static p1.p2.MyTool.*;
 //import static p1.p2.MyTool.PI;
 //import static p1.p2.MyTool.getArea;

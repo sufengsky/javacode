@@ -1,3 +1,5 @@
+package j2se.chapter09.d9_07;
+
 public class TestClone{
 	public static void main(String args[]){
 		Person p1 = new Person("Tom",18);

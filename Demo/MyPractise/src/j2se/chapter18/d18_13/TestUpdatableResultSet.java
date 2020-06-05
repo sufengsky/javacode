@@ -1,3 +1,5 @@
+package j2se.chapter18.d18_13;
+
 import java.sql.*;
 public class TestUpdatableResultSet{
     public static void main(String args[]){

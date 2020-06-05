@@ -1,3 +1,5 @@
+package j2se.chapter16.d16_13;
+
 public class TestDeadLock{
 	public static void main(String args[]){
 		StringBuffer sb = new StringBuffer("ABCD");

@@ -1,3 +1,5 @@
+package j2se.chapter09.d9_15;
+
 public class TestAutoBoxing{
 	public static void main(String args[]){
 		Integer t1 = new Integer(3);  

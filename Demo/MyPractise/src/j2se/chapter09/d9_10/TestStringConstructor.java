@@ -1,3 +1,5 @@
+package j2se.chapter09.d9_10;
+
 public class TestStringConstructor{
 	public static void main(String args[]){
 		String s = new String();

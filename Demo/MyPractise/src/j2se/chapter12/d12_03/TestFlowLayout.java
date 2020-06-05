@@ -1,3 +1,5 @@
+package j2se.chapter12.d12_03;
+
 import java.awt.Frame;
 import java.awt.Button;
 import java.awt.FlowLayout;

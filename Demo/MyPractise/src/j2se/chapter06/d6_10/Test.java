@@ -1,3 +1,5 @@
+package j2se.chapter06.d6_10;
+
 class Animal{
 	protected int i = 1;	
 }

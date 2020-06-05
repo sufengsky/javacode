@@ -1,3 +1,5 @@
+package j2se.chapter07.d7_04;
+
 interface A{
 	public void m1(int i);
 }

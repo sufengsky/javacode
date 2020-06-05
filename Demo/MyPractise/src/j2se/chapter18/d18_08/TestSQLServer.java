@@ -1,3 +1,5 @@
+package j2se.chapter18.d18_08;
+
 import java.sql.*;
 
 public class TestSQLServer{

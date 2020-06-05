@@ -1,3 +1,5 @@
+package j2se.chapter15.d15_08;
+
 public class Test{
 	public static void main(String[] args){
 		Point<Integer> pi = new Point<Integer>(20,40);

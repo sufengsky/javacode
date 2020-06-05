@@ -1,3 +1,5 @@
+package j2se.chapter12.d12_29;
+
 import java.awt.Color;
 import java.awt.Graphics;
 import java.applet.Applet;

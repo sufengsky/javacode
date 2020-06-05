@@ -1,3 +1,5 @@
+package j2se.chapter09.d9_29;
+
 import java.text.DecimalFormat;
 
 public class TestDecimalFormat{

@@ -1,3 +1,5 @@
+package j2se.chapter11.d11_02;
+
 import java.util.Date;
 import java.util.Vector;
 

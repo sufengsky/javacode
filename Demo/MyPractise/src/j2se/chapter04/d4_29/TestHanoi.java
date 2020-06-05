@@ -1,3 +1,5 @@
+package j2se.chapter04.d4_29;
+
 public class TestHanoi{
 	private int times = 0;
 	public static void main(String args[]){

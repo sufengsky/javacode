@@ -1,4 +1,4 @@
-/*	范例名称：简单的client/server程序
+package sxtdemo.Demo10Network;/*	范例名称：简单的client/server程序
  * 	源文件名称：TestClient.java/TestServer.java
  *	要  点：
  *		1. Java Socket编程步骤

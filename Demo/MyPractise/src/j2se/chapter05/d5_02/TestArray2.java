@@ -1,3 +1,5 @@
+package j2se.chapter05.d5_02;
+
 class MyDate{
     private int day;
     private int month;

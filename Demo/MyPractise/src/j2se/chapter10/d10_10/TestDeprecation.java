@@ -1,3 +1,5 @@
+package j2se.chapter10.d10_10;
+
 import java.util.*;
 
 public class TestDeprecation{

@@ -1,3 +1,5 @@
+package j2se.chapter10.d10_05;
+
 import java.io.File;
 import java.io.FileReader;
 import java.io.BufferedReader;

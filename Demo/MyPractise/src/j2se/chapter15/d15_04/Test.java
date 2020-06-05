@@ -1,3 +1,5 @@
+package j2se.chapter15.d15_04;
+
 public class Test{
 	public static void main(String[] args){
 		Person<String> p1 = new Person<String>(101);

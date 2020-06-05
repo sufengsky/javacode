@@ -1,3 +1,5 @@
+package j2se.chapter18.d18_14;
+
 import java.sql.*;
 public class PrepStmt{
 	public static void main(String[] args){
