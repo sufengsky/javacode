@@ -9,8 +9,8 @@ public class TestVector{
 		v.addElement("Tom");	
 		v.addElement("Billy");	
 		v.addElement("Nancy");	
-		v.addElement(new Date());		
-		v.addElement(new Integer(300));	
+//		v.addElement(new Date());
+//		v.addElement(new Integer(300));
 
 		for(int i=0;i<v.size();i++){
 			String name = v.elementAt(i);

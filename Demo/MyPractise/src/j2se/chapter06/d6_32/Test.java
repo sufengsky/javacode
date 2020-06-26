@@ -20,7 +20,7 @@ public class Test{
 		System.out.println(t.country + "\t" + t.getId());		
 		final int i = 10;
 		final int j;
-		j = 20;
-		j = 30; //非法
+//		j = 20;
+//		j = 30; //非法
 	}
 }

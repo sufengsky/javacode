@@ -11,6 +11,6 @@ public class Test{
 		pd.setY(6.78);
 		pd.showInfo();
 				
-		Point<String> ps = new Point<String>();		
+		//Point<String> ps = new Point<String>();
 	}
 }

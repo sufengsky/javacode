@@ -1,5 +1,5 @@
 package j2se.chapter06.d6_07;
-import p1.A;
+
 public class B extends A{	
 	public void mb(){
 		m = m + 1;	//合法，等价于  this.m = this.m + 1;

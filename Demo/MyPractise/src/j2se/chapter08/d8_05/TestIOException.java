@@ -2,7 +2,7 @@ package j2se.chapter08.d8_05;
 
 import java.io.*;
 public class TestIOException{
-	public static void main(String[] args)    {
+	public static void main(String[] args) throws Exception {
 		FileInputStream in=new FileInputStream("myfile.txt");
 		int b;
 		b = in.read();

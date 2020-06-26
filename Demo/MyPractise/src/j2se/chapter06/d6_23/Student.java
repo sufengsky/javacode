@@ -18,7 +18,7 @@ public class Student extends Person{
 		this(name,age,null);	
 	}
 	public Student(String school){
-		//super();
+		super("");
 		this.school = school;
 	}
 }

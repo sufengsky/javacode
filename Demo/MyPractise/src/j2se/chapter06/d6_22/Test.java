@@ -11,6 +11,6 @@ public class Test{
 		Test t = new Test();
 		t.m1(3,4.0);
 		t.m1(4.0,3);
-		t.m1(3,4);  //编译出错
+//		t.m1(3,4);  //编译出错
 	}		
 }
