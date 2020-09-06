@@ -4,7 +4,6 @@ public class TestSearch {
     public static void main(String[] args) {
         int a[] = {1, 3, 6, 8, 9, 10, 12, 18, 20, 34};
         int i = 12;
-        //System.out.println(search(a, i));
         System.out.println(binarySearch(a, i));
     }
 
