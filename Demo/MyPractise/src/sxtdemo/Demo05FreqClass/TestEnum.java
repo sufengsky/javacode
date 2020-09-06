@@ -2,13 +2,7 @@ package sxtdemo.Demo05FreqClass;
 
 public class TestEnum {
     public enum MyColor {red, green, blue}
-
-    ;
-
     public enum MyDoorOpener {me, mywife}
-
-    ;
-
     public static void main(String[] args) {
         MyColor m = MyColor.red;
         switch (m) {
