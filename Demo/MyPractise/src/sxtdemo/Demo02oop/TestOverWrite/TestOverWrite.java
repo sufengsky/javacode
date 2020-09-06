@@ -3,36 +3,59 @@ package sxtdemo.Demo02oop.TestOverWrite;
 class Person {
     private String name;
     private int age;
-    public void setName(String name){this.name=name;}
-    public void setAge(int age) {this.age=age;}
-    public String getName(){return name;}
-    public int getAge(){return age;}
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
     public String getInfo() {
-          return "Name: "+ name + "\n" +"age: "+ age;
-  }
+        return "Name: " + name + "\n" + "age: " + age;
+    }
 }
 
 class Student extends Person {
     private String school;
-    public String getSchool() {return school;}
-    public void setSchool(String school)
-    {this.school =school;}
+
+    public String getSchool() {
+        return school;
+    }
+
+    public void setSchool(String school) {
+        this.school = school;
+    }
+
+    //子类对于继承的方法进行重写
     public String getInfo() {
-      return  "Name: "+ getName() + "\nage: "+ getAge() 
-                    + "\nschool: "+ school;
-		}
+        return "Name: " + getName() + "\nage: " + getAge()
+                + "\nschool: " + school;
+    }
 }
 
 public class TestOverWrite {
-public static void main(String arg[]){
-        Student student = new Student();
+    public static void main(String arg[]) {
         Person person = new Person();
         person.setName("none");
         person.setAge(1000);
-        student.setName("John");    
+        System.out.println(person.getInfo());
+
+        System.out.println("-------------");
+
+        Student student = new Student();
+        student.setName("John");
         student.setAge(18);
         student.setSchool("SCH");
-        System.out.println(person.getInfo());
         System.out.println(student.getInfo());
     }
 }

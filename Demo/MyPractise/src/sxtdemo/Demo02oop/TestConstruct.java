@@ -15,8 +15,7 @@ class Person2 {
     }
 
     public String info() {
-        return
-                "name: " + name + " location: " + location;
+        return "name: " + name + " location: " + location;
     }
 }
 

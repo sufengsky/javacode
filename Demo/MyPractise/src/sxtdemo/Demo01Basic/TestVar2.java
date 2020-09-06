@@ -14,6 +14,5 @@ public class TestVar2 {
         System.out.println("d=" + d);
         System.out.println("c1=" + c1);
         System.out.println("c2=" + c2);
-
     }
 }

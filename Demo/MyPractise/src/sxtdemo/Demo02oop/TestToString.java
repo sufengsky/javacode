@@ -8,6 +8,7 @@ public class TestToString {
 }
 
 class Dog1 {
+    @Override
     public String toString() {
         return "I'm a cool dog!";
     }

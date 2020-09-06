@@ -11,8 +11,7 @@ public class Cat {
     }
 
     public void info() {
-        System.out.println
-                ("My name is " + name + " No." + id);
+        System.out.println("My name is " + name + " No." + id);
     }
 
     public static void main(String arg[]) {
@@ -20,6 +19,7 @@ public class Cat {
         Cat.sid = 100;
         Cat mimi = new Cat("mimi");
         mimi.sid = 2000;
+
         Cat pipi = new Cat("pipi");
         mimi.info();
         pipi.info();

@@ -13,7 +13,6 @@ public class TestMethod2 {
       TestMethod2 t = new TestMethod2();
       System.out.println("Max = "+t.Max(3,4));
       System.out.println("Min = "+t.Min(3,4));
-      //System.out.println(Max(3, 4));
   }
 
 }
