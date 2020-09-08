@@ -14,7 +14,9 @@ public class BasicGeneric {
 		}
 		
 		Collection<String> c2 = new HashSet<String>();
-		c2.add("aaa"); c2.add("bbb"); c2.add("ccc");
+		c2.add("aaa");
+		c2.add("bbb");
+		c2.add("ccc");
 		for(Iterator<String> it = c2.iterator(); it.hasNext(); ) {
 			String s = it.next();
 			System.out.println(s);

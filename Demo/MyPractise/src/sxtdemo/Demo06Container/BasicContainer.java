@@ -8,9 +8,12 @@ public class BasicContainer {
         c.add("hello");
         c.add(new Name("f1", "l1"));
         c.add(new Integer(100));
+        System.out.println(c);
+
         c.remove("hello");
         c.remove(new Integer(100));
         System.out.println(c.remove(new Name("f1", "l1")));
+        System.out.println(c.remove("world"));
         System.out.println(c);
     }
 }
