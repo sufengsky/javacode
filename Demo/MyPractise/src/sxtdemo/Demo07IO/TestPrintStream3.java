@@ -8,7 +8,7 @@ public class TestPrintStream3 {
         String s = null;
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         try {
-            FileWriter fw = new FileWriter("d:\\bak\\logfile.log", true); //Log4J
+            FileWriter fw = new FileWriter("d:\\bak\\logfile.log", true);
             PrintWriter log = new PrintWriter(fw);
             while ((s = br.readLine()) != null) {
                 if (s.equalsIgnoreCase("exit")) break;

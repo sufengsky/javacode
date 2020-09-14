@@ -15,10 +15,12 @@ public class TestFileOutputStream {
 	    in.close(); 
 	    out.close();
 	  } catch (FileNotFoundException e2) {
-	    System.out.println("�Ҳ���ָ���ļ�"); System.exit(-1);
+	    System.out.println("FileNotFound");
+	    System.exit(-1);
 	  } catch (IOException e1) {
-	    System.out.println("�ļ����ƴ���"); System.exit(-1);
+	    System.out.println("IOException");
+	    System.exit(-1);
 	  }
-	  System.out.println("�ļ��Ѹ���");
+	  System.out.println("exit");
   }
 }

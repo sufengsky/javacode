@@ -10,17 +10,16 @@ public class TestPrintStream2 {
         }
     }
 
-    public static void list(String f, PrintStream fs) {
+    public static void list(String f, PrintStream ps) {
         try {
-            BufferedReader br =
-                    new BufferedReader(new FileReader(f));
+            BufferedReader br = new BufferedReader(new FileReader(f));
             String s = null;
             while ((s = br.readLine()) != null) {
-                fs.println(s);
+                ps.println(s);
             }
             br.close();
         } catch (IOException e) {
-            fs.println("无法读取文件");
+            ps.println("无法读取文件");
         }
     }
 }
