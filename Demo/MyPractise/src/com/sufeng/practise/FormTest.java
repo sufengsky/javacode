@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 //参考：https://www.jianshu.com/p/75bcee861ef1?utm_campaign
+//https://www.jetbrains.com/help/idea/2018.3/creating-and-opening-forms.html
 public class FormTest {
     private JPanel panel1;
     private JButton button1;
